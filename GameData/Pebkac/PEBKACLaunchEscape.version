@@ -1,0 +1,21 @@
+{
+  "NAME": "PEBKAC Launch Escape",
+  "URL": "http://ksp.spacetux.net/avc/PEBKACLaunchEscape",
+  "DOWNLOAD": "https://spacedock.info/mod/816/PEBKAC%20Industries:%20Launch%20Escape%20System",
+  "CHANGE_LOG_URL": "https://spacedock.info/mod/816/PEBKAC%20Industries:%20Launch%20Escape%20System#changelog",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "PebkacLaunchEscape2"
+  },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 4,
+    "PATCH": 2,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

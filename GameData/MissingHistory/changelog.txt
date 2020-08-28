@@ -1,0 +1,76 @@
+Release v1.8 (2019-10-16)
+* Compatibility update for KSP 1.8.  Changes as follows:
+* Deprecated the two 1.875m nosecones (as those have now been superseded by a stock one).
+* Updated the 1.875m service bay to use the spiffy new model from KSP 1.8.
+* Adjusted the position of the Palici pod's IVA (thanks linuxgurugamer for pointing out & supplying fix)
+* Update to ModuleManager 4.1.0.
+
+Release v1.7.3 (2019-03-18)
+* ReStock compatibility fix. (Thanks to Nertea for kind assistance!)
+* Update to latest ModuleManager (4.0.2).
+* Fix no-longer-accurate description in 1.25m engine plate. (Thanks to rwilkinson for spotting!)
+
+Release v1.7.2 (2019-01-02)
+* Update the exhaust plume on the KANDL engine (inadvertently omitted from release 1.7).
+* Rename the KANDL engine to avoid colliding with other mods that resurrect this part.
+
+Release v1.7 (2019-01-01)
+* Add 0.625m and 1.875m nuclear engines, with models/textures from Porkjet's "Atomic Age" mod.
+* Thanks to JadeOfMaar from the KSP forums for kindly providing new exhaust plumes for the two engines!
+
+Release v1.6.1 (2018-12-24)
+* Move 1.25m engine plate down to "Advanced Construction" (in keeping with the KSP 1.6 parts rebalance).
+* Add a short 1.875m-to-2.5m fuel tank adapter. Thanks to Tonka Crash in the KSP forums for suggesting!
+
+Release v1.6 (2018-12-20)
+* Update for KSP 1.6 compatibility.
+* Reskinned Terrier removed (due to stock revamp).
+* The 2.5m-3.75m adapter tank is removed (since a stock tank got added in this shape).
+* Mk2-B "Palici" command pod now supports "Reversed" control point. Added AttitudeAdjuster compatibility.
+* Tweaked the FL-A10 Adapter to be a small fuel tank (with 0.3 tons of LFO) instead of just a structural part.
+* Update to latest ModuleManager version, 3.1.2.
+
+Release v1.5 (2018-11-29)
+* Add new Mk2-B "Palici" command pod, courtesy of steedcrugeon.
+
+Release v1.4.1 (2018-10-19):
+* Restore 1.25m engine plate to the mod, having fixed the bug that prevented it from working. (Thanks to JH4C in the KSP forums for detective work that led to the fix!)
+* Update ModuleManager to 3.1.0, the latest version.
+
+Release v1.4 (2018-10-15):
+* Remove re-skin of 1.25m tanks, for KSP 1.5 compatibility.
+* Skins *may* be re-added at some future date; this is a quick fix to keep the mod functional in KSP 1.5.
+* Hide the 1.25m engine plate so it's no longer available. This is because a KSP 1.5 physics bug makes it unusable.
+* Hopefully a future KSP patch will fix the bug so that the 1.25m engine plate becomes usable again.
+
+Release v1.3.3 (2018-07-09):
+* Fix a bug in the 1.25m engine plate that incorrectly set its ejection force. (Thanks to wile1411 in the KSP forums for catching!)
+* Enable localization for all parts. (Thanks to github user yalov for suggesting.)
+
+Release v1.3.2 (2018-06-06)
+* Fix a problem with the RemoteTech patch from 1.3.1 which broke JX2Antenna parts and others. (Thanks to Cavscout74 in the KSP forums for catching!)
+
+Release v1.3.1 (2018-06-04)
+* Update to ModuleManager v3.0.7.
+* Add a patch to enable the 1.875m probe core with RemoteTech. (Thanks to Nik kal in the KSP forums for pointing this out.)
+* Add bulkhead profiles for 1.875m nosecones and SRB.
+
+Release v1.3 (2018-03-27)
+* Add 1.875m ore tank.
+* Add 1.875m xenon tank.
+* Add optional "tweaks" config, with a fix for the Cheetah's bottom attachment node.
+
+Release v1.2 (2018-03-24)
+* Add "gray/orange" variant for size 3 Kerbodyne tanks, cloned from 1.875m Making History parts.
+
+Release v1.1.1 (2018-03-23)
+* Add missing "white" variant to the fueled 2.5m-3.75m adapter. (Thanks to klesh for calling my attention to this!)
+* Fixed the connector node sizes on the 1.875m battery and reaction wheel (they were size 1, should be size 2)
+
+Release v1.1  (2018-03-18)
+* Add "gray/orange" skin for 1.25m tanks, courtesy of Jarin.
+* Add 1.25m engine plate.
+* Update to ModuleManager version 3.0.6.
+
+Release v1.0  (2018-03-13)
+* Initial release.

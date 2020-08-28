@@ -1,0 +1,19 @@
+﻿{
+    "NAME":"Structural Disks",
+    "URL":"https://github.com/Benji-13/StructuralDisks/blob/master/StructuralDisks/Patches/Versioning/StructuralDisks.version",
+    "DOWNLOAD":"http://forum.kerbalspaceprogram.com/index.php?/topic/150867-121-structural-disks-the-more-shapes-update",
+    "VERSION":
+    {
+        "MAJOR":1,
+        "MINOR":2,
+        "PATCH”:0,
+        "BUILD":0
+    },
+    "KSP_VERSION":
+    {
+        "MAJOR":1,
+        "MINOR":2,
+        "PATCH":1
+    }
+
+}

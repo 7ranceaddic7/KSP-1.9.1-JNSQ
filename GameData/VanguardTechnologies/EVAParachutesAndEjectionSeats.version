@@ -1,0 +1,20 @@
+{
+  "NAME": "EVAParachutesAndEjectionSeats",
+  "URL": "http://ksp.spacetux.net/avc/EVAParachutesAndEjectionSeats",
+  "DOWNLOAD": "https://github.com/linuxgurugamer/EVAParachutesAndEjectionSeats/releases",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "EVAParachutesAndEjectionSeats"
+  },
+  "VERSION": {
+    "MAJOR": 0,
+    "MINOR": 2,
+    "PATCH": 0,
+    "BUILD": 2
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

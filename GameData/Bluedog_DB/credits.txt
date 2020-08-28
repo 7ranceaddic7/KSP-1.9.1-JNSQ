@@ -1,0 +1,43 @@
+Authors:
+	CobaltWolf - Original author
+	Jso - Balancing, compatibility configs, programming, 
+	VenomousRequiem - Modeling, RP configs, bugtesting
+
+Contributors: (No particular order at this point)
+	PassingLurker - Bloeting Corp parts for Mercury
+	Beale - TRAILS parts for Gemini
+	Araym - Bugtesting + Balancing
+	Kurld - Apollo Launch Abort System + working with Jso to get it all working.
+	Komodo - Lots of balance, bugtesting, and compatibility, including cooking up some crazy projects with Jso
+	129828 - Assistance with Micrometeoroid Impact Detector sciencedefs
+	fs10inator, TimothyC, Curtquarqesso, A1Ch1, AnthonyJOlson97@gmail.com - Research
+	Foxxonius Augustus - Research, Hypemaster General
+	Drekerb42 - Sciencedefs, part descriptions
+	DiscoSlelge - Memes, Manual
+	Sgt.Shutsie - Craft Files, screenshots
+	Cowboy-WY - Bugfixes, compatibility configs
+	Mods-O-Joy - LEM IVA
+	Daelkyr - Modified Apollo IVA
+	IronCretin - Bugtesting + Balancing
+	Akron - Feedback, bugtesting, sciencedefs
+
+Dependency Credits:
+	DMagic - Author of DMagicScienceAnimateGeneric
+	Nertea - Author of ModuleDeployableEngine (modified in BDB)
+	Roverdude - Author of Community Resource Pack
+
+Misc credits:
+	Felbourn - Advice on texture sizing and image compression
+	DMagic - magnetometer science definitions.
+	Frizzank and the FASA mod - geiger counter sciencedefs, Gemini IVA, and Launch Clamps
+	RGBpeter - KSP decal library
+	Beale - solar panel textures
+	Ledenko - K-P0110 IVA
+
+Special thanks:
+	Everyone who comments on the thread! Your feedback is important and appreciated!
+
+Programs used (for those curious):
+	Modeling is done in Autodesk Maya 2016
+	UV Mapping is done using the non-commercial release of Nightshade UV Editor
+	Texturing done using Adobe Photoshop CS6 

@@ -1,0 +1,180 @@
+﻿AliasConfig
+{
+	Item 
+	{
+		name = AutonomousCommand
+		Modules
+		{
+			Item
+			{
+				name = ModuleSAS
+			}
+			Item
+			{
+				name = ModuleSPU
+			}
+		}
+	}
+	Item
+	{
+		name = Command
+		Modules
+		{
+			Item
+			{
+				name = ModuleCommand
+			}
+		}
+	}
+	Item 
+	{
+		name = Communication
+		Modules
+		{
+			Item
+			{
+				name = ModuleDataTransmitter
+			}
+			Item
+			{
+				name = ModuleLimitedDataTransmitter
+			}
+			Item
+			{
+				name = ModuleRTAntenna
+			}
+			Item
+			{
+				name = AntennaRange
+			}
+			// Following needed for Kerbalism
+			Item 
+			{
+				name = Antenna
+			}
+		}
+	}
+	Item 
+	{
+		name = Energy
+		Modules
+		{
+			Item
+			{
+				name = ModuleDeployableSolarPanel
+			}
+			Item
+			{
+				name = ModuleGenerator
+			}
+			Item
+			{
+				name = FNGenerator
+			}
+			Item
+			{
+				name = FissionGenerator
+			}
+			Item
+			{
+				name = ModuleRadioisotopeGenerator
+			}
+			Item
+			{
+				name = ModuleCurvedSolarPanel
+			}
+
+			// Following needed for Fuel Cells
+			Item		
+ 			{		
+ 				name = ModuleResourceConverter
+				resource = ElectricCharge
+ 			}		
+			// Following needed for USI Fuel cells
+			Item
+			{
+				name = ModuleResourceConverter_USI
+				resource = ElectricCharge
+			}
+			Item
+            {
+                name = KopernicusSolarPanel
+            }
+			Item
+			{
+				name = ChargedParticlesPowerGenerator
+			}
+			Item
+			{
+				name = ThermalElectricPowerGenerator
+			}
+		}
+	}
+	Item 
+	{
+		name = Drill
+		Modules
+		{
+			Item
+			{
+				name = ModuleResourceHarvester
+			}
+			Item
+                        {
+                                name = ModuleResourceHarvester_USI
+                        }
+		}
+	}
+	Item
+	{
+		name = ScienceLab
+		Modules
+		{
+			Item
+			{
+				name = ModuleScienceLab
+			}
+		}
+	}
+	Item
+	{
+		name = Wheel
+		Modules
+		{
+			Item
+			{
+				name = ModuleWheel
+			}
+			Item
+			{
+				name = ModuleWheelBase
+			}
+			Item
+			{
+				name = KSPWheelBase
+			}
+		}
+	}
+	Item
+	{
+		name = DockingPort
+		Modules
+		{
+			Item
+			{
+				name = ModuleDockingNode
+			}
+		}
+	}
+	Item
+	{
+		name = Asteroid
+		Modules
+		{
+			Item
+			{
+				name = ModuleAsteroid
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+vesselCount = 0
+UT = 208595.30313047595
+gameMode = CAREER
+gameNull = False
+gameCompatible = True
+funds = 32164.772949295817
+science = 1
+reputationPercent = 0
+ongoingContracts = 2
+missionCurrentScore = 0
+missionIsStarted = False
+missionIsEnded = False
+missionHistoryId = 00000000-0000-0000-0000-000000000000
+missionExpansionVersion = 
+saveMD5 = 380e9f4abe1b30f70e92fc72606b4497

@@ -1,0 +1,27 @@
+Release v1.6
+* Add patch for ReStock and ReStock+ (thanks to UnanimousCoward).
+
+Release v1.5
+* Add patches for Station Science (thanks to Tonka Crash).
+* Add patch for K-2 Command Pod (thanks to VoidSquid).
+
+Release v1.4
+* Add patch for MSP-3000 Material Science Pod (thanks to The-Grim-Sleeper).
+
+Release v1.3.1
+* Minor fixes to work with ModuleManager 3.0 and later.
+* Thanks to Murdabenne, Skalou, and SchwinnTropius for spotting problems & testing fixes.
+
+Release v1.3
+* Add patch for MKS construction ports (thanks to DStaal)
+
+Release v1.2
+* Add patch for MK1CabinHatch (thanks to SchwinnTropius)
+
+Release v1.1
+* Add patch for Mk1 command pod from Porkjet's PartOverhauls (thanks to SchwinnTropius)
+
+Release v1.0
+* Initial release.
+* Includes support for Ven Stock Revamp (thanks to Kerbas_ad_astra)
+* Includes support for Impossible Innovations (thanks to Jiraiyah)

@@ -1,0 +1,20 @@
+{
+  "NAME": "CrewRandR",
+  "URL": "http://ksp.spacetux.net/avc/CrewRandR",
+  "DOWNLOAD": "https://github.com/linuxgurugamer/CrewRandR/releases",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "CrewRandR"
+  },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 1,
+    "PATCH": 10,
+    "BUILD": 4
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

@@ -1,0 +1,192 @@
+﻿V1.11.0 (10-19-2019) ==
+*Re-compile for KSP 1.8.x
+*Code Garbage gneration improvements.
+*Add Remote Tech antenna to TB-75.
+*If you encounter a planet without having discovered or fully researched it it will now no longer set it to fully discovered.
+Instead it will initially set the discovery to 40% and then over time whilst the vessel stays in the SOI of the planet it will slowly increase the discovery percentage.
+V1.10.0 (06-24-2019) ==
+*Re-compile for KSP 1.7.x
+*Fix NREs when entering tracking station.
+V1.9.9 (02-17-2019) ==
+*Re-compile for KSP 1.6.1
+*Fixed issue with ResearchBodies UI if opening in flight before you have opened the Observatory UI at the KSC.
+V1.9.8 (12-09-2018) ==
+*Re-compile for KSP 1.5.1
+*The Search for the skies contract will now randomly discover a body within observable range. https://github.com/JPLRepo/ResearchBodies/issues/34
+*Fixed issue with Wernher instructor portrait appearing double. https://github.com/JPLRepo/ResearchBodies/issues/36
+V1.9.7 (03-16-2018) ==
+*Re-Compile for KSP 1.4.1
+*Implement caching of textures (thanks to AlexALX for their contribution)
+*Russian Localization (thanks to AlexALX for their contribution)
+*Removed custom French localization, now uses the KSP Stock Localization for French.
+*Contract Configurator dependency updated. You must have Contract Configurator v 1.24.0 installed for this mod to work.
+V1.9.6 (10-07-2017) ==
+*Re-Compile for KSP 1.3.1
+*Fixed orbiting text in Observatory. The sun no longer orbits the sun.
+*Fixed the research complete message always saying you can now send a vessel to the the bodies parent body. Now shows the correct one.
+*Fixes to Tarsier Space Technology (TST) integration for researching Galaxies not showing up in the OBservatory or being persisted correctly.
+*When finding TST galaxies they don't show the Found message twice any more and they show the actual localized Galaxy name instead of their internal name.
+*Fix harmless NRE when leaving flight scene with the ResearchBodies UI window open.
+*ResearchBodies Log files are now kept and timestamped in the \GameData\REPOSoftTech\ResearchBodies\Plugins\PluginData folder.
+*You need Contract Configurator v1.23.3 with this version of Research Bodies.
+*Removed shinyness changes from the celestial bodies - for the color and detail changing.
+V1.9.5 (08-14-2017) ==
+*Fix fix loading different saves in the one KSP session to show body visibility correctly.
+*Fix fix discovery of bodies via telescopes and contracts actually appearing in the Observatory (related to the previous).
+*Fix the OBservatory background texture not showing in any other UI window that uses the default KSP UI skin.
+*Show the correct Observatory Ranges when Kopernicus is installed in the Observatory Facility upgrade stats window.
+V1.9.4 (08-05-2017) ==
+*Fix Tracking Station and Observatory Upgrade Level checks for contracts.
+*Fix Range checks for Observatory and Vessels with Telescopes for contracts.
+*Fix MapNodes appearing in MapView when there are orbits available for any contracts.
+*Localized strings for the Observatory Facility UI Menus and added Range Information to it's UI.
+*Fix Bodies discovery levels when you switch saves in the same KSP session, including modded bodies.
+V1.9.3 (07-15-2017) ==
+*Fix Instructors showing in other KSC Facilities - now only show in the Obervatory.
+*Fix a few issues with discovery of bodies using the TB-75. NOTE: TB-75 can only DISCOVER previously unknown bodies. 
+It cannot be used to further research a found body by scanning manually. It does have a role to play in the research contracts though that 
+allow you to further discover information about the bodies.
+*If you load a save file that was created before you installed ResearchBodies - ResearchBodies will now correctly update the save with the
+necessary ResearchBodies information and automatically turn ResearchBodies on. The default difficulty setting will be used as to which
+bodies you will be able to see. 
+*You should restart KSP any time you disable or enable ResearchBodies in a save game.
+*Added Part module info for the telescope parts to display in the extended tooltip in the parts picker in the SPH/VAB.
+*Fix issue with save file reloading not resetting the visible bodies in the Tracking Station/MapView.
+*Enabled old mode of clicking to research in the Observatory, etc if the current game is a sandbox or science sandbox game. But this is not
+much fun at all. The mod is intended to be used in Career game mode.
+*Fixed issue with the popup window not clearing in Flight when the telescope found a body.
+V1.9.2 (07-02-2017) ==
+*Fixed typo in locales for Characteristics and Orbit in UI.
+*Added Observatory SpaceCenter Facility. Yes - this Facility acts exactly like a stock one. It has TWO upgrade levels that provide different features, functions and contracts for Finding an Researching 
+celestial bodies.
+*New Game and Settings for this mod are now accessed via the Stock Difficulty Settings for new game and existing game.
+*Fixes issue with Contract Configurator.
+*Fixes integration with TST (V6.6 and above).
+*Bodies occluding the telescopes are taken into account when searching for new bodies. 
+*Capped Research Percentage at 100%
+*Amended Contract processing to use Weighting System override in KSP 1.2.1 so that contracts should not be generated for undiscovered bodies.
+*Fixed GUI for when Research State is < 10%.
+*Added pop-up menu when a body is found in flight.
+*Integrated Contract Configurator mod for ResearchBodies Contracts. Contract Configurator mod is now a dependency and must be installed alongside this mod.
+*You can no longer just click and research bodies from the Observatory. You must complete contracts or find and research them via the telescopes.
+*Full 1.3.0 Localization/Language support. Game is translated into French and Spanish. To access French, as it is not supported by KSP yet, you have to go into the
+*  difficult settings and select French manually. For all other languages simply set your language for KSP to your language. 
+* Note - Mod support Russian, Japanese, Chinese - but has not been translated at this stage. Contract text is not translated to French or Spanish currently. 
+* You now have to use contracts or Telescopes to advance research on celestial bodies (no more just click in the UI).
+* Changed default research and science values - to something a bit more balanced.
+* Celestial Bodies that you have not discovered no longer appear in the Mapview or Tracking Station; icons do not appear and tab, alt-tab do not work for undiscovered bodies.
+* If you also use TarsierSpaceTechnologies Telescopes you need to update it to V6.8
+V1.8.1 (07-30-2016) ==
+Improved integration with Contract Configurator Mod.
+V1.8.0 (07-10-2016) ==
+*Re-factored so much of the code... Under the hood now uses Scenarios to automatically save and load the game state to the persistent.sfs file.
+*If you have an old researchbodies.cfg file in your save folder V1.8.0 will read it and convert it into the new format,save your game into the persistent.sfs file and
+delete the old savegame file (researchbodies.cfg).
+*Moved Mod Folder from \GameData\ResearchBodies to \GameData\REPOSoftTech\ResearchBodies. Please ensure you remove any \GameData\ResearchBodies folders from your install.
+*The database file and locales files remain as the default settings for new games.
+*Fixed a whole bunch of little bugs along the way (both real and potential).
+*Re-factored how the Discovery mechanism works. So no more clicking forever, but still some randomness. There was a potential bug that meant the more
+you clicked and didn't find anything the less likely you would on following clicks, which only reset when you changed game scene.
+*Science reward for finding a body with the telescope is now the base science reward (that you get in the Observatory) PLUS the science reward that is
+set in the config file for each telescope part.
+*Some more screen messages, eg: When you don't actually have enough EC to scan for bodies (previously you got no indication that was the problem).
+*Fixed the Part Menu - messages now display correctly for when you discover and don't discovery bodies. Also added a list of the already
+discovered bodies to the Menu so you can see what bodies have been discovered and it will update when you do discovery new bodies in flight.
+*The ResearchBodies part action button (right click menu) is now disabled (not visible) if ResearchBodies is not enabled in current save file. eg: sandbox game and config has enableinsandbox = false.
+*Ignored/Auto-discovered Bodies (based on difficulty setting at start of new game) also display these automatically in the Observatory menu.
+*If you enter the SOI of a previously un-discovered Body or a Body that has not been fully researched it will now be automatically discovered and
+it's Research Program will be fully completed. Might look to change this in a future version to auto-discover but depending on the vessel type
+(Probe or manned/kerballed) set the research percentage to a more appropriate amount and perhaps require the vessel to remain in SOI to
+increase the research percentage over time. (But that's for a FUTURE version).
+*Input (keyboard) Control locks are set on for new games until you select your new game settings. (can't use menus, flight, etc).
+*Compatible with Asteroid Day for KSP 1.1.3 update.
+*NOW the BIG one:- Progressive CelestialBody visibility is now included. Yes the celestial bodies will start with very low detail in flight and
+in the tracking station. As you find them and research them, the details become clearer. This is still very basic functionality. Plan to expand this
+greatly to include other mod integration like SCANsat scanning to provide the final levels of details.
+
+V1.7.2 (01-06-2016) ==
+*Changed Contract cancellation (when a contract is generated for a body not yet discovered) to Withdraw instead of Cancel. 
+This will not penalise reputation.
+*Fixed bug where above code was causing issues when cancelling contracts making the Mission Control building inaccessible.
+*Ignore Bodies with Radius < 100m (Sigma/Binaries in Kopernicus)and handles barycenter/orbits of sigma binaries.
+*Added support for Blizzy Toolbar (can switch between Stock AppLauncher Icon and Toolbar in the Settings Menu - However, it does not save this setting between game sessions - next version).
+*Re-factor and clean-up of the code started.
+*If Kopernicus is installed changes the range of the telescope to 540 million kilometers. (standard is 100 million kilometers).
+*Added ability to do Tooltips to the GUI windows (Have only added a few for now, more to come).
+*Changed the in-flight Telescope - ResearchBodies window to indicate the EC usage each time you press the Search button.
+*Added a message to the in-flight window to indicate if there are bodies within the angle of the telescope but are to far away for the telescope to detect them.
+*Fixed issues with Kopernicus installed and actually discovering celestial bodies.
+*Moved cache data into /ResearchBodies/Plugins/PluginData to avoid resetting Module Manager cache load on startup when these files change.
+
+V1.7.1 (05-10-2016) ==
+*Fixed errors with V1.7 using deprecated RenderingManager calls causing Part to break KSP.
+*Added KSP-AVC version checking.
+
+v1.7 (05-04-2016) ==
+*Updated for KSP 1.1.2
+*ResearchBodies window can be opened even if tracking station is level 1, however its features aren't useable.
+*Added hover text for ResearchBodies icon
+*ModuleManager is now version 2.6.24
+
+v1.6 (01-27-2016) ==
+*Added JPLRepo's code in order to make a compatibility between TST and ResearchBodies
+*Tweaked telescope stats
+*Builded with 1.0.5
+*ModuleManager is now version 2.6.18
+*Happy new year
+
+v1.5 (10-10-2015) ==
+*Added difficulty selection panel on game save start
+*Added Spanish locale
+*Tweaked telescope stats
+
+v1.4 (08-26-2015) ==
+*New telescope model made by forum user Well
+*Complete overhaul of the tracking process :
+  *first find a celestial body in space with the telescope
+  *then go back to the space center, launch a research plan for this body.
+  *when the research state is 100% you can launch vessels to it
+*Added Wernher von Kerman portrait to space center UI
+*Added Locale system
+*Added French locale
+*finding bodies with the telescope now rewards science
+*ModuleManager is now version 2.6.7
+*API accessibility for other mods
+*tweaks on telescope stats
+
+
+v1.3 (07-27-2015) ==
+*Tracking bodies with telescope now requires looking in the direction of the body to track
+   --> NOTE : still needs to be under the 75 millions km radius
+*Added texts on body discovery
+*Tracking station now requires being level 2 or 3 in order to track (configurable to allow tracking with level 1)
+*Removed space field UI, back to button
+
+v1.2.2 (07-07-2015)==
+*Fixed priority set for Kopernicus mods
+
+v1.2.1 (07-06-2015)==
+*Hotfix
+*update source
+
+v1.2 (07-05-2015) ==
+*Better UI
+*Tweaks on TB-75M stats
+*Possibility for modders to remove bodies from the ignore list using '!body'
+
+
+v1.1 (07-03-2015) ==
+*Added TB-75M Telescope part
+  *tracking using the telescope does not cost science/funds!
+*Improved tracking process
+  *better internal logic
+  *tweaked priorities
+  *harder than before
+*Reduced science cost
+*The higher your tracking station level the better the tracking process is
+*Added ModuleManager (for AsteroidDay official mod compatibility)
+*Corrected small problem with curse forge
+*updated source
+
+v1.0 (07-02-2015) ==
+*Initial Release

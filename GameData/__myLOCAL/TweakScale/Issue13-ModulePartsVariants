@@ -1,0 +1,13 @@
+// This patch is a workaround to disable the Sanity Check Warning about parts with Variants with mass.
+//
+// This is expected to (finally) be tackled down on TweakScals 2.4.4, but until there,
+// shove this file somewhere on your GameData (I suggest GameData/__LOCAL/TweakScale/Workarounds)
+//
+// Remember to remove the file on TweakScale 2.4.4 .
+
+// Workaround to silence Sanity Check warning on parts with ModulePartVariants modules which have mass.
+@PART[*]:HAS[@MODULE[ModulePartVariants]:HAS[@VARIANT,*]:HAS[#mass[*]]]:FINAL
+{
+	-MODULE[TweakScale],* { }
+	TWEAKSCAKE_WORKAROUND = Removing TweakScale due to Issue #13 https%3A%2F%2Fgithub.com%2Fnet-lisias-ksp%2FTweakScale%2Fissues%2F13
+}

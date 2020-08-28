@@ -1,0 +1,4 @@
+@PART[SR_*]:NEEDS[ModularLaunchPads]:FINAL
+{
+	@attachRules,2 = 1
+}

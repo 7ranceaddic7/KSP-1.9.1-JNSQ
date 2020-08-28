@@ -1,0 +1,238 @@
+Release v1.6
+* Updated for KSP 1.8 compatibility.
+* Includes update to ModuleManager 4.1.0.
+
+
+Release v1.5
+* Updated for KSP 1.7.1 compatibility.
+* Axis group bindings for ModuleToggleLED and ModuleCustomColoredEmissive (affects BL-01 light).
+* Added indicator to KAL-1000 robotic controller.
+* Update to latest ModuleManager, 4.0.2.
+* Fix bug in Blinkenlights LLC "agent" that was causing NRE spam. Thanks to Tonka Crash for pointing out and supplying a fix!
+
+
+Release v1.4.2
+* Add crew indicators to revamped Mk2 Lander Can in KSP 1.6.
+* Update to latest ModuleManager, 3.1.2.
+
+
+Release v1.4.1
+* Add crew indicator for Mk1 inline cockpit. (Thanks to Beetlecat for pointing this out!)
+* Update to latest ModuleManager, 3.1.0.
+
+
+Release v1.4
+* Updated for KSP 1.5 compatibility.
+
+
+Release v1.3.1
+* Integrate support for Community Trait Icons. Will use CTI colors, if that mod's installed. (Thanks to cakepie for suggesting, and for providing compatibility patch.)
+
+
+Release v1.3
+* Updated for KSP 1.4 compatibility.
+* Support for new Making History expansion parts.
+* Update to latest ModuleManager, 3.0.5.
+
+
+Release v1.2.12
+* Crew indicators now flash to indicate availability of crew report. (Thanks to Wcmille for the suggestion!)
+* Update to latest ModuleManager, 3.0.1.
+* Minor fixes and polish.
+
+
+Release v1.2.11
+* Add science & activity indicators to the SENTINEL Infrared Telescope.
+* Update to latest ModuleManager version (2.8.1).
+
+
+Release v1.2.10
+* Add "field@module" identifier syntax, to allow targeting arbitrary fields on arbitrary PartModules.
+* Added ArbitraryFieldInputs.cfg in the "examples" section of github to demonstrate how to use the feature.
+
+
+Release v1.2.9
+* Update to ModuleManager 2.8.0 for KSP 1.3 compatibility
+* Update to target .NET 3.5, as a KSP mod is supposed to (it was targeting 4.5.2 before)
+
+
+Release v1.2.8
+* Make ModuleCrewIndicator friendlier to modders, so they can easily add indicator colors for new (modded) kerbal types. (Thanks to smokytehbear for nudging me into this.)
+* Add "main" renderer type for ModuleControllableEmissive, so it's possible to change the diffuse color of a mesh.
+
+
+Release v1.2.7
+* Add crew indicators to the Mk3 cockpit and Mk3 crew cabin. (Thanks to SchwinnTropius for the suggestion, and some time-saving numbers.)
+* Add compatibility patch for KIS. (Thanks to Enceos for the suggestion, and for finding the right syntax to use.)
+* Add hasCrewEffect() toggle syntax.
+* Update MPL science lab crew indicators to use hasCrewEffect().
+
+
+Release v1.2.6, a.k.a. "The Enceos Edition"
+* Enable IndicatorLights to work with "tint" color on Unity shaders, not just "emissive" color. (Thanks to Enceos for the suggestion.)
+* Update the color-parsing logic to allow specifying alpha values in config, in addition to RGB. (Thanks to Enceos for the suggestion.)
+* Enable resource indicators to specify that they show the *parent* part's resource contents. (Thanks to Enceos for the suggestion.)
+* Change the default status of crew indicators from "off" to "on".
+
+
+Release v1.2.5
+* Add "unknown" default color (magenta! but configurable), and enable crew indicators to use that for new kerbal types. (Thanks to mikerl for the suggestion.)
+* Cover up a dummy stock "indicator" on the Z4K battery that was causing player confusion. (Thanks to Fwiffo for the suggestion.)
+* Add situation() toggle syntax, with example config. (Thanks to steedcrugeon for the feature idea.)
+* Fix a careless bug that broke the 3-argument form of the pulsate() syntax.
+* Fix a NullReferenceException bug that happens when a breakable part has an indicator that disappears when the part breaks.
+* Update to ModuleManager 2.7.5.
+
+
+Release v1.2.4
+* Fix some recently-introduced bugs that caused log error spam.
+* Fix a bug in which the supposedly optional toggleName field for ModuleCrewIndicator wasn't actually optional.
+* Add a uiToggle field to ModuleCrewIndicatorToggle, allowing config to specify where the UI is available.
+* Add static field specifiers to various controller fields (allows using them as static-value references in IndicatorLights syntax).
+* Update to ModuleManager 2.7.3.
+
+
+Release v1.2.3
+* Fix stupid careless bug introduced in v1.2.2 that broke the data transmission display of antennas.
+
+
+Release v1.2.2
+* Stop ModuleReactionWheelIndicator from flashing during time warp.
+* Breaking change to ModuleScalarIndicator to use new scalar syntax.
+* Update pulsate color source to allow a "phase" parameter. Switched the order of the two multipliers.
+* Update "/il part" command to allow dynamically (and non-persistently) setting ColorSource fields on the fly, for debugging.
+* Add new "lerp" color source type.  Syntax: lerp(scalarID, colorSource1, scalarValue1, colorSource2, scalarValue2)
+* Add new parseable scalar syntax. Includes function types: scale, offset, range, lt, gt, max, min, average, scalar
+* Add more parseable toggle function types: gt, lt, ge, le, eq, between
+
+
+Release v1.2.1, a.k.a. "The Fwiffo Edition"
+* ModuleReactionWheelIndicator now supports IToggle and IScalar.
+* Fixed ModuleReactionWheelIndicator bug that caused it to always flash on launch. (Thanks to Fwiffo for catching.)
+* Added new toggle syntax (allows saying things like "and(toggle1, !toggle2)" for color sources.
+* Breaking change to ModuleBooleanIndicator to use the new toggle syntax.
+* Added new "if()" color source syntax. (Thanks to Fwiffo for suggesting.)
+* ModuleCustomBlink now has a field that can choose where to show its UI (editor, flight, both, neither). Thanks to Fwiffo for suggesting.
+* Modified BL-01 light's config so that its "blink enabled/disabled?" UI is only shown in the editor.
+* ModuleScienceAvailabilityIndicator can now specify experiment ID and "low science" color. (Thanks to Fwiffo for suggesting.)
+* Add new ModuleEmissiveArrayController, with sample config. (Experimental module, subject to breaking change without warning in future updates. You've been warned.)
+* Add new "/il enabled on" and "/il enabled off" debug console commands, so the user can completely enable/disable the mod for debugging purposes.
+
+
+Release v1.2, a.k.a. "The Antennas Edition"
+* Add indicators to all antennas, with a random modem-like flicker while transmitting data. Faster transmitters = faster flicker.
+* Fix a bug that caused IndicatorLights-enabled meshes to not work with the thermal overlay (Science Jr. was especially bad).
+* Moddability: add "scalar" functionality for more flexible configuration of color source syntax.
+
+
+Release v1.1, a.k.a. "The Community Edition"
+* Changed to CC-BY-NC-SA license (was previously MIT).
+* KSP 1.2 compatibility.
+* Repackaged with ModuleManager v2.7.1 (for KSP 1.2).
+* Add "/il" console debugging command. Try "/il help" for details!
+* ModuleToggleLED parts (e.g. BL-01 light, docking ports) are in Light action group by default, without requiring DefaultActionGroups.
+* ModuleControllableEmissive implementation reworked for stability & performance.
+* Fix a bug in which multiple parts would change indicator color when one part changes status.
+* Add new ModuleScienceContainerIndicator.
+* Add indicators to the new KSP 1.2 "science box" part.
+* Add new IScalar interface; many existing modules now implement.
+* Add new ModuleScalarIndicator.
+* Add new ModuleBooleanIndicator (replaces old ModuleIndirectToggleIndicator)
+* Add new "examples" folder in github.
+* Add an example showing how to have one indicator that tracks multiple resources. (Thanks to Fwiffo for suggesting.)
+* Fix indicator positioning on mini ISRU. (Thanks to Fwiffo for pointing out!)
+* ModuleScienceDataIndicator on multi-experiment parts can now specify which one. (Thanks to Fwiffo for suggesting.)
+* Modify the dim() syntax to allow brightening. (Thanks to Fwiffo for suggesting).
+* Fix incompatibility with Texture Replacer. (Thanks to Fwiffo for tracking this down.)
+* Add compatibility with TweakScale. (Thanks to Sharpy for requesting, and explaining how.)
+* Add random() color source type, along with an example. (Thanks to Beetlecat for suggesting.)
+* Not included here, but: A shout-out to Kerbas_ad_astra and Jiraiyah for supplying mod-compatibility patches, which were spun out to their own mod, "IndicatorLights Community Extensions".
+
+
+Release v1.0, a.k.a. "The 'Why Wait Any Longer' Edition"
+* Add phase control to blinking lights.
+* Implemented ModuleIndirectToggleIndicator (not yet used for anything).
+* Decided to stop pretending this is a "pre-release".  :-)
+
+
+Pre-release v0.11, a.k.a. "The Prospector's Edition"
+* Add an indicator light to the orbital survey scanner.
+* Add an indicator to the surface scanner.
+* (Moddability) Extend ColorSource syntax to allow field references within a module.
+
+
+Pre-release v0.10.1
+* Minor bugfix for science display on goo canister and Science Jr.
+* Fix a potential NRE bug in ModuleControllableEmissive.
+
+
+Pre-release v0.10, a.k.a. "The Science Edition"
+* Added indicators to all science instruments.
+* Added some TextureReplacer config to avoid an exception in the log. Thanks to Gaiiden in the KSP forums for tracking down both the problem and the solution!
+
+
+Pre-release v0.9.1, a.k.a. "The Kerbart Edition"
+* Fixed all "toggle" actions so that they follow action group status. In other words, when you turn on "Lights" group, everything you've added to that group will turn on, regardless of whether it was on already.
+* Tweaked animation logic so that blink speed will follow game-time rather than real-world time when in physics warp (i.e. blinks faster when time passes faster).
+* Fixed a bug in which saving and then re-loading a custom-colored light (e.g. the BL-01) results in color-slider values with long, ugly decimals.
+* Thanks to Kerbart in the KSP forums for calling out all of the above!
+* ...Oh, and updated ModuleManager to latest version.
+
+
+Pre-release v0.9
+* Refactor resource indicators for greater configurability.
+* Add crew indicators to science lab, with custom animations.
+* Add crew indicator to Mk1 cockpit.
+* Add science data animation to Science Jr. materials bay.
+* Provide an "error" animation color to help modders debug config problems.
+* Breaking change for players: Save games will run just fine, but indicators on batteries for ships in flight or previously saved in the editor won't work right.
+* Breaking change for modders: if you've patched your parts to show resource level (e.g. for batteries), you'll need to update your config.
+
+
+Pre-release v0.8, a.k.a. "The ISRU Edition"
+* Add indicators to the large and small ISRU units.
+* Add crew indicators to the Mk2 cockpit and Mk2 crew cabin.
+* Made the default on/off status of crew indicator lights configurable.
+
+
+Pre-release v0.7.1
+* Fix bug introduced in 0.7 that broke lots of indicators.
+* Add crew indicator to cupola.
+
+
+Pre-release v0.7, a.k.a. "The Crew Edition"
+* Add crew occupancy indicators to various crewed modules.
+* BROKEN!  Do not use this version.
+
+
+Pre-release v0.6
+* Added blinking option to BL-01 indicator light.
+* Docking port indicators now blink when docking field is engaging/disengaging.
+* Significant internal refactoring for greatly increased flexibility. Blinking now addable to anything via ModuleManager config.
+* Likely breaking change for players: Doesn't break save games. However, any prior BL-01 lights or docking port indicators (either in flight, or in saved ships) won't work right
+
+
+Pre-release v0.5, a.k.a. "The Docking Port Edition"
+* Added status indicators to small, medium, and large docking ports, with a PartModule that works for any docking port.
+* Slightly adjusted the position of the indicator on the Z400 battery.
+* Significant re-architecture of internal controller logic. No effect on players, but a potential breaking change to any modders working with ModuleToggleLED.
+
+
+Pre-release v0.4, a.k.a. "The Reaction Wheel Edition"
+* Added status indicators for reaction wheels.
+* Made the default colors of all indicators user-configurable
+
+
+Pre-release v0.3, a.k.a. "The Battery Edition"
+* Add charge indicator lights to batteries, with a PartModule that works for any resource container
+
+
+Pre-release v0.2, a.k.a. "The Fuel Cell Edition"
+* Breaking change for the v0.1 blinkenlight
+* Add on/off indicator lights to fuel cells, with a PartModule that works for any resource converter
+
+
+Pre-release v0.1
+
+* Initial implementation
+* A single blinkenlight with customizable colors that can be toggled on/off with action groups.

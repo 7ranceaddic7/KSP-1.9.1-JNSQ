@@ -1,0 +1,12 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-KSP-1-9-1-JNSQ2",
+    "name": "installed-KSP-1.9.1-JNSQ2",
+    "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ2 KSP instance",
+    "version": "2020.08.19.07.50.33",
+    "license": [
+        "unknown"
+    ],
+    "depends": [],
+    "kind": "metapackage"
+}

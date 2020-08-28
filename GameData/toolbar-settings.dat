@@ -1,0 +1,189 @@
+toolbars
+{
+	MAINMENU
+	{
+		toolbar_672933987
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 0
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+		toolbar_63187585
+		{
+			x = 865
+			y = 1008
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = FinalFrontier.button,kOS.kOSButton
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+		toolbar_1914738204
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+		toolbar_430732000
+		{
+			x = 1434
+			y = 973
+			width = 627
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = True
+			buttonOrder = 
+			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton
+			scale = 24
+			followKSPAppScale = True
+			followKSPUIScale = True
+		}
+		toolbar_670108022
+		{
+			x = 1025
+			y = 974
+			width = 348
+			height = 42
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = True
+			buttonOrder = 
+			visibleButtons = CapCom.CapComToolbarID,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FAREditorButtonBlizzy,FinalFrontier.button,KCT_NS.MainButton,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthReport,kOS.kOSButton,WaypointManager.button,ConnectedLivingSpace.ConnectedLivingSpace,ReCoupler.ReCoupler,KRASH_NS.krashButton,Achievements_NS.achButton,STE_NS.MainButton
+			scale = 32
+			followKSPAppScale = True
+			followKSPUIScale = True
+		}
+	}
+	SETTINGS
+	{
+		toolbar_63187585
+		{
+			x = 865
+			y = 1008
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = FinalFrontier.button,kOS.kOSButton
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+	}
+	MISSIONBUILDER
+	{
+		toolbar_763575924
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+	}
+	FLIGHT
+	{
+		toolbar_1914738204
+		{
+			x = 1307
+			y = -35
+			width = 351
+			height = 81
+			autoHide = True
+			drawBorder = False
+			useKSPSkin = True
+			buttonOrder = 
+			visibleButtons = CapCom.CapComToolbarID,Chatterer.UI,ContractRewardModifier.CMToolbarID,EnginesGUI.EnginesFlightButton,FerramAerospaceResearch.FARFlightButtonBlizzy,FinalFrontier.button,HotSpot.config,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthMonitor,kOS.kOSButton,MechJeb2.MechJeb2MenuButton,PersistentRotation.button,PlanetShine.Gui,SCANsat.UIMenu,ShipManifest.Manifest,SignalDelay.SignalDelay,SmokeScreen.main,SpaceAge.SpaceAge,Trajectories.TrajectoriesGUI,WaypointManager.button
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+	}
+	SPACECENTER
+	{
+		toolbar_430732000
+		{
+			x = 257
+			y = 1015
+			width = 627
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = True
+			buttonOrder = 
+			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton
+			scale = 24
+			followKSPAppScale = True
+			followKSPUIScale = True
+		}
+	}
+	EDITOR
+	{
+		toolbar_670108022
+		{
+			x = 1025
+			y = 974
+			width = 348
+			height = 42
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = True
+			buttonOrder = 
+			visibleButtons = CapCom.CapComToolbarID,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FAREditorButtonBlizzy,FinalFrontier.button,KCT_NS.MainButton,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthReport,kOS.kOSButton,WaypointManager.button,ConnectedLivingSpace.ConnectedLivingSpace,ReCoupler.ReCoupler,KRASH_NS.krashButton,Achievements_NS.achButton,STE_NS.MainButton
+			scale = 32
+			followKSPAppScale = True
+			followKSPUIScale = True
+		}
+	}
+	FLIGHTMAP
+	{
+		toolbar_258916921
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = True
+		}
+	}
+}

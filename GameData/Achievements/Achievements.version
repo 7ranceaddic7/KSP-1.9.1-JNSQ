@@ -1,0 +1,20 @@
+{
+  "NAME": "Achievements",
+  "URL": "http://ksp.spacetux.net/avc/Achievements",
+  "DOWNLOAD": "https://github.com/linuxgurugamer/Achievements",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "Achievements"
+  },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 10,
+    "PATCH": 1,
+    "BUILD": 2
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

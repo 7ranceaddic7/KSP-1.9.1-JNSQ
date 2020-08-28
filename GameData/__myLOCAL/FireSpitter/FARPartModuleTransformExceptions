@@ -1,0 +1,9 @@
+@FARPartModuleTransformExceptions
+{
+	FARPartModuleException
+	{
+		PartModuleName = WBIPropSpinner
+		TransformException = rotorTransformName
+		blurredRotorName = disc
+	}
+}

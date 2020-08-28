@@ -1,0 +1,20 @@
+{
+  "NAME": "Recovery Controller",
+  "URL": "http://ksp.spacetux.net/avc/RecoveryController",
+  "DOWNLOAD": "https://github.com/linuxgurugamer/RecoveryController/releases",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "FMRS"
+  },
+  "VERSION": {
+    "MAJOR": 0,
+    "MINOR": 0,
+    "PATCH": 4,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "NAME": "EngineIgnitor",
+  "URL": "http://ksp.spacetux.net/avc/EngineIgnitor",
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 3,
+    "PATCH": 6,
+    "BUILD": 2
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

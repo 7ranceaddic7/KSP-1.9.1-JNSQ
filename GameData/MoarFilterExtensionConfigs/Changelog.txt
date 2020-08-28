@@ -1,0 +1,34 @@
+MoarFilterExtensionConfigs
+
+Changelog:
+
+1.0.5.2
+	- Fixed missing closing bracket in 1.875 config
+
+1.0.5.1
+	- Seperate "coupling" into Adapter, Decoupler, Docking Port, and Multi-Coupler subcategories.
+	- Add file to fix incorrect Squad bulkheads. Currently only 1.875 heat shield, will add more as I find them.
+
+1.0.5
+	- Add subcategories for cargo and robotics. ** Robotics not showing, FE needs new code? **
+
+1.0.4.1
+	- Fixed wrong link for version check.
+	- Fixed a typo in folder name.
+	- Added Changelog.txt
+	
+1.0.4
+	- Added 0.35m size filter and corresponding icon.
+	- Converted icons to DDS format.
+	
+1.0.3
+	- Updated folder name to be more in line with normal naming schema. If you are installing this manually, be sure to delete the old folder!
+	- Added version file so that AVC can check for updates.
+	
+1.0.2
+	- Added a check to prevent filter from showing old Squad parts that are somehow still in the game.
+		These parts were "replaced" by squad by changing the original part categories to "none". But FE does not differentiate without being told to do so in a config file.
+	- Added a config to fix invalid categories on a few Squad parts. Now they will show up in the proper sub-category for their size.
+
+1.0
+	- Initial release.

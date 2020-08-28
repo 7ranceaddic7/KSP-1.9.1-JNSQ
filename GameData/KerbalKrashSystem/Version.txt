@@ -1,0 +1,16 @@
+Version: 0.5.0
+
+
+
+Author: 
+	Enzo Meertens 
+		(https://github.com/EnzoMeertens)
+
+Special thanks to:
+	ialdabaoth 	(http://forum.kerbalspaceprogram.com/index.php?/profile/57270-ialdabaoth/)
+	Sarbian 	(http://forum.kerbalspaceprogram.com/index.php?/profile/57146-sarbian/)
+	rbray89		(http://forum.kerbalspaceprogram.com/index.php?/profile/48847-rbray89/)
+	ferram4         (http://forum.kerbalspaceprogram.com/index.php?/profile/21328-ferram4/)
+	linuxgurugamer	(https://forum.kerbalspaceprogram.com/index.php?/profile/129964-linuxgurugamer/)
+
+
