@@ -1,0 +1,113 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-KSP-1-9-1-JNSQ",
+    "name": "installed-KSP-1.9.1-JNSQ",
+    "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ KSP instance",
+    "version": "2020.08.30.12.27.04",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "MakingHistory-DLC",
+            "version": "1.9.1"
+        },
+        {
+            "name": "BreakingGround-DLC",
+            "version": "1.4.1"
+        },
+        {
+            "name": "ContractConfigurator-CleverSats",
+            "version": "1.4"
+        },
+        {
+            "name": "ContractConfigurator-FieldResearch",
+            "version": "1.2.1"
+        },
+        {
+            "name": "ContractConfigurator-KerbalAcademy",
+            "version": "1.1.10"
+        },
+        {
+            "name": "ContractConfigurator-KerbinSpaceStation",
+            "version": "2:3.7.2.2"
+        },
+        {
+            "name": "GAP",
+            "version": "1.6.1"
+        },
+        {
+            "name": "CrowdSourcedScience",
+            "version": "v6.0"
+        },
+        {
+            "name": "AllYAll",
+            "version": "1:0.11.19"
+        },
+        {
+            "name": "Astrogator",
+            "version": "v0.10.1"
+        },
+        {
+            "name": "AviationLights",
+            "version": "1:v4.1.1"
+        },
+        {
+            "name": "AmazingCurveEditor",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "LaunchCountDown",
+            "version": "1.7.6"
+        },
+        {
+            "name": "BluedogDB",
+            "version": "v1.6.3"
+        },
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "DMagicScienceAnimate",
+            "version": "v0.23"
+        },
+        {
+            "name": "AnimatedAttachment",
+            "version": "v2.1.5"
+        },
+        {
+            "name": "AnimatedDecouplers",
+            "version": "v1.4.2.2"
+        },
+        {
+            "name": "AntennaHelper",
+            "version": "2:1.0.7.2"
+        },
+        {
+            "name": "ToolbarController",
+            "version": "1:0.1.9.4"
+        },
+        {
+            "name": "ZeroMiniAVC",
+            "version": "1:1.1.0.1"
+        },
+        {
+            "name": "BobsPanicBox",
+            "version": "1:0.0.2.3"
+        },
+        {
+            "name": "BasicDeltaV",
+            "version": "6.0"
+        },
+        {
+            "name": "BasicOrbit",
+            "version": "9.0"
+        },
+        {
+            "name": "B9PartSwitch",
+            "version": "v2.17.0"
+        }
+    ],
+    "kind": "metapackage"
+}

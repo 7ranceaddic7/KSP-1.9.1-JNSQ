@@ -1,0 +1,49 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-KSP-1-9-1-JNSQ",
+    "name": "installed-KSP-1.9.1-JNSQ",
+    "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ KSP instance",
+    "version": "2020.08.29.11.54.21",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "AllYAll",
+            "version": "1:0.11.19"
+        },
+        {
+            "name": "MakingHistory-DLC",
+            "version": "1.9.1"
+        },
+        {
+            "name": "BreakingGround-DLC",
+            "version": "1.4.1"
+        },
+        {
+            "name": "ContractConfigurator-CleverSats",
+            "version": "1.4"
+        },
+        {
+            "name": "ContractConfigurator-FieldResearch",
+            "version": "1.2.1"
+        },
+        {
+            "name": "ContractConfigurator-KerbalAcademy",
+            "version": "1.1.10"
+        },
+        {
+            "name": "ContractConfigurator-KerbinSpaceStation",
+            "version": "2:3.7.2.2"
+        },
+        {
+            "name": "GAP",
+            "version": "1.6.1"
+        },
+        {
+            "name": "CrowdSourcedScience",
+            "version": "v6.0"
+        }
+    ],
+    "kind": "metapackage"
+}

@@ -49,15 +49,15 @@ toolbars
 		}
 		toolbar_430732000
 		{
-			x = 1434
-			y = 973
+			x = 312
+			y = 971
 			width = 627
 			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = True
 			buttonOrder = 
-			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton
+			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton,Achievements_NS.achButton,KRASH_NS.krashButton,ScienceParamModifier.SMToolbarID,STE_NS.MainButton
 			scale = 24
 			followKSPAppScale = True
 			followKSPUIScale = True
@@ -126,7 +126,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = True
 			buttonOrder = 
-			visibleButtons = CapCom.CapComToolbarID,Chatterer.UI,ContractRewardModifier.CMToolbarID,EnginesGUI.EnginesFlightButton,FerramAerospaceResearch.FARFlightButtonBlizzy,FinalFrontier.button,HotSpot.config,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthMonitor,kOS.kOSButton,MechJeb2.MechJeb2MenuButton,PersistentRotation.button,PlanetShine.Gui,SCANsat.UIMenu,ShipManifest.Manifest,SignalDelay.SignalDelay,SmokeScreen.main,SpaceAge.SpaceAge,Trajectories.TrajectoriesGUI,WaypointManager.button
+			visibleButtons = CapCom.CapComToolbarID,Chatterer.UI,ContractRewardModifier.CMToolbarID,EnginesGUI.EnginesFlightButton,FerramAerospaceResearch.FARFlightButtonBlizzy,FinalFrontier.button,HotSpot.config,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthMonitor,kOS.kOSButton,MechJeb2.MechJeb2MenuButton,PersistentRotation.button,PlanetShine.Gui,SCANsat.UIMenu,ShipManifest.Manifest,SignalDelay.SignalDelay,SmokeScreen.main,SpaceAge.SpaceAge,Trajectories.TrajectoriesGUI,WaypointManager.button,STE_NS.MainButton,ScienceParamModifier.SMToolbarID,KRASH_NS.krashButton,Achievements_NS.achButton
 			scale = 24
 			followKSPAppScale = False
 			followKSPUIScale = True
@@ -136,15 +136,15 @@ toolbars
 	{
 		toolbar_430732000
 		{
-			x = 257
-			y = 1015
+			x = 312
+			y = 971
 			width = 627
 			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = True
 			buttonOrder = 
-			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton
+			visibleButtons = ferram4.FARDebugButtonBlizzy,FinalFrontier.button,kOS.kOSButton,SCANsat.KSCMap,test.buttonDOSettings,WaypointManager.button,KerbalAlarmClock.btnToolbarIcon,ShipManifest.Roster,CapCom.CapComToolbarID,SpaceAge.SpaceAge,KerbalHealth.HealthMonitor,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FARDebugButtonBlizzy,Trajectories.TrajectoriesGUI,KCT_NS.MainButton,Achievements_NS.achButton,KRASH_NS.krashButton,ScienceParamModifier.SMToolbarID,STE_NS.MainButton
 			scale = 24
 			followKSPAppScale = True
 			followKSPUIScale = True

@@ -13,7 +13,7 @@
   <RefreshOnStartupNoNag>true</RefreshOnStartupNoNag>
   <RefreshPaused>false</RefreshPaused>
   <AutoSortByUpdate>true</AutoSortByUpdate>
-  <ActiveFilter>0</ActiveFilter>
+  <ActiveFilter>6</ActiveFilter>
   <SortByColumnIndex>2</SortByColumnIndex>
   <SortDescending>false</SortDescending>
   <HiddenColumnNames>
@@ -24,13 +24,13 @@
   </HiddenColumnNames>
   <IsWindowMaximised>false</IsWindowMaximised>
   <WindowSize>
-    <Width>1052</Width>
-    <Height>705</Height>
+    <Width>1433</Width>
+    <Height>834</Height>
   </WindowSize>
-  <PanelPosition>729</PanelPosition>
-  <ModInfoPosition>382</ModInfoPosition>
+  <PanelPosition>800</PanelPosition>
+  <ModInfoPosition>289</ModInfoPosition>
   <WindowLoc>
-    <X>1796</X>
-    <Y>148</Y>
+    <X>126</X>
+    <Y>131</Y>
   </WindowLoc>
 </Configuration>

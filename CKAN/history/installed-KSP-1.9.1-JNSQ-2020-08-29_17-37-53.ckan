@@ -1,0 +1,257 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-KSP-1-9-1-JNSQ",
+    "name": "installed-KSP-1.9.1-JNSQ",
+    "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ KSP instance",
+    "version": "2020.08.30.12.37.53",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "MakingHistory-DLC",
+            "version": "1.9.1"
+        },
+        {
+            "name": "BreakingGround-DLC",
+            "version": "1.4.1"
+        },
+        {
+            "name": "ContractConfigurator-CleverSats",
+            "version": "1.4"
+        },
+        {
+            "name": "ContractConfigurator-FieldResearch",
+            "version": "1.2.1"
+        },
+        {
+            "name": "ContractConfigurator-KerbalAcademy",
+            "version": "1.1.10"
+        },
+        {
+            "name": "ContractConfigurator-KerbinSpaceStation",
+            "version": "2:3.7.2.2"
+        },
+        {
+            "name": "GAP",
+            "version": "1.6.1"
+        },
+        {
+            "name": "CrowdSourcedScience",
+            "version": "v6.0"
+        },
+        {
+            "name": "AllYAll",
+            "version": "1:0.11.19"
+        },
+        {
+            "name": "Astrogator",
+            "version": "v0.10.1"
+        },
+        {
+            "name": "AviationLights",
+            "version": "1:v4.1.1"
+        },
+        {
+            "name": "AmazingCurveEditor",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "LaunchCountDown",
+            "version": "1.7.6"
+        },
+        {
+            "name": "BluedogDB",
+            "version": "v1.6.3"
+        },
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "DMagicScienceAnimate",
+            "version": "v0.23"
+        },
+        {
+            "name": "AnimatedAttachment",
+            "version": "v2.1.5"
+        },
+        {
+            "name": "AnimatedDecouplers",
+            "version": "v1.4.2.2"
+        },
+        {
+            "name": "AntennaHelper",
+            "version": "2:1.0.7.2"
+        },
+        {
+            "name": "ToolbarController",
+            "version": "1:0.1.9.4"
+        },
+        {
+            "name": "ZeroMiniAVC",
+            "version": "1:1.1.0.1"
+        },
+        {
+            "name": "BobsPanicBox",
+            "version": "1:0.0.2.3"
+        },
+        {
+            "name": "BasicDeltaV",
+            "version": "6.0"
+        },
+        {
+            "name": "BasicOrbit",
+            "version": "9.0"
+        },
+        {
+            "name": "B9PartSwitch",
+            "version": "v2.17.0"
+        },
+        {
+            "name": "Chatterer",
+            "version": "0.9.99"
+        },
+        {
+            "name": "ClickThroughBlocker",
+            "version": "1:0.1.10.11"
+        },
+        {
+            "name": "CollisionFXReUpdated",
+            "version": "1.1.0"
+        },
+        {
+            "name": "CCTV",
+            "version": "1.1.6.5"
+        },
+        {
+            "name": "ComfortableLanding",
+            "version": "2:1.9.1"
+        },
+        {
+            "name": "CommNetAntennasConsumptor",
+            "version": "3.0.2"
+        },
+        {
+            "name": "ContractConfigurator",
+            "version": "1.29.0"
+        },
+        {
+            "name": "CraftManager",
+            "version": "1.2.0"
+        },
+        {
+            "name": "CriticalTemperatureGauge",
+            "version": "1.10.0.0"
+        },
+        {
+            "name": "CommunityTraitIcons",
+            "version": "v1.1.1"
+        },
+        {
+            "name": "ContractParser",
+            "version": "9.0"
+        },
+        {
+            "name": "CrewLight",
+            "version": "1:1.20.0"
+        },
+        {
+            "name": "TweakScale",
+            "version": "v2.4.3.21"
+        },
+        {
+            "name": "CommNetAntennasExtension",
+            "version": "2.1.3"
+        },
+        {
+            "name": "CommNetAntennasInfo",
+            "version": "3.0.2"
+        },
+        {
+            "name": "RemoteTechRedevAntennas",
+            "version": "0.1.1"
+        },
+        {
+            "name": "DistantObject",
+            "version": "v2.0.0.2"
+        },
+        {
+            "name": "DockingPortAlignmentIndicator",
+            "version": "6.9.1"
+        },
+        {
+            "name": "DockRotate",
+            "version": "v1.9.1.48"
+        },
+        {
+            "name": "DockSafe",
+            "version": "1:1.1"
+        },
+        {
+            "name": "DynamicBatteryStorage",
+            "version": "2:2.1.8.0"
+        },
+        {
+            "name": "DeadlyReentry",
+            "version": "v7.8.0"
+        },
+        {
+            "name": "DefaultActionGroups",
+            "version": "1.3"
+        },
+        {
+            "name": "DestructionEffects",
+            "version": "2:v1.11.0"
+        },
+        {
+            "name": "DistantObject-default",
+            "version": "v2.0.0.2"
+        },
+        {
+            "name": "EarlyBird",
+            "version": "0.2.1.0"
+        },
+        {
+            "name": "EarnYourStripes",
+            "version": "4.0.2"
+        },
+        {
+            "name": "EasyVesselSwitch",
+            "version": "2.1"
+        },
+        {
+            "name": "EditorExtensionsRedux",
+            "version": "3.4.1.1"
+        },
+        {
+            "name": "EditorTime",
+            "version": "KSP1.4.1"
+        },
+        {
+            "name": "EngineLightRelit",
+            "version": "1.6.3"
+        },
+        {
+            "name": "FilterExtensions",
+            "version": "3.2.5"
+        },
+        {
+            "name": "FinalFrontier",
+            "version": "1.10.0-3485"
+        },
+        {
+            "name": "FilterExtensionsDefaultConfig",
+            "version": "3.2.5"
+        },
+        {
+            "name": "MoarFEConfigs",
+            "version": "1.0.5.2"
+        },
+        {
+            "name": "FlightTracker",
+            "version": "3.0.0.1"
+        }
+    ],
+    "kind": "metapackage"
+}
