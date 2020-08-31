@@ -3,6 +3,7 @@
 # KSP-specific files
 _MMCfgOutput/
 GameData/SquadExpansion/
+ModuleManager*.*
 Internals/
 KSP_x64_Data/
 Launcher_Data/
@@ -20,6 +21,8 @@ UserLoadingScreens/
 *.log
 *.exe
 *.bak
+*.zip
+*.7z
 [Ll]egalNotice.*
 [Ll]icense.*
 [Rr]ead[Mm]e.*
