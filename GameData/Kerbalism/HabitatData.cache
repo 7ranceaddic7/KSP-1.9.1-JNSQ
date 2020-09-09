@@ -1,0 +1,1236 @@
+KERBALISM_HABITAT_INFO
+{
+	partName = mk1-3pod
+	bestMethod = Collider
+	boundsVolume = 11.046668497061567
+	boundsSurface = 30.030141757824595
+	colliderVolume = 4.6692064199596643
+	colliderSurface = 15.649200886487961
+	meshVolume = 4.6068581647519249
+	meshSurface = 18.943667898009281
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = MK1CrewCabin
+	bestMethod = Mesh
+	boundsVolume = 3.0273463297642351
+	boundsSurface = 12.812507107854827
+	colliderVolume = 2.1972692366689444
+	colliderSurface = 9.6230456233024597
+	meshVolume = 2.352746425778605
+	meshSurface = 9.8724866015836596
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = mk1pod
+	bestMethod = Mesh
+	boundsVolume = 1.8263846097503078
+	boundsSurface = 8.9781403145330501
+	colliderVolume = 0.62897535314550623
+	colliderSurface = 4.2056094869039953
+	meshVolume = 0.665006470064327
+	meshSurface = 4.0622071588149993
+	attachNodesSurface = 1.534
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = mk1pod_v2
+	bestMethod = Mesh
+	boundsVolume = 1.7797969281673431
+	boundsSurface = 8.820350170135498
+	colliderVolume = 0.4604208804666996
+	colliderSurface = 3.1747266948223114
+	meshVolume = 0.79800618642179899
+	meshSurface = 4.8424494240016429
+	attachNodesSurface = 1.534
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = mk2CrewCabin
+	bestMethod = Mesh
+	boundsVolume = 7.0312629640136493
+	boundsSurface = 22.500027060511457
+	colliderVolume = 4.5736853517591953
+	colliderSurface = 16.973436005413532
+	meshVolume = 4.6245450716394316
+	meshSurface = 16.870236528862733
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = 144cockpit
+	bestMethod = Mesh
+	boundsVolume = 46.29169445816617
+	boundsSurface = 89.074714985030369
+	colliderVolume = 10.793062985409051
+	colliderSurface = 39.809488602622878
+	meshVolume = 10.793062985409051
+	meshSurface = 39.809488602622878
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = airbuscockpit
+	bestMethod = Mesh
+	boundsVolume = 20.231716127590857
+	boundsSurface = 44.863486124194878
+	colliderVolume = 9.0980696274588659
+	colliderSurface = 24.166743344820745
+	meshVolume = 9.3789939453708939
+	meshSurface = 24.171295745996758
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = b29cockpit
+	bestMethod = Mesh
+	boundsVolume = 19.652766692907328
+	boundsSurface = 43.941302852879289
+	colliderVolume = 6.9855305252668938
+	colliderSurface = 21.451731970671858
+	meshVolume = 6.9855305252668938
+	meshSurface = 21.451731970671858
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bellcockpit
+	bestMethod = Mesh
+	boundsVolume = 2.8899254867374435
+	boundsSurface = 12.372760271062532
+	colliderVolume = 1.550078959208643
+	colliderSurface = 7.8045223516528495
+	meshVolume = 1.5611438946482394
+	meshSurface = 7.8142230294761248
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bombardiercockpit
+	bestMethod = Mesh
+	boundsVolume = 9.0337457448502949
+	boundsSurface = 26.303239597506945
+	colliderVolume = 4.3311174973386244
+	colliderSurface = 14.803145662160659
+	meshVolume = 4.5001917381314342
+	meshSurface = 14.965100708850514
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = cessnacabin
+	bestMethod = Collider
+	boundsVolume = 1.1891960044532159
+	boundsSurface = 6.8061075791100336
+	colliderVolume = 1.0081025365545582
+	colliderSurface = 5.6869331561672851
+	meshVolume = 1.0081005386872572
+	meshSurface = 5.6869257741588655
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = cessnacockpit
+	bestMethod = Mesh
+	boundsVolume = 2.8567969139103075
+	boundsSurface = 12.555192525420466
+	colliderVolume = 1.2651774366659083
+	colliderSurface = 6.1530188107317372
+	meshVolume = 1.7305792993838622
+	meshSurface = 8.3875694143280271
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = citationcockpit
+	bestMethod = Mesh
+	boundsVolume = 2.9940064494523058
+	boundsSurface = 12.705819526467593
+	colliderVolume = 0.94049180830916157
+	colliderSurface = 5.3765606392116752
+	meshVolume = 1.5391686048626525
+	meshSurface = 7.6491569732606877
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = concordecockpit
+	bestMethod = Mesh
+	boundsVolume = 48.794434153234079
+	boundsSurface = 90.51104123051573
+	colliderVolume = 8.9364046992413932
+	colliderSurface = 24.465485016000457
+	meshVolume = 14.79628700190797
+	meshSurface = 38.854218515276443
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = falconcockpit
+	bestMethod = Mesh
+	boundsVolume = 22.965673591064178
+	boundsSurface = 52.528176030858845
+	colliderVolume = 2.9859448649567639
+	colliderSurface = 18.483354458468966
+	meshVolume = 2.6329668174621474
+	meshSurface = 23.594840270932764
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = fightercockpit
+	bestMethod = Mesh
+	boundsVolume = 14.074707342004283
+	boundsSurface = 43.737060527748213
+	colliderVolume = 5.8765304442125341
+	colliderSurface = 23.865926155830152
+	meshVolume = 5.9478463068326874
+	meshSurface = 23.731549039375352
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = fighterinlinecockpit
+	bestMethod = Mesh
+	boundsVolume = 8.1785266126543377
+	boundsSurface = 26.620414380288139
+	colliderVolume = 4.7869828370476171
+	colliderSurface = 18.449281393754063
+	meshVolume = 5.1519447007305939
+	meshSurface = 18.422903945436715
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = mk3galaxy
+	bestMethod = Mesh
+	boundsVolume = 67.354720974536605
+	boundsSurface = 101.75918709159123
+	colliderVolume = 9.8923046229756437
+	colliderSurface = 33.979863028042018
+	meshVolume = 12.900019389654013
+	meshSurface = 75.140967370713952
+	attachNodesSurface = 11.045
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = herculescockpit
+	bestMethod = Mesh
+	boundsVolume = 19.596782705476841
+	boundsSurface = 43.854852025740115
+	colliderVolume = 8.219420688455557
+	colliderSurface = 22.734357281264238
+	meshVolume = 8.5634957926137982
+	meshSurface = 22.108653272170045
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = hipcockpit
+	bestMethod = Mesh
+	boundsVolume = 17.219235488558365
+	boundsSurface = 40.020162243914456
+	colliderVolume = 9.519528090248059
+	colliderSurface = 24.109663449286018
+	meshVolume = 9.7200168673769554
+	meshSurface = 24.075873834104641
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = hueycockpit
+	bestMethod = Mesh
+	boundsVolume = 6.8183343938230845
+	boundsSurface = 21.760140320671923
+	colliderVolume = 3.1047962037816532
+	colliderSurface = 10.115904498540484
+	meshVolume = 3.1047962037816532
+	meshSurface = 10.115904498540484
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = oh6cockpit
+	bestMethod = Mesh
+	boundsVolume = 1.8550021278215563
+	boundsSurface = 9.0611204032194621
+	colliderVolume = 1.0530779299996409
+	colliderSurface = 5.505698300261832
+	meshVolume = 1.083332493422688
+	meshSurface = 5.8511696288051098
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = oldfightercockpit
+	bestMethod = Mesh
+	boundsVolume = 6.776645008356752
+	boundsSurface = 23.117601531555465
+	colliderVolume = 3.3153589022404049
+	colliderSurface = 12.295317469513975
+	meshVolume = 4.3823962886128092
+	meshSurface = 16.571813516236887
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = x1cockpit
+	bestMethod = Mesh
+	boundsVolume = 3.8442998179162498
+	boundsSurface = 15.426754800217964
+	colliderVolume = 0.88228463092561993
+	colliderSurface = 5.6948147787936687
+	meshVolume = 0.88228463092561993
+	meshSurface = 5.6948147787936687
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = zerocockpit
+	bestMethod = Mesh
+	boundsVolume = 5.6476424443543651
+	boundsSurface = 19.994344034050016
+	colliderVolume = 3.2308719553984702
+	colliderSurface = 12.854432540945709
+	meshVolume = 3.6541487145920719
+	meshSurface = 16.44306600831564
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = s1p5CrewCabin
+	bestMethod = Mesh
+	boundsVolume = 10.2173172799199
+	boundsSurface = 28.828182958088689
+	colliderVolume = 5.97131028895895
+	colliderSurface = 19.249506721386584
+	meshVolume = 7.9207194008631632
+	meshSurface = 22.20295431651175
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = size2CrewCabin
+	bestMethod = Mesh
+	boundsVolume = 24.218774959440381
+	boundsSurface = 51.250036656855968
+	colliderVolume = 12.132150113582611
+	colliderSurface = 29.368410110473633
+	meshVolume = 18.774978613518741
+	meshSurface = 39.471853620838374
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Apollo_Block2_Capsule
+	bestMethod = Collider
+	boundsVolume = 7.564367448570124
+	boundsSurface = 24.602985457803243
+	colliderVolume = 3.201761688105762
+	colliderSurface = 13.59319281578064
+	meshVolume = 2.4985660677220807
+	meshSurface = 11.137978590501007
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Apollo_Block4_MissionModule
+	bestMethod = Mesh
+	boundsVolume = 14.038355431231487
+	boundsSurface = 35.005296380077198
+	colliderVolume = 8.6822880925610662
+	colliderSurface = 22.130399644374847
+	meshVolume = 9.9160083329666122
+	meshSurface = 26.635088136303239
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_LEM_Ascent_Cockpit
+	bestMethod = Mesh
+	boundsVolume = 14.351118133347079
+	boundsSurface = 35.941917099338127
+	colliderVolume = 3.720689652254805
+	colliderSurface = 14.546543170697987
+	meshVolume = 5.6874554937677573
+	meshSurface = 26.988151578203542
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_BigG_CylindricalSM
+	bestMethod = Collider
+	boundsVolume = 36.735381263420443
+	boundsSurface = 68.352135384803432
+	colliderVolume = 25.341780621558428
+	colliderSurface = 47.836991652846336
+	meshVolume = 20.41819818443355
+	meshSurface = 67.704135773608868
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_GeminiFerry_PressurizedModule
+	bestMethod = Collider
+	boundsVolume = 5.67441119434997
+	boundsSurface = 19.144532805571799
+	colliderVolume = 4.2191149853169918
+	colliderSurface = 14.558599919080734
+	meshVolume = 3.0641239549582053
+	meshSurface = 10.539281195586227
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_1p5mShortSegment
+	bestMethod = Collider
+	boundsVolume = 3.6757146181936622
+	boundsSurface = 14.301905521058529
+	colliderVolume = 2.7553205732256174
+	colliderSurface = 10.935618609189987
+	meshVolume = 1.8634962737560272
+	meshSurface = 7.5183070302009583
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_InflatableAirlock
+	bestMethod = Bounds
+	boundsVolume = 0.61945646566872692
+	boundsSurface = 4.4009198975299455
+	colliderVolume = 0.23905226693022996
+	colliderSurface = 2.8310701092705131
+	meshVolume = 0.093837724424759017
+	meshSurface = 1.0393729186507699
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_OneRoomStationModule
+	bestMethod = Collider
+	boundsVolume = 7.1495530904742903
+	boundsSurface = 22.283629850696343
+	colliderVolume = 5.3814853131771088
+	colliderSurface = 17.086904078722
+	meshVolume = 3.6396411657333374
+	meshSurface = 11.747354626655579
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_StructuralNode
+	bestMethod = Collider
+	boundsVolume = 2.3744176269685773
+	boundsSurface = 10.723136534868217
+	colliderVolume = 1.77228869125247
+	colliderSurface = 8.1742031276226044
+	meshVolume = 1.4813846179677057
+	meshSurface = 6.8649649601429701
+	attachNodesSurface = 5.2157999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_TwoRoomStationModule
+	bestMethod = Collider
+	boundsVolume = 10.665179215582492
+	boundsSurface = 29.783631497847182
+	colliderVolume = 8.0722266808152199
+	colliderSurface = 22.939612120389938
+	meshVolume = 5.459461634978652
+	meshSurface = 17.621031533926725
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MOL_1p5mStationSegment
+	bestMethod = Collider
+	boundsVolume = 4.5757148506515781
+	boundsSurface = 16.701905759477086
+	colliderVolume = 3.4441500939428806
+	colliderSurface = 12.808484524488449
+	meshVolume = 2.4638014560878787
+	meshSurface = 10.868868416939222
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MOL_Airlock
+	bestMethod = Mesh
+	boundsVolume = 2.5666747362437716
+	boundsSurface = 11.332186641571525
+	colliderVolume = 1.0294572291895747
+	colliderSurface = 5.8235831558704376
+	meshVolume = 1.1985571000737916
+	meshSurface = 8.8357625378183116
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MOL_Hab
+	bestMethod = Collider
+	boundsVolume = 12.42517664024308
+	boundsSurface = 32.706373227894801
+	colliderVolume = 9.8396406713873148
+	colliderSurface = 25.117361895740032
+	meshVolume = 4.4829375095614523
+	meshSurface = 13.931313901557587
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MOL_Lab
+	bestMethod = Mesh
+	boundsVolume = 13.505399872561895
+	boundsSurface = 34.466658386720951
+	colliderVolume = 9.8396406713873148
+	colliderSurface = 25.117361895740032
+	meshVolume = 10.010712478164351
+	meshSurface = 30.953842805232853
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MOL_Lab_New
+	bestMethod = Mesh
+	boundsVolume = 11.524298491676911
+	boundsSurface = 30.7137276859944
+	colliderVolume = 7.5897137047722936
+	colliderSurface = 21.045989241451025
+	meshVolume = 8.5149652386847574
+	meshSurface = 32.869213395848419
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_Crew_A
+	bestMethod = Collider
+	boundsVolume = 2.7060774564743042
+	boundsSurface = 11.716206550598145
+	colliderVolume = 1.1406902977032587
+	colliderSurface = 6.4265152900479734
+	meshVolume = 1.0362103346438083
+	meshSurface = 6.5636038822467526
+	attachNodesSurface = 1.534
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_Crew_B
+	bestMethod = Collider
+	boundsVolume = 8.2000002264976501
+	boundsSurface = 25.62000036239624
+	colliderVolume = 3.9586752294562757
+	colliderSurface = 14.901320390403271
+	meshVolume = 3.8820826216770001
+	meshSurface = 15.839018768383539
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_Crew_C
+	bestMethod = Collider
+	boundsVolume = 1.8159306365694139
+	boundsSurface = 10.905235681898915
+	colliderVolume = 1.1236533261835575
+	colliderSurface = 7.281198650598526
+	meshVolume = 0.96603618732797258
+	meshSurface = 7.9523216154775582
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_LanderCan
+	bestMethod = Mesh
+	boundsVolume = 0.92728063142605599
+	boundsSurface = 5.7490404495041503
+	colliderVolume = 0.69613570300862193
+	colliderSurface = 4.5220471173524857
+	meshVolume = 0.78356745330920319
+	meshSurface = 5.3354665267916062
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = BDB_FASAlaunchTower
+	bestMethod = Mesh
+	boundsVolume = 528.98430518223847
+	boundsSurface = 430.14454585317253
+	colliderVolume = 15.70507550239563
+	colliderSurface = 49.012454032897949
+	meshVolume = 128.35693668229123
+	meshSurface = 259.44972584454808
+	attachNodesSurface = 0
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_mercuryPod
+	bestMethod = Collider
+	boundsVolume = 1.1390624567866325
+	boundsSurface = 6.7699998617172241
+	colliderVolume = 0.48368755215778947
+	colliderSurface = 3.687972653657198
+	meshVolume = 0.3405312378963572
+	meshSurface = 3.1245361343608238
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Saturn_VFB_MissionModule
+	bestMethod = Collider
+	boundsVolume = 65.132555310564783
+	boundsSurface = 97.534132575177864
+	colliderVolume = 37.774138572625816
+	colliderSurface = 60.941498043015599
+	meshVolume = 29.702928429303938
+	meshSurface = 52.582611011617701
+	attachNodesSurface = 45.407999999999994
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Skylab_Airlock
+	bestMethod = Mesh
+	boundsVolume = 36.658802281307146
+	boundsSurface = 67.366893883326611
+	colliderVolume = 19.216928027570248
+	colliderSurface = 50.718362383544445
+	meshVolume = 7.0310895542178287
+	meshSurface = 69.772363062566001
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Skylab_MDA
+	bestMethod = Mesh
+	boundsVolume = 11.60655279511961
+	boundsSurface = 31.161508905411893
+	colliderVolume = 6.5552063193172216
+	colliderSurface = 18.970837071537971
+	meshVolume = 7.21034761981673
+	meshSurface = 24.069755460193846
+	attachNodesSurface = 19.635999999999999
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Skylab_OWS
+	bestMethod = Mesh
+	boundsVolume = 103.70572103239547
+	boundsSurface = 137.21198081747912
+	colliderVolume = 69.21211576461792
+	colliderSurface = 96.798528075218201
+	meshVolume = 70.603230649632749
+	meshSurface = 114.76924579678234
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Spacelab_Adapter
+	bestMethod = Collider
+	boundsVolume = 36.658825408438418
+	boundsSurface = 67.366924143432357
+	colliderVolume = 18.873499160632491
+	colliderSurface = 51.563191942870617
+	meshVolume = 12.371160402107467
+	meshSurface = 83.321761231531127
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Spacelab_Airlock
+	bestMethod = Collider
+	boundsVolume = 10.308278391832756
+	boundsSurface = 28.542929217248457
+	colliderVolume = 6.148080974817276
+	colliderSurface = 17.993036765605211
+	meshVolume = 5.8763715433868526
+	meshSurface = 19.307530806698196
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Spacelab_ERM
+	bestMethod = Collider
+	boundsVolume = 44.908211342450379
+	boundsSurface = 76.362220708188033
+	colliderVolume = 27.674028461799026
+	colliderSurface = 48.609139688313007
+	meshVolume = 26.927053992636502
+	meshSurface = 47.39727209508419
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FS_BiplaneCockpit
+	bestMethod = Mesh
+	boundsVolume = 1.5805706529012213
+	boundsSurface = 8.2720713277517177
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 0.80044469364088711
+	meshSurface = 8.925633319595363
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FSbiplaneCockpit
+	bestMethod = Collider
+	boundsVolume = 1.889124262862288
+	boundsSurface = 9.4661493935046224
+	colliderVolume = 0.79998235501938531
+	colliderSurface = 8.9256296583916992
+	meshVolume = 0.078919260658580015
+	meshSurface = 1.2388151384875528
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FSapacheCockpit
+	bestMethod = Collider
+	boundsVolume = 2.8389323102735715
+	boundsSurface = 12.504415463176827
+	colliderVolume = 0.90825812260300154
+	colliderSurface = 4.8733994463109411
+	meshVolume = 0.13524833343399223
+	meshSurface = 1.5591360968537629
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FSbomberCockpit
+	bestMethod = Mesh
+	boundsVolume = 36.889866249442399
+	boundsSurface = 70.32476970150492
+	colliderVolume = 9.0349887313604995
+	colliderSurface = 86.82544802990742
+	meshVolume = 9.0349887313604995
+	meshSurface = 86.82544802990742
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FScopterCockpit
+	bestMethod = Collider
+	boundsVolume = 2.8781552588714368
+	boundsSurface = 12.320836578543037
+	colliderVolume = 1.3363040984731924
+	colliderSurface = 6.6753998349595349
+	meshVolume = 0.071374417192515693
+	meshSurface = 1.2512164026411483
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FSfighterCockpit
+	bestMethod = Collider
+	boundsVolume = 3.0301993329306303
+	boundsSurface = 13.224819803686714
+	colliderVolume = 1.8298499914671993
+	colliderSurface = 8.4216982671059668
+	meshVolume = 0.0037623533280566335
+	meshSurface = 0.05618211068212986
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FSCrewFuselage
+	bestMethod = Collider
+	boundsVolume = 3.0966165510426915
+	boundsSurface = 12.942123548956602
+	colliderVolume = 2.3211324488802347
+	colliderSurface = 10.511785274837166
+	meshVolume = 0.0021896484922763193
+	meshSurface = 0.31342429458163679
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AirshipGondola5mtr
+	bestMethod = Collider
+	boundsVolume = 56.712813697966588
+	boundsSurface = 104.20347587796459
+	colliderVolume = 25.294378845137544
+	colliderSurface = 55.329547997564077
+	meshVolume = 0.013112434368338199
+	meshSurface = 0.45788590015581576
+	attachNodesSurface = 53.998999999999995
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AirshipPod
+	bestMethod = Collider
+	boundsVolume = 12.696278365456253
+	boundsSurface = 34.189183232859591
+	colliderVolume = 7.7333872605099714
+	colliderSurface = 21.539221978338901
+	meshVolume = 1.0433059777133167
+	meshSurface = 4.2180450791493058
+	attachNodesSurface = 7.3632
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = LedZep2R
+	bestMethod = Collider
+	boundsVolume = 2950.1980748944547
+	boundsSurface = 1658.7773911923432
+	colliderVolume = 1151.7474603713054
+	colliderSurface = 842.56433388164442
+	meshVolume = 0.0058300504460930824
+	meshSurface = 0.54894621297717094
+	attachNodesSurface = 39.271999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = LETlander2mX3
+	bestMethod = Mesh
+	boundsVolume = 20.074058266927167
+	boundsSurface = 51.213286237792431
+	colliderVolume = 5.8813193440437317
+	colliderSurface = 21.445772260427475
+	meshVolume = 7.4847307725140126
+	meshSurface = 23.372704291890841
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = LETpod2m4k
+	bestMethod = Mesh
+	boundsVolume = 16.184256916271238
+	boundsSurface = 38.390940384091209
+	colliderVolume = 6.299219062551856
+	colliderSurface = 18.775188602507114
+	meshVolume = 7.1128448993919848
+	meshSurface = 24.417085657833013
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = commandPod_1p5
+	bestMethod = Collider
+	boundsVolume = 4.6968770324440978
+	boundsSurface = 17.051254721403353
+	colliderVolume = 3.0976782008074224
+	colliderSurface = 11.445931544527411
+	meshVolume = 2.9860989714003523
+	meshSurface = 11.76263588622146
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArm
+	bestMethod = Mesh
+	boundsVolume = 57.003806403125466
+	boundsSurface = 102.73112465008171
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 0.92144618555289526
+	meshSurface = 42.582446191925555
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmL1
+	bestMethod = Mesh
+	boundsVolume = 89.764615399016932
+	boundsSurface = 154.24078155620964
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 1.7679995430298732
+	meshSurface = 69.636783681577072
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmL2
+	bestMethod = Mesh
+	boundsVolume = 89.764615399016932
+	boundsSurface = 154.24078155620964
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 2.5823262019312097
+	meshSurface = 90.973514476558194
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmL3
+	bestMethod = Mesh
+	boundsVolume = 89.764615399016932
+	boundsSurface = 154.24078155620964
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 2.0773873216138661
+	meshSurface = 110.48140466376208
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmSmallMount
+	bestMethod = Mesh
+	boundsVolume = 41.526661738403035
+	boundsSurface = 83.802535715275098
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 0.82822922989726067
+	meshSurface = 5.1261417372152209
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmS1
+	bestMethod = Mesh
+	boundsVolume = 66.987519029565746
+	boundsSurface = 128.93937605875044
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 2.4501652235921938
+	meshSurface = 43.185741221532226
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmS2
+	bestMethod = Mesh
+	boundsVolume = 66.987519029565746
+	boundsSurface = 128.93937605875044
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 2.2723060643927511
+	meshSurface = 77.226151218870655
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_GeneralCrewArmS3
+	bestMethod = Mesh
+	boundsVolume = 64.635622898614727
+	boundsSurface = 126.52861736741954
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 1.706903824915571
+	meshSurface = 93.822207348479424
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = AM_MLP_SoyuzLaunchBaseGantry
+	bestMethod = Mesh
+	boundsVolume = 4493.4419810994132
+	boundsSurface = 2506.3680668067973
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 8.3766984816475087
+	meshSurface = 278.90635531541193
+	attachNodesSurface = 11.045
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = X1_Crew
+	bestMethod = Mesh
+	boundsVolume = 4.1226562112569809
+	boundsSurface = 16.317499876022339
+	colliderVolume = 1.1563664505383713
+	colliderSurface = 6.4225807403709041
+	meshVolume = 1.1627290030799031
+	meshSurface = 6.69145902298078
+	attachNodesSurface = 1.2272000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = hl10HangarDeck
+	bestMethod = Mesh
+	boundsVolume = 1074.2347698586398
+	boundsSurface = 629.76594973122701
+	colliderVolume = 386.61091350340575
+	colliderSurface = 485.58587230516787
+	meshVolume = 328.7074666192521
+	meshSurface = 245.55488998884476
+	attachNodesSurface = 99.404799999999966
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = hl10HangarDeck2
+	bestMethod = Mesh
+	boundsVolume = 1074.2347698586398
+	boundsSurface = 629.76594973122701
+	colliderVolume = 386.61091350340575
+	colliderSurface = 485.58587230516787
+	meshVolume = 328.7074666192521
+	meshSurface = 245.55488998884476
+	attachNodesSurface = 99.404799999999966
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_BisonAirlock
+	bestMethod = Collider
+	boundsVolume = 8.4818475437714138
+	boundsSurface = 25.315022630987357
+	colliderVolume = 6.7876974532409804
+	colliderSurface = 20.77724026251235
+	meshVolume = 5.986081330818684
+	meshSurface = 19.120036436094317
+	attachNodesSurface = 14.727
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_BisonCab
+	bestMethod = Collider
+	boundsVolume = 8.9892682284387728
+	boundsSurface = 26.470068034603685
+	colliderVolume = 7.0824929317459464
+	colliderSurface = 21.185211207717657
+	meshVolume = 4.9189756019777633
+	meshSurface = 11.38671620493551
+	attachNodesSurface = 14.727
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_GondoGarden2
+	bestMethod = Collider
+	boundsVolume = 14.749229208035196
+	boundsSurface = 36.319245058320575
+	colliderVolume = 12.201294153928757
+	colliderSurface = 31.003259234130383
+	meshVolume = 8.2018916890631974
+	meshSurface = 23.565775358186301
+	attachNodesSurface = 29.453999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_GondoHab2
+	bestMethod = Collider
+	boundsVolume = 14.749229208035196
+	boundsSurface = 36.319245058320575
+	colliderVolume = 12.201294153928757
+	colliderSurface = 31.003259234130383
+	meshVolume = 8.2018916890631974
+	meshSurface = 23.565775358186301
+	attachNodesSurface = 29.453999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_GondoLab2
+	bestMethod = Collider
+	boundsVolume = 14.749229208035196
+	boundsSurface = 36.319245058320575
+	colliderVolume = 12.201294153928757
+	colliderSurface = 31.003259234130383
+	meshVolume = 8.2018916890631974
+	meshSurface = 23.565775358186301
+	attachNodesSurface = 29.453999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_GondoOffice
+	bestMethod = Mesh
+	boundsVolume = 14.749227539222622
+	boundsSurface = 36.31924253288139
+	colliderVolume = 5.0789765450764294E-13
+	colliderSurface = 3.4211154270168825E-08
+	meshVolume = 8.2018916890631974
+	meshSurface = 23.565775358186301
+	attachNodesSurface = 29.453999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_HL10CommandCab
+	bestMethod = Collider
+	boundsVolume = 15.828584686941994
+	boundsSurface = 38.129249783471096
+	colliderVolume = 4.8370900415056894
+	colliderSurface = 13.957704412994644
+	meshVolume = 1.8743605480121914
+	meshSurface = 8.1192099875770509
+	attachNodesSurface = 14.727
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_PassengerGondola
+	bestMethod = Collider
+	boundsVolume = 14.731793454254198
+	boundsSurface = 36.292859269707606
+	colliderVolume = 12.201294153928757
+	colliderSurface = 31.003259234130383
+	meshVolume = 8.2018917591068945
+	meshSurface = 23.565775358186301
+	attachNodesSurface = 19.635999999999999
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = WBI_Walkway
+	bestMethod = Bounds
+	boundsVolume = 2.5799524690946067
+	boundsSurface = 12.269172828017531
+	colliderVolume = 0
+	colliderSurface = 0
+	meshVolume = 2.4056509432801905
+	meshSurface = 11.130469153116813
+	attachNodesSurface = 12.272400000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = FASAlaunchTower
+	bestMethod = Mesh
+	boundsVolume = 528.98430518223847
+	boundsSurface = 430.14454585317253
+	colliderVolume = 15.70507550239563
+	colliderSurface = 49.012454032897949
+	meshVolume = 128.35693668229123
+	meshSurface = 259.44972584454808
+	attachNodesSurface = 0
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = KspiCommandCenterDome
+	bestMethod = Mesh
+	boundsVolume = 44.064959226135372
+	boundsSurface = 78.870312242971977
+	colliderVolume = 23.197680808603764
+	colliderSurface = 45.350656971335411
+	meshVolume = 23.426229454628356
+	meshSurface = 54.072552019060822
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = kspiDSD1
+	bestMethod = Mesh
+	boundsVolume = 33.054088673590329
+	boundsSurface = 63.532741701866144
+	colliderVolume = 21.737748140993062
+	colliderSurface = 58.839750388637185
+	meshVolume = 20.907779068405642
+	meshSurface = 54.199151692178802
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = kspiIXSCommandModule
+	bestMethod = Mesh
+	boundsVolume = 272.93483716161103
+	boundsSurface = 273.46489583141283
+	colliderVolume = 40.931433270220808
+	colliderSurface = 137.77226193987752
+	meshVolume = 51.085279518440075
+	meshSurface = 211.85805924062151
+	attachNodesSurface = 11.965400000000002
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = scienceModule
+	bestMethod = Mesh
+	boundsVolume = 40.940944538546887
+	boundsSurface = 71.789008131997207
+	colliderVolume = 21.395620658993721
+	colliderSurface = 43.763181000947952
+	meshVolume = 24.043005125833133
+	meshSurface = 55.034785477819241
+	attachNodesSurface = 9.8179999999999996
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = LH_IcarusTrussEnd
+	bestMethod = Collider
+	boundsVolume = 53.225185557821554
+	boundsSurface = 86.341825585821653
+	colliderVolume = 13.402597321699098
+	colliderSurface = 37.805058863244831
+	meshVolume = 0
+	meshSurface = 0
+	attachNodesSurface = 4.9089999999999998
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = jnsq_jebs
+	bestMethod = Mesh
+	boundsVolume = 19878.89489830911
+	boundsSurface = 5617.204426582146
+	colliderVolume = 7651.8741518612951
+	colliderSurface = 3577.3893464617431
+	meshVolume = 5020.2808013342155
+	meshSurface = 2742.2223078289635
+	attachNodesSurface = 0
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_BigG_Cabin
+	bestMethod = Collider
+	boundsVolume = 8.3301438893995137
+	boundsSurface = 25.828229109932749
+	colliderVolume = 4.067293431609869
+	colliderSurface = 15.187964126467705
+	meshVolume = 4.0507957351367736
+	meshSurface = 16.568627609318355
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_ArrowSM
+	bestMethod = Mesh
+	boundsVolume = 5.3371513261120818
+	boundsSurface = 18.48471931285232
+	colliderVolume = 0.45782487629912794
+	colliderSurface = 3.4417038317769766
+	meshVolume = 2.1570000476349378
+	meshSurface = 7.9860686147585511
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_Capsule
+	bestMethod = Collider
+	boundsVolume = 2.594991604092193
+	boundsSurface = 11.419977280302163
+	colliderVolume = 1.0413755208719522
+	colliderSurface = 6.0632893480360508
+	meshVolume = 0.68376180227751027
+	meshSurface = 4.2223673221926195
+	attachNodesSurface = 1.534
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Gemini_RumbleSeat
+	bestMethod = Collider
+	boundsVolume = 1.7813182901590774
+	boundsSurface = 10.831395685672646
+	colliderVolume = 1.0694572366774082
+	colliderSurface = 7.1631278246641159
+	meshVolume = 0.71955335541639442
+	meshSurface = 2.7786523369286442
+	attachNodesSurface = 6.1361999999999997
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Shuguang_EquipmentModule
+	bestMethod = Collider
+	boundsVolume = 3.0425219073298861
+	boundsSurface = 13.694705909414751
+	colliderVolume = 2.2086131703108549
+	colliderSurface = 10.185500919818878
+	meshVolume = 1.5581247964664726
+	meshSurface = 5.1520087942408281
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_Mercury_Capsule
+	bestMethod = Collider
+	boundsVolume = 1.5652943019338466
+	boundsSurface = 8.1339415294755497
+	colliderVolume = 0.6773688904941082
+	colliderSurface = 4.4745393730700016
+	meshVolume = 0.45883698668143325
+	meshSurface = 3.0492503541427141
+	attachNodesSurface = 2.4544000000000001
+}
+KERBALISM_HABITAT_INFO
+{
+	partName = bluedog_MiniLab_Lab
+	bestMethod = Collider
+	boundsVolume = 3.1826108385507399
+	boundsSurface = 13.176620458748658
+	colliderVolume = 2.253825506195426
+	colliderSurface = 9.738768681883812
+	meshVolume = 1.9285816393228714
+	meshSurface = 9.0649891279454096
+	attachNodesSurface = 2.4544000000000001
+}

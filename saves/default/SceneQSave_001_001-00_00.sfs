@@ -91,7 +91,7 @@ GAME
 		}
 		CAREER
 		{
-			TechTreeUrl = GameData/Squad/Resources/TechTree.cfg
+			TechTreeUrl = GameData\HideEmptyTechTreeNodes\Resources\HETTN.TechTree
 			StartingFunds = 25000
 			StartingScience = 0
 			StartingReputation = 0
@@ -115,7 +115,6 @@ GAME
 		{
 			weldRequiresEVA = True
 			weldRequiresRepairSkill = True
-			keepDockingPorts = False
 		}
 		LNSettings
 		{
@@ -308,6 +307,7 @@ GAME
 			payToReconfigure = True
 			requiresSkillCheck = True
 			enableDebugLogging = False
+			emailConverterResults = True
 		}
 		RAParameters
 		{
@@ -327,6 +327,14 @@ GAME
 			CutoffVelocity = 10
 			HighCut = 12
 			LowCut = 6
+		}
+		PreferencesRadiation
+		{
+			lifetime = False
+			stormFrequency = 0.4
+			stormDurationHours = 2
+			stormRadiation = 5
+			shieldingEfficiency = 0.9
 		}
 		KerbalHealthRadiationSettings
 		{
@@ -350,14 +358,6 @@ GAME
 			DecontaminationAstronautComplexLevel = 3
 			DecontaminationRNDLevel = 3
 		}
-		PreferencesRadiation
-		{
-			lifetime = False
-			stormFrequency = 0.4
-			stormDurationHours = 2
-			stormRadiation = 5
-			shieldingEfficiency = 0.9
-		}
 		StatsGameSettings
 		{
 			AlwaysShow = True
@@ -366,6 +366,12 @@ GAME
 			HoverHighlight = True
 			TransferButton = True
 			ReloadDelay = 5
+		}
+		PartInfoSettings
+		{
+			WindowHeightPercent = 75
+			availableInFlight = True
+			useAltSkin = True
 		}
 		OD
 		{
@@ -465,6 +471,19 @@ GAME
 			prospectResetCost = 100
 			bonusPerSkillPoint = 1
 		}
+		JanitorsClosetSettings
+		{
+			toolbarEnabled = True
+			toolbarPopupsEnabled = True
+			editorMenuPopupEnabled = True
+			hoverTimeout = 0.5
+			enabeHoverOnToolbarIcons = True
+			useKerboKatzToolbar = True
+			buttonIdent = False
+			buttonTooltip = True
+			showMod = True
+			debug = False
+		}
 		KerbalHealthGeneralSettings
 		{
 			modEnabled = True
@@ -482,19 +501,6 @@ GAME
 			ExhaustionEndHealth = 0.25
 			DebugMode = False
 			ResetSettings = False
-		}
-		JanitorsClosetSettings
-		{
-			toolbarEnabled = True
-			toolbarPopupsEnabled = True
-			editorMenuPopupEnabled = True
-			hoverTimeout = 0.5
-			enabeHoverOnToolbarIcons = True
-			useKerboKatzToolbar = True
-			buttonIdent = False
-			buttonTooltip = True
-			showMod = True
-			debug = False
 		}
 		KURSSettings
 		{
@@ -536,6 +542,11 @@ GAME
 		{
 			ConsumeMachinery = True
 		}
+		AchOptions
+		{
+			useKSPskin = False
+			achievementDisplayTime = 10
+		}
 		BPB_Options
 		{
 			useKSPskin = True
@@ -543,11 +554,6 @@ GAME
 			activeInVAB = False
 			activeInSPH = False
 			allowChangeInFlight = False
-		}
-		AchOptions
-		{
-			useKSPskin = False
-			achievementDisplayTime = 10
 		}
 		BPB_Options2
 		{
@@ -593,7 +599,7 @@ GAME
 			symbolSpaceDuration = 1.1
 			letterSpaceDuration = 1.7
 			wordSpaceDuration = 2.5
-			letterSpaceChar =  
+			letterSpaceChar = 
 			wordSpaceChar = |
 			useVesselLightsOnEVA = True
 			lightSymLights = False
@@ -630,13 +636,13 @@ GAME
 		kOSConnectivityParameters
 		{
 			version = 0
-			knownHandlerList = PermitAllConnectivityManager
-			connectivityHandler = StockConnectivityManager
+			knownHandlerList = CommNetConnectivityManager,PermitAllConnectivityManager
+			connectivityHandler = CommNetConnectivityManager
 		}
 		kOSCustomParameters
 		{
 			InstructionsPerUpdate = 200
-			migrated = False
+			migrated = True
 			version = 0
 			useCompressedPersistence = True
 			showStatistics = False
@@ -685,9 +691,9 @@ GAME
 		}
 		CTB
 		{
-			focusFollowsclick = False
+			focusFollowsclick = True
 			global = True
-			showPopup = True
+			showPopup = False
 			cleanupDelay = 0.5
 		}
 		StripeSettingsClassRestrictions
@@ -875,68 +881,34 @@ GAME
 			facilityLevelTS = 3
 			facilityLevelVAB = 3
 		}
-		NRAPCustomParams
-		{
-			size0 = 0.625
-			size1 = 0
-			size2 = 1.25
-			size3 = 1.5
-			size4 = 1.875
-			size5 = 2.5
-			size6 = 3.125
-			size7 = 3.75
-			size8 = 5
-			size9 = 7.5
-			resetSizes = False
-		}
-		CrewRandRCustomParams
-		{
-			VacationScalar = 10
-			enabled = True
-			AssignCrews = True
-			vacationScalar = 0.1
-			MinimumVacationDays = 7
-			MaximumVacationDays = 28
-		}
-		TC
-		{
-			showStockTooltips = True
-			hoverTimeout = 0.5
-			debugMode = False
-			oldDebugMode = False
-		}
-		EEX
-		{
-			vabHeight = 5
-			sphHeight = 5
-		}
-		StateFundingSettings
-		{
-			ConvergingRate = 50
-			enabled = True
-			budgetPeriodsPerYear = 4
-			stopWarpAtBudgetPeriod = True
-			stopWarpOnNewYear = True
-			convergingRate = 0.5
-		}
-		SR3
-		{
-			GlobalMod = 100
-			GlobalModifier = 1
-			DistanceOver = 1
-			DistanceOverride = 0.01
-			DreVelocity = 2000
-			globalModifier = 1
-			distanceOverride = 0.01
-			DeadlyReentryMaxVelocity = 2000
-			MinTWR = 1
-		}
 		EL
 		{
 			lightFadeCoefficient = 1
 			lightPower = 1
 			lightRange = 1
 			useKSPskin = False
+		}
+		BM
+		{
+			debugMode = False
+		}
+		PM
+		{
+			EnabledForSave = True
+		}
+		KRASH_Settings
+		{
+			CostAdj = 100
+			CostAdjustment = 1
+			wireframes = False
+			defaultAtmoStartingAltitude = 75000
+			defaultNoAtmoStartingAltitude = 10000
+			costAdjustment = 1
+			noChargeDuringTimewarp = True
+		}
+		PAPI
+		{
+			debug = False
 		}
 		SR1
 		{
@@ -952,27 +924,61 @@ GAME
 			UseUpgrades = True
 			hideSpaceCenterButton = False
 		}
-		PAPI
+		EEX
 		{
-			debug = False
+			vabHeight = 5
+			sphHeight = 5
 		}
-		KRASH_Settings
+		SR3
 		{
-			CostAdj = 100
-			CostAdjustment = 1
-			wireframes = False
-			defaultAtmoStartingAltitude = 75000
-			defaultNoAtmoStartingAltitude = 10000
-			costAdjustment = 1
-			noChargeDuringTimewarp = True
+			GlobalMod = 100
+			GlobalModifier = 1
+			DistanceOver = 1
+			DistanceOverride = 0.01
+			DreVelocity = 2000
+			globalModifier = 1
+			distanceOverride = 0.01
+			DeadlyReentryMaxVelocity = 2000
+			MinTWR = 1
 		}
-		PM
+		StateFundingSettings
 		{
-			EnabledForSave = True
+			ConvergingRate = 50
+			enabled = True
+			budgetPeriodsPerYear = 4
+			stopWarpAtBudgetPeriod = True
+			stopWarpOnNewYear = True
+			convergingRate = 0.5
 		}
-		BM
+		TC
 		{
+			showStockTooltips = True
+			hoverTimeout = 0.5
 			debugMode = False
+			oldDebugMode = False
+		}
+		CrewRandRCustomParams
+		{
+			VacationScalar = 10
+			enabled = True
+			AssignCrews = True
+			vacationScalar = 0.1
+			MinimumVacationDays = 7
+			MaximumVacationDays = 28
+		}
+		NRAPCustomParams
+		{
+			size0 = 0.625
+			size1 = 0
+			size2 = 1.25
+			size3 = 1.5
+			size4 = 1.875
+			size5 = 2.5
+			size6 = 3.125
+			size7 = 3.75
+			size8 = 5
+			size9 = 7.5
+			resetSizes = False
 		}
 		FMRS_Settings
 		{
@@ -998,21 +1004,42 @@ GAME
 	{
 		name = PartUpgradeManager
 		scene = 6, 5, 7
+		UPGRADES
+		{
+			Unlocks
+			{
+			}
+			Enableds
+			{
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = ResourceScenario
 		scene = 7, 8, 5, 6, 21
+		RESOURCE_SETTINGS
+		{
+			GameSeed = 254083382
+			ROCMissionSeed = 254083382
+			MaxDeltaTime = 21600
+		}
 	}
 	SCENARIO
 	{
 		name = ScenarioNewGameIntro
 		scene = 5, 6, 8
+		kscComplete = True
+		editorComplete = True
+		tsComplete = False
 	}
 	SCENARIO
 	{
 		name = ProgressTracking
 		scene = 6, 7, 8, 5
+		Progress
+		{
+		}
 	}
 	SCENARIO
 	{
@@ -1033,16 +1060,185 @@ GAME
 	{
 		name = ScenarioDestructibles
 		scene = 5, 7, 6, 8
+		SpaceCenter/Administration/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/PodMemorial
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole/Facility
+		{
+			intact = True
+		}
+		SpaceCenter/Observatory/Facility/RB_observatory
+		{
+			intact = True
+		}
 	}
 	SCENARIO
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
+		lastSeed = 559298752
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
 	}
 	SCENARIO
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
+		NextSpawnTime = 44547.45500749928
 	}
 	SCENARIO
 	{
@@ -1053,46 +1249,955 @@ GAME
 	{
 		name = DeployedScience
 		scene = 7, 8, 5, 6
+		ScienceTimeDelay = 60
+		DataSendFailedTimeDelay = 600
+		SCIENCECLUSTERS
+		{
+		}
+		DIMINISHINGRETURNS
+		{
+			ENTRY
+			{
+				ExpCount = 1
+				Rate = 1
+			}
+			ENTRY
+			{
+				ExpCount = 2
+				Rate = 0.200000003
+			}
+			ENTRY
+			{
+				ExpCount = 3
+				Rate = 0.349999994
+			}
+			ENTRY
+			{
+				ExpCount = 4
+				Rate = 0.449999988
+			}
+			ENTRY
+			{
+				ExpCount = 5
+				Rate = 0.5
+			}
+		}
+		SEISMICENERGY
+		{
+			MinimumEnergyRequired = 3000
+			SeismicScienceProcessingDelay = 3
+			ENTRY
+			{
+				BodyName = Moho
+				Energy = 2.02E+09
+			}
+			ENTRY
+			{
+				BodyName = Eve
+				Energy = 9.78000036E+10
+			}
+			ENTRY
+			{
+				BodyName = Gilly
+				Energy = 1000000
+			}
+			ENTRY
+			{
+				BodyName = Kerbin
+				Energy = 4.1840001E+10
+			}
+			ENTRY
+			{
+				BodyName = Mun
+				Energy = 782000000
+			}
+			ENTRY
+			{
+				BodyName = Minmus
+				Energy = 21200000
+			}
+			ENTRY
+			{
+				BodyName = Duna
+				Energy = 3.62E+09
+			}
+			ENTRY
+			{
+				BodyName = Ike
+				Energy = 223000000
+			}
+			ENTRY
+			{
+				BodyName = Dres
+				Energy = 258000000
+			}
+			ENTRY
+			{
+				BodyName = Laythe
+				Energy = 2.3600001E+10
+			}
+			ENTRY
+			{
+				BodyName = Vall
+				Energy = 2.48999987E+09
+			}
+			ENTRY
+			{
+				BodyName = Tylo
+				Energy = 3.38999992E+10
+			}
+			ENTRY
+			{
+				BodyName = Bop
+				Energy = 29900000
+			}
+			ENTRY
+			{
+				BodyName = Pol
+				Energy = 8660000
+			}
+			ENTRY
+			{
+				BodyName = Eeloo
+				Energy = 894000000
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = EarnedAchievements
 		scene = 6, 7, 5, 8
+		achievements
+		{
+			Complete.Contracts.1
+			{
+			}
+			Complete.Contracts.20
+			{
+			}
+			Complete.Contracts.100
+			{
+			}
+			flight.aboveAtmosphere.Kerbin
+			{
+			}
+			flight.aboveAtmosphere.Eve
+			{
+			}
+			flight.aboveAtmosphere.Duna
+			{
+			}
+			flight.aboveAtmosphere.Jool
+			{
+			}
+			flight.aboveAtmosphere.Laythe
+			{
+			}
+			flight.aboveAtmosphere.Tylo
+			{
+			}
+			flight.aboveAtmosphere.Eeloo
+			{
+			}
+			flight.aboveAtmosphere.Lindor
+			{
+			}
+			flight.aboveAtmosphere.Huygen
+			{
+			}
+			flight.aboveAtmosphere.Riga
+			{
+			}
+			flight.aboveAtmosphere.Nara
+			{
+			}
+			flight.altitude.Kerbin.10000
+			{
+			}
+			flight.altitude.Sun.1000000
+			{
+			}
+			stableOrbit.hyperEdit
+			{
+			}
+			landing.kscHelicopterPad.underTenSeconds
+			{
+			}
+			launch.1
+			{
+				count = 0
+			}
+			launch.10
+			{
+				count = 0
+			}
+			launch.100
+			{
+				count = 0
+			}
+			launch.500
+			{
+				count = 0
+			}
+			launch.1000
+			{
+				count = 0
+			}
+			Collect.Funds.100000
+			{
+			}
+			Collect.Funds.1000000
+			{
+			}
+			Collect.Funds.10000000
+			{
+			}
+			kill.singleIncident.1
+			{
+				count = 0
+			}
+			kill.singleIncident.10
+			{
+				count = 0
+			}
+			kill.10
+			{
+				count = 0
+			}
+			kill.100
+			{
+				count = 0
+			}
+			kill.jebediahAgain
+			{
+				count = 0
+			}
+			crash.kscBuilding
+			{
+			}
+			landing
+			{
+			}
+			landing.Moho
+			{
+			}
+			landing.Eve
+			{
+			}
+			landing.Kerbin
+			{
+			}
+			landing.Duna
+			{
+			}
+			landing.Dres
+			{
+			}
+			landing.Eeloo
+			{
+			}
+			landing.Gilly
+			{
+			}
+			landing.Mun
+			{
+			}
+			landing.Minmus
+			{
+			}
+			landing.Ike
+			{
+			}
+			landing.Laythe
+			{
+			}
+			landing.Vall
+			{
+			}
+			landing.Tylo
+			{
+			}
+			landing.Bop
+			{
+			}
+			landing.Pol
+			{
+			}
+			landing.splash.Kerbin
+			{
+			}
+			landing.splash.Eve
+			{
+			}
+			landing.splash.Laythe
+			{
+			}
+			landing.Edna
+			{
+			}
+			landing.Dak
+			{
+			}
+			landing.Krel
+			{
+			}
+			landing.Aden
+			{
+			}
+			landing.Huygen
+			{
+			}
+			landing.Riga
+			{
+			}
+			landing.Talos
+			{
+			}
+			landing.Hamek
+			{
+			}
+			landing.Celes
+			{
+			}
+			landing.Tam
+			{
+			}
+			landing.Nara
+			{
+			}
+			landing.Amos
+			{
+			}
+			landing.Enon
+			{
+			}
+			landing.Prax
+			{
+			}
+			landing.splash.Huygen
+			{
+			}
+			landing.allCrewAlive
+			{
+			}
+			landing.allCrewAlive.abort
+			{
+			}
+			landing.enginesDestroyed
+			{
+			}
+			landing.mun.crater
+			{
+			}
+			landing.ksc
+			{
+			}
+			landing.kerbin.pole
+			{
+			}
+			landing.kscLaunchPad
+			{
+			}
+			landing.kscHelicopterPad
+			{
+			}
+			landing.kscRunway
+			{
+			}
+			landing.islandRunway
+			{
+			}
+			landing.armstrongMemorial
+			{
+			}
+			docking.orbit
+			{
+			}
+			docking.asteroid
+			{
+			}
+			stableOrbit.Sun
+			{
+			}
+			stableOrbit.Kerbin
+			{
+			}
+			stableOrbit.Mun
+			{
+			}
+			stableOrbit.Minmus
+			{
+			}
+			stableOrbit.Moho
+			{
+			}
+			stableOrbit.Eve
+			{
+			}
+			stableOrbit.Duna
+			{
+			}
+			stableOrbit.Ike
+			{
+			}
+			stableOrbit.Jool
+			{
+			}
+			stableOrbit.Laythe
+			{
+			}
+			stableOrbit.Vall
+			{
+			}
+			stableOrbit.Bop
+			{
+			}
+			stableOrbit.Tylo
+			{
+			}
+			stableOrbit.Gilly
+			{
+			}
+			stableOrbit.Pol
+			{
+			}
+			stableOrbit.Dres
+			{
+			}
+			stableOrbit.Eeloo
+			{
+			}
+			stableOrbit.Edna
+			{
+			}
+			stableOrbit.Dak
+			{
+			}
+			stableOrbit.Lindor
+			{
+			}
+			stableOrbit.Krel
+			{
+			}
+			stableOrbit.Aden
+			{
+			}
+			stableOrbit.Huygen
+			{
+			}
+			stableOrbit.Riga
+			{
+			}
+			stableOrbit.Talos
+			{
+			}
+			stableOrbit.Hamek
+			{
+			}
+			stableOrbit.Celes
+			{
+			}
+			stableOrbit.Tam
+			{
+			}
+			stableOrbit.Nara
+			{
+			}
+			stableOrbit.Amos
+			{
+			}
+			stableOrbit.Enon
+			{
+			}
+			stableOrbit.Prax
+			{
+			}
+			stableOrbit
+			{
+			}
+			stableOrbit.extraKerbalPlanet
+			{
+			}
+			stableOrbit.moon
+			{
+			}
+			kesslerSyndrome
+			{
+				count = 0
+			}
+			stableOrbit.ssto
+			{
+			}
+			stableOrbit.jetPack
+			{
+			}
+			orbit.escapeSun
+			{
+			}
+			orbit.asteroid.preventImpact
+			{
+			}
+			orbit.asteroid.moveIntoStableOrbit
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Kerbin
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Sun
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Moho
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Eve
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Duna
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Jool
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Dres
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Eeloo
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Edna
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Lindor
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Hamek
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Nara
+			{
+			}
+			docking.surface
+			{
+			}
+			landing.extraKerbalFlag
+			{
+			}
+			landing.allBodiesFlags
+			{
+				count = 0
+			}
+			landing.Kerbin
+			{
+				count = 0
+			}
+			landing.Mun
+			{
+				count = 0
+			}
+			landing.Minmus
+			{
+				count = 0
+			}
+			landing.Moho
+			{
+				count = 0
+			}
+			landing.Eve
+			{
+				count = 0
+			}
+			landing.Duna
+			{
+				count = 0
+			}
+			landing.Ike
+			{
+				count = 0
+			}
+			landing.Laythe
+			{
+				count = 0
+			}
+			landing.Vall
+			{
+				count = 0
+			}
+			landing.Bop
+			{
+				count = 0
+			}
+			landing.Tylo
+			{
+				count = 0
+			}
+			landing.Gilly
+			{
+				count = 0
+			}
+			landing.Pol
+			{
+				count = 0
+			}
+			landing.Dres
+			{
+				count = 0
+			}
+			landing.Eeloo
+			{
+				count = 0
+			}
+			landing.Edna
+			{
+				count = 0
+			}
+			landing.Dak
+			{
+				count = 0
+			}
+			landing.Krel
+			{
+				count = 0
+			}
+			landing.Aden
+			{
+				count = 0
+			}
+			landing.Huygen
+			{
+				count = 0
+			}
+			landing.Riga
+			{
+				count = 0
+			}
+			landing.Talos
+			{
+				count = 0
+			}
+			landing.Hamek
+			{
+				count = 0
+			}
+			landing.Celes
+			{
+				count = 0
+			}
+			landing.Tam
+			{
+				count = 0
+			}
+			landing.Nara
+			{
+				count = 0
+			}
+			landing.Amos
+			{
+				count = 0
+			}
+			landing.Enon
+			{
+				count = 0
+			}
+			landing.Prax
+			{
+				count = 0
+			}
+			landing.allBodiesEVA
+			{
+			}
+			eva.jump.240
+			{
+			}
+			reputation.fame.400
+			{
+			}
+			reputation.fame.800
+			{
+			}
+			reputation.fame.-400
+			{
+			}
+			surfaceSample.Kerbin
+			{
+			}
+			surfaceSample.Mun
+			{
+			}
+			surfaceSample.Minmus
+			{
+			}
+			surfaceSample.Moho
+			{
+			}
+			surfaceSample.Eve
+			{
+			}
+			surfaceSample.Duna
+			{
+			}
+			surfaceSample.Ike
+			{
+			}
+			surfaceSample.Laythe
+			{
+			}
+			surfaceSample.Vall
+			{
+			}
+			surfaceSample.Bop
+			{
+			}
+			surfaceSample.Tylo
+			{
+			}
+			surfaceSample.Gilly
+			{
+			}
+			surfaceSample.Pol
+			{
+			}
+			surfaceSample.Dres
+			{
+			}
+			surfaceSample.Eeloo
+			{
+			}
+			surfaceSample.Edna
+			{
+			}
+			surfaceSample.Dak
+			{
+			}
+			surfaceSample.Krel
+			{
+			}
+			surfaceSample.Aden
+			{
+			}
+			surfaceSample.Huygen
+			{
+			}
+			surfaceSample.Riga
+			{
+			}
+			surfaceSample.Talos
+			{
+			}
+			surfaceSample.Hamek
+			{
+			}
+			surfaceSample.Celes
+			{
+			}
+			surfaceSample.Tam
+			{
+			}
+			surfaceSample.Nara
+			{
+			}
+			surfaceSample.Amos
+			{
+			}
+			surfaceSample.Enon
+			{
+			}
+			surfaceSample.Prax
+			{
+			}
+			surfaceSample
+			{
+			}
+			surfaceSample.allBodies
+			{
+			}
+			asteroidSample
+			{
+			}
+			allTechsResearched
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Kerbin
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Sun
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Moho
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Eve
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Duna
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Jool
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Dres
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Eeloo
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Edna
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Lindor
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Hamek
+			{
+			}
+			stableOrbit.85000.-1.0.1.85.90.Nara
+			{
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = CrewRandRSettings
 		scene = 6, 7, 5, 8
+		CrewList
+		{
+			KERBAL
+			{
+				Name = Gemner Kerman
+				CurrentMissionStartTime = -1
+				GetLastMissionDuration = -1
+				LastMissionEndTime = -1
+				ExtremelyFatigued = False
+			}
+			KERBAL
+			{
+				Name = Johan Kerman
+				CurrentMissionStartTime = -1
+				GetLastMissionDuration = -1
+				LastMissionEndTime = -1
+				ExtremelyFatigued = False
+			}
+			KERBAL
+			{
+				Name = Helrick Kerman
+				CurrentMissionStartTime = -1
+				GetLastMissionDuration = -1
+				LastMissionEndTime = -1
+				ExtremelyFatigued = False
+			}
+			KERBAL
+			{
+				Name = Lagerbart Kerman
+				CurrentMissionStartTime = -1
+				GetLastMissionDuration = -1
+				LastMissionEndTime = -1
+				ExtremelyFatigued = False
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = DeadlyReentryScenario
 		scene = 7, 5
+		difficultySetting = 1
+		displayCrewGForceWarning = True
+		DREReentryHeatScale = 1
 	}
 	SCENARIO
 	{
 		name = DMScienceScenario
 		scene = 7, 5, 8, 6
+		Asteroid_Science
+		{
+		}
+		Anomaly_Records
+		{
+		}
 	}
 	SCENARIO
 	{
 		name = EarlyBird_Settings
 		scene = 5, 7, 8
+		Settings
+		{
+			DawnOffset
+			{
+				Flight = 0
+				SpaceCenter = -5
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = FlightTrackerScenario
 		scene = 5, 7, 8
+		KERBAL
+		{
+			Name = Gemner Kerman
+			Flights = 0
+			LaunchTime = 460.11308919998822
+			TimeLogged = 0
+		}
+		VESSEL_TRACKER
+		{
+			VESSEL
+			{
+				ID = 4a8ea976-6008-4063-b1af-1978838a67f8
+				actualLaunchTime = 460.11308919998822
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = StripesData
 		scene = 5, 7, 8, 6
+		firstRun = False
+		STRIPYKERBAL
+		{
+			Name = Gemner Kerman
+			SuitSet = True
+			Promoted = False
+		}
+		STRIPYKERBAL
+		{
+			Name = Johan Kerman
+			SuitSet = True
+			Promoted = False
+		}
+		STRIPYKERBAL
+		{
+			Name = Helrick Kerman
+			SuitSet = True
+			Promoted = False
+		}
+		STRIPYKERBAL
+		{
+			Name = Lagerbart Kerman
+			SuitSet = True
+			Promoted = False
+		}
 	}
 	SCENARIO
 	{
 		name = FARSettingsScenarioModule
 		scene = 5, 6, 7
+		newGame = False
+		fractionTransonicDrag = 1
+		gaussianVehicleLengthFractionForSmoothing = 0.014999999999999999
+		numAreaSmoothingPasses = 2
+		numDerivSmoothingPasses = 1
+		numVoxelsControllableVessel = 250000
+		numVoxelsDebrisVessel = 20000
+		minPhysTicksPerUpdate = 80
+		useHigherResVoxelPoints = True
+		use32BitIndices = False
+		index = 4
+		allowStructuralFailures = True
+		showMomentArrows = False
+		useBlizzyToolbar = False
+		aeroFailureExplosions = True
+		FlightGUISettings
+		{
+		}
 	}
 	SCENARIO
 	{
@@ -1103,11 +2208,152 @@ GAME
 	{
 		name = KerbalConstructionTimeData
 		scene = 6, 7, 5, 8
+		KCT_DataStorage
+		{
+			enabledForSave = True
+			activeKSC = Stock
+			SalesFigures = 0
+			SciPoints = -1
+			UpgradesResetCounter = 0
+			TechUpgrades = 0
+			SavedUpgradePointsPreAPI = 0
+			VABUpgrades
+			{
+				Item = 0
+			}
+			SPHUpgrades
+			{
+				Item = 0
+			}
+			RDUpgrades
+			{
+				Item = 0
+				Item = 0
+			}
+			PurchasedUpgrades
+			{
+				Item = 0
+				Item = 0
+			}
+		}
+		KSC
+		{
+			KSCName = Stock
+			ActiveLPID = 0
+			VABUpgrades
+			{
+				Upgrade = 18
+				Upgrade = 4
+			}
+			SPHUpgrades
+			{
+				Upgrade = 18
+				Upgrade = 5
+			}
+			RDUpgrades
+			{
+				Upgrade = 0
+				Upgrade = 0
+			}
+			VABList
+			{
+			}
+			SPHList
+			{
+			}
+			VABWarehouse
+			{
+			}
+			SPHWarehouse
+			{
+			}
+			KSCTech
+			{
+			}
+			VABPlans
+			{
+			}
+			SPHPlans
+			{
+			}
+			Recon_Rollout
+			{
+			}
+			Airlaunch_Prep
+			{
+			}
+			LaunchPads
+			{
+				KCT_LaunchPad
+				{
+					level = 1
+					name = LaunchPad
+					DestructionState
+					{
+					}
+				}
+			}
+			VABRateCache
+			{
+				rate = 1
+				rate = 0.40000000000000002
+				rate = 0
+			}
+			SPHRateCache
+			{
+				rate = 1
+				rate = 0.5
+				rate = 0
+			}
+		}
+		TechList
+		{
+		}
 	}
 	SCENARIO
 	{
 		name = KerbalHealthScenario
 		scene = 5, 8, 7, 6
+		version = 1.4.4.0
+		nextEventTime = 72765.801502017348
+		KerbalHealthStatus
+		{
+			name = Lagerbart Kerman
+			health = 101.95086143096913
+			dose = 0
+			exposure = 0.5
+			quirk = GameAddict
+			quirk = LeadSkin
+			quirkLevel = 5
+		}
+		KerbalHealthStatus
+		{
+			name = Helrick Kerman
+			health = 101.95086143096913
+			dose = 0
+			exposure = 0.5
+			quirk = LeadSkin
+			quirkLevel = 5
+		}
+		KerbalHealthStatus
+		{
+			name = Johan Kerman
+			health = 101.95086143096913
+			dose = 0
+			exposure = 0.5
+			quirk = LeadSkin
+			quirk = Unstable
+			quirkLevel = 5
+		}
+		KerbalHealthStatus
+		{
+			name = Gemner Kerman
+			health = 101.95086143096913
+			dose = 0
+			quirk = Unstable
+			quirk = Claustrophobic
+			quirkLevel = 5
+		}
 	}
 	SCENARIO
 	{
@@ -1118,11 +2364,16 @@ GAME
 	{
 		name = KRASHPersistent
 		scene = 5, 6, 7, 8, 5
+		shelterSimulationActive = False
+		selectedCostsCfg = * Normal
 	}
 	SCENARIO
 	{
 		name = LaunchNumberer
 		scene = 5, 6, 7
+		selectedTemplateName = Default
+		selectedTemplate = <[name]><-[launchNumber]>< Bloc [blocNumber]>
+		preferred-template = Default
 	}
 	SCENARIO
 	{
@@ -1133,6 +2384,95 @@ GAME
 	{
 		name = UPFMData
 		scene = 7, 6
+		UPFMTracker
+		{
+			FlightWindow = True
+			EditorWindow = False
+			PART
+			{
+				ID = 321819295
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 4197212926
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 4265979996
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 2404837862
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 3118237602
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 3581377227
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 793383125
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 2721647564
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 1497865176
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 1114781517
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 1019242662
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 1615384374
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 2552139024
+				Generation = 1
+				Tested = True
+			}
+			PART
+			{
+				ID = 2621886231
+				Generation = 1
+				Tested = False
+			}
+		}
 	}
 	SCENARIO
 	{
@@ -1153,26 +2493,597 @@ GAME
 	{
 		name = AmpYear
 		scene = 5, 6, 7
+		AYGameSettings
+		{
+			Enabled = True
+		}
 	}
 	SCENARIO
 	{
 		name = ResearchBodies
 		scene = 5, 6, 7, 8
+		lastTimeCheckedSOIs = 21516.312408066668
+		RBGameSettings
+		{
+			BODY
+			{
+				body = Sun
+				isResearched = True
+				researchState = 100
+				ignore = True
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Kerbin
+				isResearched = True
+				researchState = 100
+				ignore = True
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Mun
+				isResearched = True
+				researchState = 100
+				ignore = True
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Minmus
+				isResearched = True
+				researchState = 100
+				ignore = True
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Moho
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Eve
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Duna
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Ike
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Jool
+				isResearched = True
+				researchState = 100
+				ignore = True
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Laythe
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Vall
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Bop
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Tylo
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Gilly
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Pol
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Dres
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Eeloo
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Edna
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Dak
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Lindor
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Krel
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Aden
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Huygen
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Riga
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Talos
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Hamek
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Celes
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Tam
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Nara
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Amos
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Enon
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+			BODY
+			{
+				body = Prax
+				isResearched = False
+				researchState = 0
+				ignore = False
+				ContractsWeight = 30
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = ResonantOrbitCalculator_Persistent
 		scene = 5, 6, 7, 8, 5
+		lastSelectedPlanet = Kerbin
 	}
 	SCENARIO
 	{
 		name = SCANcontroller
 		scene = 7, 5, 8
+		storageUpgraded = True
+		mainMapVisible = False
+		mainMapColor = True
+		mainMapTerminator = False
+		mainMapBiome = False
+		mainMapMinimized = False
+		bigMapVisible = False
+		bigMapColor = True
+		bigMapTerminator = False
+		bigMapGrid = True
+		bigMapOrbit = True
+		bigMapWaypoint = True
+		bigMapAnomaly = True
+		bigMapFlag = True
+		bigMapLegend = True
+		bigMapResourceOn = False
+		bigMapProjection = Rectangular
+		bigMapType = Altimetry
+		bigMapResource = Ore
+		bigMapBody = Kerbin
+		zoomMapVesselLock = False
+		zoomMapColor = True
+		zoomMapTerminator = False
+		zoomMapOrbit = True
+		zoomMapIcons = True
+		zoomMapLegend = True
+		zoomMapResourceOn = False
+		zoomMapType = Altimetry
+		zoomMapResource = Ore
+		zoomMapState = 0
+		zoomMapRefresh = 0
+		zoomMapZoomPersist = False
+		zoomMapZoom = 10
+		overlaySelection = 0
+		overlayResource = Ore
+		Scanners
+		{
+		}
+		Progress
+		{
+			Body
+			{
+				Name = Kerbin
+				Disabled = False
+				MinHeightRange = -1500
+				MaxHeightRange = 6500
+				ClampHeight = 0
+				PaletteName = Default
+				PaletteSize = 7
+				PaletteReverse = False
+				PaletteDiscrete = False
+				Map = CAABAAAA-----0AHQAAAD0AIBUD6AQACAOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AODlAAEACw__
+			}
+		}
+		SCANResources
+		{
+			ResourceType
+			{
+				Resource = Ore
+				MinColor = 0.241454497,0.120727301,0.829999983,1
+				MaxColor = 0.788862824,0,0.939999998,1
+				Transparency = 20
+				MinMaxValues = 0|2.500|14.000,1|2.500|14.000,2|2.500|14.000,3|2.500|14.000,4|2.500|14.000,5|2.500|14.000,6|2.500|14.000,7|2.500|14.000,8|2.500|14.000,9|2.500|14.000,10|2.500|14.000,11|2.500|14.000,12|2.500|14.000,13|2.500|14.000,14|2.500|14.000,15|2.500|14.000,16|2.500|14.000,17|1.000|15.000,18|1.000|15.000,19|1.000|15.000,20|1.000|15.000,21|1.000|15.000,22|1.000|15.000,23|1.000|15.000,24|1.000|15.000,25|1.000|15.000,26|1.000|15.000,27|1.000|15.000,28|1.000|15.000,29|1.000|15.000,30|1.000|15.000,31|1.000|15.000
+			}
+			ResourceType
+			{
+				Resource = Blutonium
+				MinColor = 0,0.319215685,0.74000001,1
+				MaxColor = 0.75,0.382352889,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.800|2.200,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Gemstones
+				MinColor = 0.4762353,0.0432941206,0.920000017,1
+				MaxColor = 0,0.576470971,0.0745100006,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Zeonium
+				MinColor = 0.64188242,0.0138039198,0.879999995,1
+				MaxColor = 0.742823482,0.819999993,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Propellium
+				MinColor = 0,0.839215994,0.76078397,1
+				MaxColor = 1,0.235294104,0.0313725509,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Water
+				MinColor = 0.75999999,0,0.572235286,1
+				MaxColor = 0,0.568784416,0.980000019,1
+				Transparency = 20
+				MinMaxValues = 0|0.500|6.500,1|5.000|45.000,2|0.500|6.500,3|0.500|6.500,4|0.500|6.500,5|0.500|6.500,6|0.500|6.500,7|0.500|6.500,8|0.500|6.500,9|5.000|40.000,10|0.500|6.500,11|0.500|6.500,12|0.500|6.500,13|0.500|6.500,14|0.500|6.500,15|0.500|6.500,16|0.500|6.500,17|0.500|6.500,18|0.500|6.500,19|0.500|6.500,20|0.500|6.500,21|0.500|6.500,22|0.500|6.500,23|0.500|6.500,24|0.500|6.500,25|0.500|6.500,26|0.500|6.500,27|0.500|6.500,28|0.500|6.500,29|0.500|6.500,30|0.500|6.500,31|0.500|6.500
+			}
+			ResourceType
+			{
+				Resource = Minerite
+				MinColor = 0.720000029,0.505411804,0,1
+				MaxColor = 0,0.630274475,0.980000019,1
+				Transparency = 20
+				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Nitronite
+				MinColor = 0.182784304,0.589999974,0,1
+				MaxColor = 0.0865882412,0.894745111,0.920000017,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500
+			}
+			ResourceType
+			{
+				Resource = Rock
+				MinColor = 1,0.2196078,0.772548974,1
+				MaxColor = 0.322196096,0.790000021,0,1
+				Transparency = 20
+				MinMaxValues = 0|15.000|35.000,1|15.000|35.000,2|15.000|35.000,3|15.000|35.000,4|15.000|35.000,5|15.000|35.000,6|15.000|35.000,7|15.000|35.000,8|15.000|35.000,9|15.000|35.000,10|15.000|35.000,11|15.000|35.000,12|15.000|35.000,13|15.000|35.000,14|15.000|35.000,15|15.000|35.000,16|15.000|35.000,17|15.000|35.000,18|15.000|35.000,19|15.000|35.000,20|15.000|35.000,21|15.000|35.000,22|15.000|35.000,23|15.000|35.000,24|15.000|35.000,25|15.000|35.000,26|15.000|35.000,27|15.000|35.000,28|15.000|35.000,29|15.000|35.000,30|15.000|35.000,31|15.000|35.000
+			}
+			ResourceType
+			{
+				Resource = Hexagen
+				MinColor = 0.939568579,0.970000029,0,1
+				MaxColor = 0.467882395,0,0.970000029,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = GrayWater
+				MinColor = 0.172117695,0.769999981,0.39858821,1
+				MaxColor = 0.930000007,0.452235311,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = GeoEnergy
+				MinColor = 0,0.790000021,0.492588311,1
+				MaxColor = 1,0.725490212,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|10.000|35.000,2|1.000|35.000,3|1.000|6.500,4|1.000|6.500,5|1.000|35.000,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|35.000,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|35.000
+			}
+			ResourceType
+			{
+				Resource = Methane
+				MinColor = 0.146117598,0.0432941206,0.689999998,1
+				MaxColor = 0,1,0.678431392,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|15.000,2|1.000|20.000,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|1.000|7.500,18|1.000|7.500,19|1.000|7.500,20|1.000|7.500,21|1.000|7.500,22|1.000|7.500,23|1.000|7.500,24|1.000|7.500,25|1.000|7.500,26|1.000|7.500,27|1.000|7.500,28|1.000|7.500,29|1.000|7.500,30|1.000|7.500,31|1.000|7.500
+			}
+			ResourceType
+			{
+				Resource = CarbonDioxide
+				MinColor = 0.720000029,0.505411804,0,1
+				MaxColor = 0,0.630274475,0.980000019,1
+				Transparency = 20
+				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|1.000|6.500,18|1.000|6.500,19|1.000|6.500,20|1.000|6.500,21|1.000|6.500,22|1.000|6.500,23|1.000|6.500,24|1.000|6.500,25|1.000|6.500,26|1.000|6.500,27|1.000|6.500,28|1.000|6.500,29|1.000|6.500,30|1.000|6.500,31|1.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Ammonia
+				MinColor = 0.446470588,0,0.689999998,1
+				MaxColor = 0.0705882385,1,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.700|10.000,1|0.700|14.000,2|2.500|35.000,3|0.700|10.000,4|2.500|35.000,5|0.700|10.000,6|5.000|55.000,7|0.700|10.000,8|0.700|10.000,9|0.700|10.000,10|0.700|10.000,11|0.700|10.000,12|0.700|10.000,13|0.700|10.000,14|0.700|10.000,15|0.700|90.000,16|0.700|10.000,17|0.700|10.000,18|0.700|10.000,19|0.700|10.000,20|0.700|10.000,21|0.700|10.000,22|0.700|10.000,23|0.700|10.000,24|0.700|10.000,25|0.700|10.000,26|0.700|10.000,27|0.700|10.000,28|0.700|10.000,29|0.700|10.000,30|0.700|10.000,31|0.700|10.000
+			}
+			ResourceType
+			{
+				Resource = Oxygen
+				MinColor = 0.0170588307,0.863176525,0.870000005,1
+				MaxColor = 1,0,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|1.000|7.500,18|1.000|7.500,19|1.000|7.500,20|1.000|7.500,21|1.000|7.500,22|1.000|7.500,23|1.000|7.500,24|1.000|7.500,25|1.000|7.500,26|1.000|7.500,27|1.000|7.500,28|1.000|7.500,29|1.000|7.500,30|1.000|7.500,31|1.000|7.500
+			}
+			ResourceType
+			{
+				Resource = Alumina
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|2.000|3.000,1|2.000|3.000,2|2.000|3.000,3|2.000|3.000,4|2.000|3.000,5|2.000|3.000,6|2.000|3.000,7|2.000|3.000,8|2.000|3.000,9|2.000|3.000,10|2.000|3.000,11|2.000|3.000,12|2.000|3.000,13|2.000|3.000,14|2.000|3.000,15|2.000|3.000,16|2.000|3.000,17|2.000|3.000,18|2.000|3.000,19|2.000|3.000,20|2.000|3.000,21|2.000|3.000,22|2.000|3.000,23|2.000|3.000,24|2.000|3.000,25|2.000|3.000,26|2.000|3.000,27|2.000|3.000,28|2.000|3.000,29|2.000|3.000,30|2.000|3.000,31|2.000|3.000
+			}
+			ResourceType
+			{
+				Resource = ExoticMinerals
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Gypsum
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Hydrates
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = LqdHe3
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = MetallicOre
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Minerals
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Monazite
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|3.000|4.000,1|3.000|4.000,2|3.000|4.000,3|3.000|4.000,4|3.000|4.000,5|3.000|4.000,6|3.000|4.000,7|3.000|4.000,8|3.000|4.000,9|3.000|4.000,10|3.000|4.000,11|3.000|4.000,12|3.000|4.000,13|3.000|4.000,14|3.000|4.000,15|3.000|4.000,16|3.000|4.000,17|3.000|4.000,18|3.000|4.000,19|3.000|4.000,20|3.000|4.000,21|3.000|4.000,22|3.000|4.000,23|3.000|4.000,24|3.000|4.000,25|3.000|4.000,26|3.000|4.000,27|3.000|4.000,28|3.000|4.000,29|3.000|4.000,30|3.000|4.000,31|3.000|4.000
+			}
+			ResourceType
+			{
+				Resource = RareMetals
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Silicates
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Uraninite
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Substrate
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = MetalOre
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+			}
+			ResourceType
+			{
+				Resource = Nitrogen
+				MinColor = 1,0,1,1
+				MaxColor = 0.899999976,0.600000024,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.000|0.001,1|0.000|0.001,2|0.000|0.001,3|0.000|0.001,4|0.000|0.001,5|0.000|0.001,6|0.000|0.001,7|0.000|0.001,8|0.000|0.001,9|0.000|0.001,10|0.000|0.001,11|0.000|0.001,12|0.000|0.001,13|0.000|0.001,14|0.000|0.001,15|0.000|0.001,16|0.000|0.001,17|0.000|0.001,18|0.000|0.001,19|0.000|0.001,20|0.000|0.001,21|0.000|0.001,22|0.000|0.001,23|0.000|0.001,24|0.000|0.001,25|0.000|0.001,26|0.000|0.001,27|0.000|0.001,28|0.000|0.001,29|0.000|0.001,30|0.000|0.001,31|0.000|0.001
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = ScrapYard
 		scene = 8, 5, 6, 7
+		PartInventory
+		{
+		}
+		PartTracker
+		{
+		}
+		VesselTracker
+		{
+		}
 	}
 	SCENARIO
 	{
@@ -1183,6 +3094,12 @@ GAME
 	{
 		name = SpaceAgeScenario
 		scene = 7, 5, 8
+		CHRONICLE
+		{
+		}
+		ACHIEVEMENTS
+		{
+		}
 	}
 	SCENARIO
 	{
@@ -1193,31 +3110,70 @@ GAME
 	{
 		name = TestFlightManagerScenario
 		scene = 7, 6, 5, 8
+		saveData = 
 	}
 	SCENARIO
 	{
 		name = TestFlightRnDScenario
 		scene = 7, 6, 5, 8
+		lastUpdateTime = 0
 	}
 	SCENARIO
 	{
 		name = TRScenario
 		scene = 5
+		personaliseSuit = True
+		hideBackpack = False
+		reflectionType = Real
+		Kerbals
+		{
+			Gemner Kerman = GENERIC GENERIC
+			Johan Kerman = GENERIC GENERIC
+			Helrick Kerman = GENERIC GENERIC
+			Lagerbart Kerman = GENERIC GENERIC
+		}
+		ClassSuits
+		{
+		}
 	}
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
 		scene = 5, 6, 7, 8
+		KACAlarmListStorage
+		{
+		}
 	}
 	SCENARIO
 	{
 		name = ODScenarioModule
 		scene = 6, 7, 8, 5
+		Vessels
+		{
+			VESSEL
+			{
+				name = Ast. HSJ-227 (unloaded)
+				id = a6f53b31-d474-4ef0-8abb-6f52a85faa17
+				persistence = default
+				code = S-4046902
+				Mass = 150000
+				Area = 2.7206989975195905
+				ReferenceBodyName = Sun
+				SMA = 40858588056.611435
+				ECC = 0.093999870717555348
+				INC = 1.79116802106509
+				LPE = 344.90112440308781
+				LAN = 51.36696289128605
+				MNA = 0.17416338258285763
+				EPH = 2043585.7560839844
+			}
+		}
 	}
 	SCENARIO
 	{
 		name = WBIContractScenario
 		scene = 5, 6, 7, 8
+		contractsAvailable = 0
 	}
 	SCENARIO
 	{
@@ -1228,6 +3184,7 @@ GAME
 	{
 		name = WBIOmniManager
 		scene = 5, 6, 7, 8
+		cycleStartTime = 0.02
 	}
 	SCENARIO
 	{
@@ -1243,33 +3200,480 @@ GAME
 	{
 		name = WBIRefinery
 		scene = 5, 6, 7, 8
+		lastUpdate = 0
 	}
 	SCENARIO
 	{
 		name = WBIToolTipManager
 		scene = 6
+		showToolTips = True
+		askToShowTips = True
 	}
 	SCENARIO
 	{
 		name = Kerbalism
 		scene = 5, 8, 7, 6
+		version = 3.11
+		uid = 467655321
+		uncreditedScience = 0
+		kerbals
+		{
+			Gemner___Kerman
+			{
+				rescue = True
+				disabled = False
+				eva_dead = False
+				rules
+				{
+				}
+			}
+			Johan___Kerman
+			{
+				rescue = True
+				disabled = False
+				eva_dead = False
+				rules
+				{
+				}
+			}
+			Helrick___Kerman
+			{
+				rescue = True
+				disabled = False
+				eva_dead = False
+				rules
+				{
+				}
+			}
+			Lagerbart___Kerman
+			{
+				rescue = True
+				disabled = False
+				eva_dead = False
+				rules
+				{
+				}
+			}
+		}
+		vessels2
+		{
+			a6f53b31-d474-4ef0-8abb-6f52a85faa17
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = False
+				cfg_malfunction = True
+				cfg_storm = False
+				cfg_script = False
+				cfg_highlights = True
+				cfg_showlink = True
+				cfg_show = True
+				deviceTransmit = True
+				solarPanelsAverageExposure = -1
+				scienceTransmitted = 0
+				StormData
+				{
+					storm_time = 0
+					storm_duration = 0
+					storm_generation = 0
+					storm_state = 0
+					msg_storm = 0
+					displayed_duration = 0
+					display_warning = True
+				}
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				supplies
+				{
+				}
+				SunShielding
+				{
+					maxPressure = 0
+					sspi
+					{
+					}
+				}
+				parts
+				{
+				}
+			}
+		}
+		sandboxScienceSubjects
+		{
+		}
+		subjectData
+		{
+		}
+		bodies
+		{
+			Kerbin
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 40648.363058604904
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Moho
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 41117.713296629299
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Eve
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 42252.467033672743
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Duna
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 39453.754553080311
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Jool
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 36494.717303318634
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Dres
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 41361.578596848631
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Eeloo
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 39581.810328407395
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Edna
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 41291.358862572764
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Lindor
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 39051.908131180506
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Hamek
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 36362.476195158379
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+			Nara
+			{
+				storm_time = 0
+				storm_duration = 0
+				storm_generation = 40020.726931105863
+				storm_state = 0
+				msg_storm = 0
+				displayed_duration = 0
+				display_warning = True
+			}
+		}
+		landmarks
+		{
+			belt_crossing = False
+			manned_orbit = False
+			space_harvest = False
+			space_analysis = False
+			heliopause_crossing = False
+		}
+		ui
+		{
+			win_left = 280
+			win_top = 100
+			map_viewed = False
+		}
 	}
 	SCENARIO
 	{
 		name = Trajectories
 		scene = 7
 	}
+	SCENARIO
+	{
+		name = HaystackScenarioModule
+		scene = 7, 8, 5
+		VERSION = 1
+		HiddenVessels
+		{
+			HaystackReContinued.HiddenVessels+NodeSeralizer
+			{
+			}
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 1.9.1
+		UT = 21524.384306966662
+		activeVessel = 0
+		mapViewFiltering = 0
+		commNetUIModeTracking = Network
+		commNetUIModeFlight = Path
+		VESSEL
+		{
+			pid = a6f53b31d4744ef08abb6f52a85faa17
+			persistentId = 45792097
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 0.02
+			lct = 0.02
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -1.4181845462059741
+			lon = -0.97479651107650633
+			alt = 37502790474.187691
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.298433661,0.402898014,-0.817398846,0.283672005
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			GroupOverride = 0
+			OverrideDefault = False,False,False,False
+			OverrideActionControl = 0,0,0,0
+			OverrideAxisControl = 0,0,0,0
+			OverrideGroupNames = ,,,
+			altDispState = DEFAULT
+			ORBIT
+			{
+				SMA = 40858588056.611435
+				ECC = 0.093999870717555348
+				INC = 1.79116802106509
+				LPE = 344.90112440308781
+				LAN = 51.36696289128605
+				MNA = 0.17416338258285763
+				EPH = 2043585.7560839844
+				REF = 0
+				IDENT = Sun
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 559298752
+				mid = 559298752
+				persistentId = 3535173631
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				sameVesselCollision = False
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				staticPressureAtm = 0
+				expt = 1
+				state = 0
+				PreFailState = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 0.02
+				lifetime = 586354.71038818359
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				ModularFlightIntegrator
+				{
+				}
+				AxisGroupsModule
+				{
+				}
+				TimekeeperModule
+				{
+				}
+				VesselModuleSave
+				{
+				}
+				UllageModule
+				{
+				}
+				LandertronController
+				{
+				}
+				KSPWheelVesselDebug
+				{
+				}
+				KSPWheelVesselControl
+				{
+				}
+				KSPWheelDustCamera
+				{
+				}
+				kOSVesselModule
+				{
+				}
+				RPMVesselComputer
+				{
+				}
+				FARVesselAero
+				{
+				}
+				FlightGUI
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+				VesselDataManager
+				{
+				}
+				BPB_VesselModule
+				{
+					vesselGuid = a6f53b31-d474-4ef0-8abb-6f52a85faa17
+					missionTime = 21516.272408066667
+					aborted = False
+					abortAcknowledged = False
+					abortTime = 0
+					postAbortActionCompleted = False
+					armed = False
+					status = Off
+					vertSpeedTriggerEnabled = False
+					vertSpeed = -40
+					gForceTriggerEnabled = False
+					gForceTrigger = 6
+					exceedingAoA = False
+					maxAoA = 20
+					explosiveTriggerEnabled = False
+					disableAfter = 600
+					actionAfterTimeout = 0
+					disableAtAltitudeKm = 100
+					disableAtAltitude = 100000
+					ignoreAoAAboveAltitudeKm = 100
+					ignoreAoAAboveAltitude = 100000
+					maxTimeoutActionG = 10
+					postAbortAction = 0
+					postAbortDelay = 0
+					delayPostAbortUntilSafe = False
+				}
+				SolverFlightSys
+				{
+				}
+				ModuleStabilization
+				{
+				}
+				GoldStrikeVesselModule
+				{
+					lastProspectLongitude = 0
+					lastProspectLatitude = 0
+					lastProspectAltitude = 0
+					lastProspectPlanet = -1
+					lastProspectBiome = 
+				}
+				WBIPressureOverride
+				{
+				}
+			}
+		}
+	}
 	LoaderInfo
 	{
-		KSPe v2.2.1.0 = True
+		KSPe v2.2.1.0 = False
 		ModuleManagerWatchDog v0.0.1.0 = True
-		Scale_Redist v1.0.0.0 / v2.5.0.19 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.19 = False
 		Hyperspace v1.1.0.0 = True
 		ModuleManager v4.1.4.0 = True
 		ClickThroughBlocker v0.1.10.11 / v1.0.0.0 = True
 		FilterExtensions v3.2.5.0 / v1.0.0.0 = True
-		KSPAPIExtensions v2.2.1.0 = True
-		KSPe.UI v2.2.1.0 = True
+		KSPAPIExtensions v2.2.1.0 = False
+		KSPe.UI v2.2.1.0 = False
 		aaa_Toolbar v1.8.0.5 = True
 		USITools v1.0.0.0 = True
 		ToolbarControl v0.1.9.4 / v1.0.0.0 = True
@@ -1404,7 +3808,7 @@ GAME
 		ICSharpCode.SharpZipLib v0.86.0.518 / v0.86.0 = True
 		kOS v1.2.1.0 = True
 		kOS.Safe v1.2.1.0 = True
-		KRASH v0.5.33.1 / v1.0.0.0 = True
+		KRASH v0.5.33.1 / v1.0.0.0 = False
 		KSPDev_LogConsole v2.1.7422.1031 / v2.1 for KSP v1 = True
 		KSPDev_Utils.2.2 v2.2.7417.673 / v2.2 for KSP v1 = True
 		KSPLogger v0.6.0.3 / v1.0.0.0 = True
@@ -1445,7 +3849,7 @@ GAME
 		AmpYear v1.5.7.0 = True
 		ProgressiveCBMaps v0.1.29.0 = True
 		ResearchBodies v1.11.0.0 = True
-		ResonantOrbitCalculator v0.0.6.1 / v1.4.4.0 = True
+		ResonantOrbitCalculator v0.0.6.1 / v1.4.4.0 = False
 		FXModuleConstrainPositionEx v0.4.1.0 / v0.4.0.0 = True
 		ModuleScienceExeperimentCamera v0.4.1.0 / v0.4.0.0 = True
 		SCANsat v1.20.2.0 / vv20.2 = True
@@ -1485,7 +3889,7 @@ GAME
 		KSPAlternateResourcePanel v2.10.0.0 = True
 		TUFX v1.0.0.0 = True
 		KSPe.Light.TweakScale v2.2.1.2 = True
-		Scale v2.5.0.19 = True
+		Scale v2.5.0.19 = False
 		TweakScaleCompanion_FS v0.0.2.0 = True
 		TweakScalerFSBuoyancy v0.0.2.0 = True
 		TweakScaleCompanion_KIS v0.0.2.0 = True
@@ -1734,27 +4138,36 @@ GAME
 		FinalFrontier.dat = True
 		Hyperspace.dll = True
 		ModuleManager.4.1.4.dll = True
-		ModuleManager.ConfigCache = True
-		ModuleManager.ConfigSHA = True
+		ModuleManager.ConfigCache = False
+		ModuleManager.ConfigSHA = False
 		ModuleManager.Physics = True
 		ModuleManager.TechTree = True
 		S.A.V.E.dat = True
 		toolbar-settings.dat = True
 		totaltime.dat = True
 		WBIPlayMode.cfg = True
+		KSPe v2.2.1.2 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.20 = True
+		KSPAPIExtensions v2.2.1.2 = True
+		KSPe.UI v2.2.1.2 = True
+		KRASH v0.5.33.2 / v1.0.0.0 = True
+		PartInfo v0.0.3.7 / v1.0.0.0 = True
+		ResonantOrbitCalculator v0.0.6.2 / v1.4.4.0 = True
+		Scale v2.5.0.20 = True
+		PartInfo = True
 	}
 	ROSTER
 	{
 		KERBAL
 		{
-			name = Jebediah Kerman
-			gender = Male
+			name = Gemner Kerman
+			gender = Female
 			type = Crew
-			trait = Pilot
-			brave = 0.5
-			dumb = 0.5
-			badS = True
-			veteran = True
+			trait = Engineer
+			brave = 0.0695581064
+			dumb = 0.300618172
+			badS = False
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -1771,10 +4184,11 @@ GAME
 			lightB = 0
 			completedFirstEVA = False
 			suit = Default
-			hero = True
+			hero = False
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -1782,18 +4196,21 @@ GAME
 			}
 			KerbalExt
 			{
+				experience
+				{
+				}
 			}
 		}
 		KERBAL
 		{
-			name = Bill Kerman
+			name = Johan Kerman
 			gender = Male
 			type = Crew
 			trait = Engineer
-			brave = 0.5
-			dumb = 0.800000012
+			brave = 0.770819485
+			dumb = 0.767989516
 			badS = False
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -1810,10 +4227,11 @@ GAME
 			lightB = 0
 			completedFirstEVA = False
 			suit = Default
-			hero = True
+			hero = False
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -1821,57 +4239,21 @@ GAME
 			}
 			KerbalExt
 			{
+				experience
+				{
+				}
 			}
 		}
 		KERBAL
 		{
-			name = Bob Kerman
-			gender = Male
-			type = Crew
-			trait = Scientist
-			brave = 0.300000012
-			dumb = 0.100000001
-			badS = False
-			veteran = True
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hasHelmetOn = False
-			hasNeckRingOn = False
-			lightR = 1
-			lightG = 0.5176
-			lightB = 0
-			completedFirstEVA = False
-			suit = Default
-			hero = True
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-			KerbalExt
-			{
-			}
-		}
-		KERBAL
-		{
-			name = Valentina Kerman
+			name = Helrick Kerman
 			gender = Female
 			type = Crew
-			trait = Pilot
-			brave = 0.550000012
-			dumb = 0.400000006
+			trait = Engineer
+			brave = 0.962930501
+			dumb = 0.403706849
 			badS = True
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -1888,10 +4270,11 @@ GAME
 			lightB = 0
 			completedFirstEVA = False
 			suit = Default
-			hero = True
+			hero = False
 			CAREER_LOG
 			{
 				flight = 0
+				0 = Training5,Kerbin
 			}
 			FLIGHT_LOG
 			{
@@ -1899,6 +4282,52 @@ GAME
 			}
 			KerbalExt
 			{
+				experience
+				{
+				}
+			}
+		}
+		KERBAL
+		{
+			name = Lagerbart Kerman
+			gender = Female
+			type = Crew
+			trait = Engineer
+			brave = 0.70055759
+			dumb = 0.81224978
+			badS = False
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hasHelmetOn = False
+			hasNeckRingOn = False
+			lightR = 1
+			lightG = 0.5176
+			lightB = 0
+			completedFirstEVA = False
+			suit = Default
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+				0 = Training5,Kerbin
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
 			}
 		}
 	}

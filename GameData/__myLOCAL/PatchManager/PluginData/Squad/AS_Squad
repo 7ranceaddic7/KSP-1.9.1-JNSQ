@@ -1,0 +1,8 @@
+//	Adjustments to Squad Parts
+//	Author: TranceaddicT
+//	File: AS_SquadAdjustments.cfg
+
+@PART[liquidEngine2]:FINAL	//	LV-T45 "Swivel" Liquid Fuel Engine
+{
+	%node_stack_bottom = 0.0, -7.21461, 0.0, 0.0, -1.0, 0.0
+}

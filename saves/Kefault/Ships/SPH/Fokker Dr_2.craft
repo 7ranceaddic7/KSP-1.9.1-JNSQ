@@ -2,7 +2,7 @@ ship = Fokker Dr.2
 version = 1.9.1
 description = 
 type = SPH
-size = 10.0275249,3.05096817,6.91055727
+size = 10.0275249,3.05096817,6.91055965
 steamPublishedFileId = 0
 persistentId = 3090775731
 rot = 0,0,0,1
@@ -16,7 +16,7 @@ PART
 {
 	part = FS.BiplaneCockpit_4294683096
 	partName = Part
-	persistentId = 639757359
+	persistentId = 236523297
 	pos = -0.0764099211,5.16223335,-0.613750935
 	attPos = 0,0,0
 	attPos0 = -0.0764099211,5.16223335,-0.613750935
@@ -35,8 +35,8 @@ PART
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
-	modCost = 15
-	modMass = 0.0355999991
+	modCost = 519.099976
+	modMass = -0.445165098
 	modSize = 0,0,0
 	link = FS.OblongToRoundAdapter_4294673810
 	link = FS.BiplaneTailFuselage_4294640848
@@ -383,7 +383,7 @@ PART
 		name = HardDrive
 		isEnabled = True
 		hdId = 0
-		effectiveDataCapacity = 0.5
+		effectiveDataCapacity = 1
 		effectiveSampleCapacity = 1
 		stagingEnabled = True
 		EVENTS
@@ -1084,6 +1084,30 @@ PART
 	}
 	MODULE
 	{
+		name = AntennaFailureModule
+		isEnabled = True
+		originalPower = 0
+		launched = False
+		endOfLife = False
+		hasFailed = False
+		failureType = communication failure
+		expectedLifetime = 6
+		chanceOfFailure = 0.0900000036
+		baseChanceOfFailure = 0.100000001
+		numberOfRepairs = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = TankFailureModule
 		isEnabled = True
 		leakingName = None
@@ -1092,7 +1116,7 @@ PART
 		hasFailed = False
 		failureType = none
 		expectedLifetime = 6
-		chanceOfFailure = 0.100000001
+		chanceOfFailure = 0.0900000036
 		baseChanceOfFailure = 0.100000001
 		numberOfRepairs = 0
 		stagingEnabled = True
@@ -1156,7 +1180,7 @@ PART
 			AYPwrPartList
 			{
 				PrtName = FS.BiplaneCockpit
-				PrtTitle = FS4BC Biplane Cockpit
+				PrtTitle = FS4BC Biplane Cockpit (UNPRESSURIZED) 
 				PrtModuleName = ModuleCommand
 				PrtSubsystem = False
 				PrtPower = 0
@@ -1170,42 +1194,6 @@ PART
 				PrtPreEmergShutDnStateActive = True
 				PrtEmergShutDnPriority = 2
 				ConsPartKey = 4294683096,ModuleCommand
-			}
-			AYPwrPartList
-			{
-				PrtName = FS.BiplaneCockpit
-				PrtTitle = FS4BC Biplane Cockpit
-				PrtModuleName = ModuleResourceConverter Ballast Exhaust Vent 
-				PrtSubsystem = False
-				PrtPower = 0.5
-				PrtPowerF = 0.5
-				PrtActive = True
-				PrtSolarDependant = False
-				PrtEditorInclude = True
-				PrtUserEditorInclude = True
-				PrtValidprtEmergShutDn = False
-				PrtEmergShutDnInclude = False
-				PrtPreEmergShutDnStateActive = True
-				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4294683096,ModuleResourceConverter Ballast Exhaust Vent 
-			}
-			AYPwrPartList
-			{
-				PrtName = FS.BiplaneCockpit
-				PrtTitle = FS4BC Biplane Cockpit
-				PrtModuleName = ModuleResourceConverter Dump Ballast 
-				PrtSubsystem = False
-				PrtPower = 0.5
-				PrtPowerF = 0.5
-				PrtActive = True
-				PrtSolarDependant = False
-				PrtEditorInclude = True
-				PrtUserEditorInclude = True
-				PrtValidprtEmergShutDn = False
-				PrtEmergShutDnInclude = False
-				PrtPreEmergShutDnStateActive = True
-				PrtEmergShutDnPriority = 2
-				ConsPartKey = 4294683096,ModuleResourceConverter Dump Ballast 
 			}
 			AYPwrPartList
 			{
@@ -1243,6 +1231,42 @@ PART
 				PrtEmergShutDnPriority = 2
 				ConsPartKey = 4294683096,SAS
 			}
+			AYPwrPartList
+			{
+				PrtName = FS.BiplaneCockpit
+				PrtTitle = FS4BC Biplane Cockpit (UNPRESSURIZED) 
+				PrtModuleName = ModuleResourceConverter Ballast Exhaust Vent 
+				PrtSubsystem = False
+				PrtPower = 0.5
+				PrtPowerF = 0.5
+				PrtActive = True
+				PrtSolarDependant = False
+				PrtEditorInclude = True
+				PrtUserEditorInclude = True
+				PrtValidprtEmergShutDn = False
+				PrtEmergShutDnInclude = False
+				PrtPreEmergShutDnStateActive = True
+				PrtEmergShutDnPriority = 2
+				ConsPartKey = 4294683096,ModuleResourceConverter Ballast Exhaust Vent 
+			}
+			AYPwrPartList
+			{
+				PrtName = FS.BiplaneCockpit
+				PrtTitle = FS4BC Biplane Cockpit (UNPRESSURIZED) 
+				PrtModuleName = ModuleResourceConverter Dump Ballast 
+				PrtSubsystem = False
+				PrtPower = 0.5
+				PrtPowerF = 0.5
+				PrtActive = True
+				PrtSolarDependant = False
+				PrtEditorInclude = True
+				PrtUserEditorInclude = True
+				PrtValidprtEmergShutDn = False
+				PrtEmergShutDnInclude = False
+				PrtPreEmergShutDnStateActive = True
+				PrtEmergShutDnPriority = 2
+				ConsPartKey = 4294683096,ModuleResourceConverter Dump Ballast 
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1252,7 +1276,7 @@ PART
 	{
 		name = ModuleSYPartTracker
 		isEnabled = True
-		id = 639757359
+		id = 236523297
 		TimesRecovered = 0
 		Inventoried = False
 		stagingEnabled = True
@@ -1403,7 +1427,7 @@ PART
 	{
 		name = ProcessController
 		isEnabled = False
-		running = True
+		running = False
 		valve_i = 0
 		stagingEnabled = True
 		EVENTS
@@ -1427,28 +1451,6 @@ PART
 		isEnabled = False
 		running = True
 		valve_i = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = False
-		running = True
-		valve_i = 6
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1513,135 +1515,8 @@ PART
 	{
 		name = Configure
 		isEnabled = True
-		cfg = !$None
-		prev_cfg = !$None
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = True
-		valve_i = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = True
-		valve_i = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = True
-		valve_i = 6
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = True
-		valve_i = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = False
-		valve_i = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Configure
-		isEnabled = True
-		cfg = !$None
-		prev_cfg = !$None
+		cfg = "0Telemetry Report$None
+		prev_cfg = "0Telemetry Report$None
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1679,7 +1554,7 @@ PART
 	{
 		name = Sensor
 		isEnabled = True
-		type = temperature
+		type = habitat_radiation
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1772,34 +1647,6 @@ PART
 	}
 	MODULE
 	{
-		name = Reliability
-		isEnabled = True
-		type = Antenna
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = SCANRPMStorage
 		isEnabled = True
 		stagingEnabled = True
@@ -1832,6 +1679,23 @@ PART
 		TargetPosition_y = 0
 		TargetPosition_z = 0
 		ManualTargetTxt = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = Configure
+		isEnabled = True
+		cfg = "0Telemetry Report$None
+		prev_cfg = "0Telemetry Report$None
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1896,6 +1760,937 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Fuselage
+		utilization = 86
+		mass = 0.0122348834
+		_numberOfAddedMLILayers = 0
+		partPrevTemperature = -1
+		stagingEnabled = True
+		volume = 100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LqdOxygen
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.89999976E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 90.1500015
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Kerosene
+			note = (pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 100
+			maxAmount = 100
+		}
+		TANK
+		{
+			name = LqdHydrogen
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 6.70000009E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 20.1499996
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = NTO
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = UDMH
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Hydrazine
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Aerozine50
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = HTP
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = AvGas
+			note = (pressurized)
+			utilization = 1
+			mass = 7.30000029E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Nitrogen
+			note = (pressurized)
+			utilization = 200
+			mass = 9.50000031E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = IRFNA-III
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = NitrousOxide
+			note = (pressurized)
+			utilization = 100
+			mass = 9.50000031E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Aniline
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Ethanol75
+			note = (pressurized)
+			utilization = 1
+			mass = 7.79999973E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Ethanol90
+			note = (pressurized)
+			utilization = 1
+			mass = 7.79999973E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Ethanol
+			note = (pressurized)
+			utilization = 1
+			mass = 7.79999973E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LqdAmmonia
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 237.649994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LqdMethane
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 111.449997
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Helium
+			note = (pressurized)
+			utilization = 200
+			mass = 0.000115000003
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = ClF3
+			note = (pressurized)
+			utilization = 1
+			mass = 0.000104999999
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = ClF5
+			note = (pressurized)
+			utilization = 1
+			mass = 0.000104999999
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Diborane
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 8.2999999E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 180.649994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Pentaborane
+			note = (pressurized)
+			utilization = 1
+			mass = 8.2999999E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Ethane
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 184.649994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Ethylene
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 169.449997
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = OF2
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 8.2999999E-05
+			cost = 0
+			loss_rate = 1.6E-11
+			temperature = 128.399994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LqdFluorine
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 0.000104999999
+			cost = 0
+			loss_rate = 8.8000000000000006E-11
+			temperature = 85.0400009
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = N2F4
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.50000036E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 200.149994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Methanol
+			note = (pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Furfuryl
+			note = (pressurized)
+			utilization = 1
+			mass = 7.89999976E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = UH25
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Tonka250
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Tonka500
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = FLOX30
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 8.15000021E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 216.149994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = FLOX70
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 0.000103500002
+			cost = 0
+			loss_rate = 0
+			temperature = 216.149994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = FLOX88
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 0.000113399998
+			cost = 0
+			loss_rate = 0
+			temperature = 216.149994
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = IWFNA
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = IRFNA-IV
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = AK20
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = AK27
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = CaveaB
+			note = (pressurized)
+			utilization = 1
+			mass = 8.49999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON1
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON3
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON10
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON15
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON20
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON25
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = ArgonGas
+			note = (pressurized)
+			utilization = 100
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = KryptonGas
+			note = (pressurized)
+			utilization = 100
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Hydrogen
+			note = (pressurized)
+			utilization = 100
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Oxygen
+			note = (pressurized)
+			utilization = 200
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Food
+			note = (pressurized)
+			utilization = 1
+			mass = 9.99999975E-06
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Water
+			note = (pressurized)
+			utilization = 1
+			mass = 9.99999975E-06
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = CarbonDioxide
+			note = (pressurized)
+			utilization = 200
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Waste
+			note = (pressurized)
+			utilization = 1
+			mass = 9.99999975E-06
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = WasteWater
+			note = (pressurized)
+			utilization = 1
+			mass = 9.99999975E-06
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Hydyne
+			note = (pressurized)
+			utilization = 1
+			mass = 7.79999973E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Syntin
+			note = (pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = (pressurized)
+			utilization = 1
+			mass = 8.09999983E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = (pressurized)
+			utilization = 1
+			mass = 7.6999997E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 100
+			mass = 2.99999992E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = ElectricCharge
+			note = (pressurized)
+			utilization = 7
+			mass = 0.00288999989
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LeadBallast
+			note = (pressurized)
+			utilization = 1
+			mass = 6.50000002E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleKerbalHealth
 		isEnabled = True
 		id = 535663043
@@ -1917,6 +2712,21 @@ PART
 		name = ModuleUPFMEvents
 		isEnabled = True
 		highlight = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartInfo
+		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2140,17 +2950,6 @@ PART
 	}
 	RESOURCE
 	{
-		name = LiquidFuel
-		amount = 20.000001788139397
-		maxAmount = 20.000001788139397
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
 		name = CompressedLiquids
 		amount = 0
 		maxAmount = 1000.0000894069698
@@ -2165,39 +2964,6 @@ PART
 		name = ReservePower
 		amount = 80.000007152557586
 		maxAmount = 80.000007152557586
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Food
-		amount = 1.3500001206994094
-		maxAmount = 1.3500001206994094
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Water
-		amount = 0.70000006258487879
-		maxAmount = 0.70000006258487879
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxygen
-		amount = 187.00001671910337
-		maxAmount = 187.00001671910337
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2237,13 +3003,24 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	RESOURCE
+	{
+		name = Kerosene
+		amount = 100
+		maxAmount = 100
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
 	part = FS.OblongToRoundAdapter_4294673810
 	partName = Part
 	persistentId = 2155037506
-	pos = -0.0764099211,5.16223335,0.414070845
+	pos = -0.0764099211,5.16223335,0.414071321
 	attPos = 0,0,0
 	attPos0 = 0,1.02782011,-1.1920929E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -2571,6 +3348,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -2593,8 +3385,8 @@ PART
 {
 	part = FS.BiplaneEngine_4294647076
 	partName = Part
-	persistentId = 2101821615
-	pos = -0.0764099211,5.16223335,0.72757113
+	persistentId = 778261928
+	pos = -0.0764099211,5.16223335,0.727571607
 	attPos = 0,0,0
 	attPos0 = 0,0.313500196,0
 	rot = 0.707106829,0,0,0.707106829
@@ -2725,21 +3517,6 @@ PART
 	}
 	MODULE
 	{
-		name = FSalternator
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = Driftless
 		isEnabled = True
 		stagingEnabled = True
@@ -2840,7 +3617,7 @@ PART
 		hasFailed = False
 		failureType = none
 		expectedLifetime = 6
-		chanceOfFailure = 0.100000001
+		chanceOfFailure = 0.0900000036
 		baseChanceOfFailure = 0.100000001
 		numberOfRepairs = 0
 		stagingEnabled = True
@@ -2883,6 +3660,24 @@ PART
 		}
 		VesselProdPartsList
 		{
+			AYPwrPartList
+			{
+				PrtName = FS.BiplaneEngine
+				PrtTitle = Biplane Engine
+				PrtModuleName = ModuleAlternator
+				PrtSubsystem = False
+				PrtPower = 0
+				PrtPowerF = 0
+				PrtActive = True
+				PrtSolarDependant = False
+				PrtEditorInclude = True
+				PrtUserEditorInclude = True
+				PrtValidprtEmergShutDn = False
+				PrtEmergShutDnInclude = False
+				PrtPreEmergShutDnStateActive = True
+				PrtEmergShutDnPriority = 2
+				ProdPartKey = 4294647076,ModuleAlternator
+			}
 		}
 		VesselConsPartsList
 		{
@@ -2895,7 +3690,7 @@ PART
 	{
 		name = ModuleSYPartTracker
 		isEnabled = True
-		id = 2101821615
+		id = 778261928
 		TimesRecovered = 0
 		Inventoried = False
 		stagingEnabled = True
@@ -3037,9 +3832,39 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleUPFMEvents
 		isEnabled = True
 		highlight = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartInfo
+		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3086,8 +3911,8 @@ PART
 {
 	part = FS.BiplaneTailFuselage_4294640848
 	partName = Part
-	persistentId = 122477605
-	pos = -0.0764099211,5.16223335,-1.03913176
+	persistentId = 4045358217
+	pos = -0.0764099211,5.16223335,-1.039132
 	attPos = 0,0,0
 	attPos0 = 0,-0.425380051,5.96046448E-08
 	rot = 0.707106829,0,0,0.707106829
@@ -3105,8 +3930,8 @@ PART
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
-	modCost = 0
-	modMass = -0.188662797
+	modCost = 10.25
+	modMass = -0.169412792
 	modSize = 0,0,0
 	link = FS.BiplaneRudder_4294625134
 	link = FS.BiplaneElevator_4294620834
@@ -3258,7 +4083,7 @@ PART
 		hasFailed = False
 		failureType = none
 		expectedLifetime = 6
-		chanceOfFailure = 0.100000001
+		chanceOfFailure = 0.0900000036
 		baseChanceOfFailure = 0.100000001
 		numberOfRepairs = 0
 		stagingEnabled = True
@@ -3313,7 +4138,7 @@ PART
 	{
 		name = ModuleSYPartTracker
 		isEnabled = True
-		id = 122477605
+		id = 4045358217
 		TimesRecovered = 0
 		Inventoried = False
 		stagingEnabled = True
@@ -3459,7 +4284,7 @@ PART
 		isEnabled = True
 		type = Fuselage
 		utilization = 86
-		mass = 0.0113372086
+		mass = 0.0305872075
 		_numberOfAddedMLILayers = 0
 		partPrevTemperature = -1
 		stagingEnabled = True
@@ -3495,8 +4320,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 0
-			maxAmount = 0
+			amount = 250
+			maxAmount = 250
 		}
 		TANK
 		{
@@ -4402,6 +5227,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -4430,13 +5270,24 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	RESOURCE
+	{
+		name = Kerosene
+		amount = 250
+		maxAmount = 250
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
 	part = FS.BiplaneRudder_4294625134
 	partName = Part
 	persistentId = 1568312130
-	pos = -0.0764099509,5.46067524,-4.57017517
+	pos = -0.0764099509,5.46067524,-4.57017708
 	attPos = 0,0,0
 	attPos0 = -2.98023224E-08,-3.53103805,-0.29844141
 	rot = -0.477698267,0.521348774,0.477698267,-0.521348774
@@ -4845,6 +5696,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -4868,7 +5734,7 @@ PART
 	part = FS.BiplaneElevator_4294620834
 	partName = Part
 	persistentId = 1561461856
-	pos = 0.0666326582,5.16223383,-4.39471817
+	pos = 0.0666326582,5.16223383,-4.39472008
 	attPos = 0,0,0
 	attPos0 = 0.143042579,-3.35558176,-5.96046306E-08
 	rot = 0.0345504731,0.706262231,0.706255317,-0.0346919969
@@ -5293,6 +6159,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -5316,10 +6197,10 @@ PART
 	part = FS.BiplaneElevator_4294620700
 	partName = Part
 	persistentId = 3699136527
-	pos = -0.2194525,5.16223383,-4.39471817
+	pos = -0.2194525,5.16223383,-4.39472008
 	attPos = 0,0,0
 	attPos0 = -0.143042579,-3.35558176,-5.96046306E-08
-	rot = -0.706255376,0.0346919373,-0.0345504805,-0.706262171
+	rot = -0.706255376,0.0346919261,-0.0345504694,-0.706262171
 	attRot = 0,0,0,1
 	attRot0 = 4.79817345E-06,0.00010002403,-0.0489617996,-0.998800635
 	mir = 1,1,1
@@ -5741,6 +6622,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -5764,7 +6660,7 @@ PART
 	part = FS.BiplaneWingShort_4294617366
 	partName = Part
 	persistentId = 2929644574
-	pos = 1.17788553,4.84935474,-0.451925278
+	pos = 1.17788553,4.84935474,-0.451925159
 	attPos = 0,-0.19488734,0
 	attPos0 = 1.25429547,0.356712699,0.312878609
 	rot = -4.21468513E-08,0.707106769,0.707106888,0
@@ -6105,6 +7001,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -6128,7 +7039,7 @@ PART
 	part = FS.BiplaneWingShort_4294617228
 	partName = Part
 	persistentId = 2095434814
-	pos = -1.3307054,4.84935474,-0.451925159
+	pos = -1.3307054,4.84935474,-0.451925039
 	attPos = 0,-0.19488734,0
 	attPos0 = -1.25429547,0.356712818,0.312878609
 	rot = -0.707107067,-3.0908609E-08,1.12382272E-08,-0.70710659
@@ -6469,6 +7380,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -6492,7 +7418,7 @@ PART
 	part = FS.BiplaneWingCenter_4294615130
 	partName = Part
 	persistentId = 4151825673
-	pos = -0.0764099211,5.36223364,0.386250496
+	pos = -0.0764099211,5.36223364,0.386250973
 	attPos = -4.47034836E-08,0.717503309,0.310920179
 	attPos0 = 4.47034836E-08,0.282497078,-0.510920584
 	rot = -0.707106769,0,0,-0.707106888
@@ -6833,6 +7759,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -6856,7 +7797,7 @@ PART
 	part = FS.BiplaneWingMain_4294610492
 	partName = Part
 	persistentId = 1095812691
-	pos = 0.659701526,6.10981846,0.448423386
+	pos = 0.659701526,6.10981941,0.448423862
 	attPos = -0.0451388359,0.0600832924,-0.00488901138
 	attPos0 = 0.781250298,0.00208960404,-0.74269563
 	rot = 0,0.707106829,0.707106829,0
@@ -7294,6 +8235,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -7317,7 +8273,7 @@ PART
 	part = FS.BiplaneWingMain_4294610438
 	partName = Part
 	persistentId = 2039411376
-	pos = -0.812521398,6.10981941,0.448423386
+	pos = -0.812521398,6.10982037,0.448423862
 	attPos = 0.0451388359,0.0600832924,-0.00488901138
 	attPos0 = -0.781250298,0.00208972325,-0.742695749
 	rot = -0.707106948,-3.09086197E-08,-3.09086197E-08,-0.707106709
@@ -7755,6 +8711,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -7778,7 +8749,7 @@ PART
 	part = FS.BiplaneWingShort_4294603066
 	partName = Part
 	persistentId = 730528652
-	pos = 2.74063635,4.85240746,-0.45359242
+	pos = 2.74063635,4.85240746,-0.4535923
 	attPos = 0,0,0
 	attPos0 = -1.5627507,-0.00166723563,0.00305261882
 	rot = -4.21468478E-08,0.70710665,0.707107008,0
@@ -8119,6 +9090,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -8142,7 +9128,7 @@ PART
 	part = FS.BiplaneWingShort_4294602982
 	partName = Part
 	persistentId = 785213775
-	pos = -2.89345598,4.85240746,-0.453592122
+	pos = -2.89345598,4.85240746,-0.453592002
 	attPos = 0,0,0
 	attPos0 = -1.5627507,-0.00166711549,-0.00305275433
 	rot = -0.707107127,-3.0908609E-08,1.12382175E-08,-0.707106531
@@ -8483,6 +9469,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -8506,7 +9507,7 @@ PART
 	part = FS.BiplaneWingRound_4294586380
 	partName = Part
 	persistentId = 619974362
-	pos = 3.78470445,6.11398983,0.260498941
+	pos = 3.78470445,6.11399078,0.260499418
 	attPos = 0,0,0
 	attPos0 = -3.12500072,-0.187923953,0.00417073956
 	rot = -4.21468513E-08,0.707106769,0.707106888,0
@@ -8931,6 +9932,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -8954,7 +9970,7 @@ PART
 	part = FS.BiplaneWingRound_4294586262
 	partName = Part
 	persistentId = 259277328
-	pos = -3.93752408,6.11398983,0.260498941
+	pos = -3.93752408,6.11399078,0.260499418
 	attPos = 0,0,0
 	attPos0 = -3.12500286,-0.187923819,-0.00417094817
 	rot = -0.707106829,-3.09086268E-08,1.12382139E-08,-0.707106829
@@ -9379,6 +10395,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -9402,7 +10433,7 @@ PART
 	part = FS.BiplaneWingTip_4294576918
 	partName = Part
 	persistentId = 3645288312
-	pos = 3.52188873,4.85273886,-0.445231795
+	pos = 3.52188969,4.85273886,-0.445231676
 	attPos = 0,0,0
 	attPos0 = -0.78125006,0.00836057588,0.000331359071
 	rot = -4.21468442E-08,0.707106531,0.707107127,-3.55271368E-15
@@ -9742,6 +10773,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -9765,7 +10811,7 @@ PART
 	part = FS.BiplaneWingTip_4294576876
 	partName = Part
 	persistentId = 2110041946
-	pos = -3.67470646,4.85273886,-0.445231497
+	pos = -3.67470646,4.85273886,-0.445231378
 	attPos = 0,0,0
 	attPos0 = -0.781250596,0.00836058054,-0.000331430754
 	rot = -0.707107186,-3.09086019E-08,1.12382139E-08,-0.707106471
@@ -10105,6 +11151,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -10128,10 +11189,10 @@ PART
 	part = FS.BiplaneWheel_4294567954
 	partName = Part
 	persistentId = 1634991520
-	pos = -0.255227029,4.7867465,0.457006097
+	pos = -0.255227029,4.7867465,0.457006574
 	attPos = 0.425285757,-0.00152444839,-0.457190007
 	attPos0 = -0.60410285,0.0444595702,0.832676828
-	rot = -0.00626567006,-0.00178565457,0.0382642075,-0.999246597
+	rot = -0.00626567006,-0.00178565457,0.0382642001,-0.999246597
 	attRot = 9.062461E-09,-5.4491438E-09,0.419424891,-0.907790005
 	attRot0 = 0.70214349,0.0257942416,0.0283195339,-0.711004436
 	mir = 1,1,1
@@ -10501,6 +11562,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -10524,7 +11600,7 @@ PART
 	part = FS.BiplaneWheel_4294564082
 	partName = Part
 	persistentId = 4249361621
-	pos = 0.102407187,4.7867465,0.457006335
+	pos = 0.102407187,4.7867465,0.457006812
 	attPos = -0.425285757,-0.00152420998,-0.457190007
 	attPos0 = 0.60410285,0.0444595702,0.832676828
 	rot = -0.0382642224,0.999246538,0.00626569986,0.00178560615
@@ -10897,6 +11973,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -10920,7 +12011,7 @@ PART
 	part = FS.BiplaneSkid_4294562272
 	partName = Part
 	persistentId = 1497116975
-	pos = -0.0764099211,4.86161375,-4.33802319
+	pos = -0.0764099211,4.86161375,-4.33802605
 	attPos = 0,0,0
 	attPos0 = 0,-3.2988863,0.30061996
 	rot = 0.740555763,0,0,0.671995163
@@ -11226,6 +12317,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -11249,7 +12355,7 @@ PART
 	part = FS.BiplaneWingShort_4294616304
 	partName = Part
 	persistentId = 4283570332
-	pos = -1.2764101,5.40552473,-0.213750362
+	pos = -1.2764101,5.40552473,-0.213750124
 	attPos = 0.0305994749,0.128937751,0.0864467621
 	attPos0 = -1.23059952,0.271062434,-0.3297382
 	rot = -0.707106888,-3.13976045E-08,-2.43179432E-08,-0.707106769
@@ -11590,6 +12696,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -11613,7 +12734,7 @@ PART
 	part = FS.BiplaneWingShort_4294607974
 	partName = Part
 	persistentId = 258212312
-	pos = -2.8391614,5.40018177,-0.21373409
+	pos = -2.8391614,5.40018177,-0.213733852
 	attPos = 0,1.78813934E-07,0.0145531166
 	attPos0 = -1.5627501,1.61789103E-05,-0.00921020471
 	rot = -0.707107008,-3.13976152E-08,-2.43179574E-08,-0.70710665
@@ -11954,6 +13075,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -11977,7 +13113,7 @@ PART
 	part = FS.BiplaneWingRound_4294583248
 	partName = Part
 	persistentId = 3406546958
-	pos = -3.62041283,5.40500069,-0.210019529
+	pos = -3.62041283,5.40500069,-0.21001929
 	attPos = 0,0,0
 	attPos0 = -0.781250775,0.0037145419,-0.00481897313
 	rot = -0.707107008,-3.13976045E-08,-2.43179556E-08,-0.70710665
@@ -12402,6 +13538,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -12425,7 +13576,7 @@ PART
 	part = FS.BiplaneWingShort_4287572222
 	partName = Part
 	persistentId = 284531379
-	pos = 1.12359023,5.40552473,-0.213750333
+	pos = 1.12359023,5.40552473,-0.213750094
 	attPos = -0.0305994749,0.12893787,0.0864467025
 	attPos0 = 1.23059952,0.271062344,-0.32973817
 	rot = -6.590684E-09,0.707106709,0.707106948,4.88982188E-10
@@ -12766,6 +13917,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -12789,10 +13955,10 @@ PART
 	part = FS.BiplaneWingShort_4287572148
 	partName = Part
 	persistentId = 69841739
-	pos = 2.686342,5.40018177,-0.21373421
+	pos = 2.686342,5.40018177,-0.213733971
 	attPos = 0,1.78813934E-07,0.0145531166
 	attPos0 = -1.5627501,1.61789103E-05,-0.00921020471
-	rot = -6.59067778E-09,0.70710659,0.707107067,4.88990182E-10
+	rot = -6.59067823E-09,0.70710659,0.707107067,4.88990182E-10
 	attRot = 0,0,0,1
 	attRot0 = 4.17232513E-07,-3.55271368E-15,1.59872116E-14,1
 	mir = 1,1,1
@@ -13130,6 +14296,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -13153,7 +14334,7 @@ PART
 	part = FS.BiplaneWingRound_4287572074
 	partName = Part
 	persistentId = 3459749573
-	pos = 3.46759319,5.40500069,-0.210019708
+	pos = 3.46759319,5.40500069,-0.210019469
 	attPos = 0,0,0
 	attPos0 = -0.781250775,0.0037145419,-0.00481897313
 	rot = -6.59067734E-09,0.70710659,0.707107067,4.8898019E-10
@@ -13570,6 +14751,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAeroReentry
 		isEnabled = True
 		dead = False
@@ -13592,11 +14788,11 @@ PART
 {
 	part = bluedog.Titan.Transtage.Antenna_4285762724
 	partName = Part
-	persistentId = 4268230515
-	pos = -0.0764099211,5.84041691,-0.970834494
+	persistentId = 1855354505
+	pos = -0.0764099211,5.84041691,-0.970834732
 	attPos = -5.21540642E-08,0.136848271,-0.00209760666
 	attPos0 = 5.21540642E-08,-0.0685510933,-0.676085711
-	rot = 0.709857762,1.20124429E-12,-1.19191582E-12,-0.704345286
+	rot = 0.709857762,1.20124407E-12,-1.1919156E-12,-0.704345286
 	attRot = 6.54036459E-20,0.0397559255,0.999209464,-3.21103856E-20
 	attRot0 = 0.99999249,6.59628602E-15,-1.69221961E-12,0.00389793515
 	mir = 1,1,1
@@ -13775,6 +14971,30 @@ PART
 	}
 	MODULE
 	{
+		name = AntennaFailureModule
+		isEnabled = True
+		originalPower = 0
+		launched = False
+		endOfLife = False
+		hasFailed = False
+		failureType = communication failure
+		expectedLifetime = 6
+		chanceOfFailure = 0.0900000036
+		baseChanceOfFailure = 0.100000001
+		numberOfRepairs = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ControllingRecoveryModule
 		isEnabled = True
 		recoveryOwner = x
@@ -13811,8 +15031,8 @@ PART
 				PrtTitle = Titan III Engineering Antenna
 				PrtModuleName = ModuleDataTransmitter
 				PrtSubsystem = False
-				PrtPower = 10
-				PrtPowerF = 10
+				PrtPower = 8.108
+				PrtPowerF = 8.10823059
 				PrtActive = True
 				PrtSolarDependant = False
 				PrtEditorInclude = True
@@ -13832,7 +15052,7 @@ PART
 	{
 		name = ModuleSYPartTracker
 		isEnabled = True
-		id = 4268230515
+		id = 1855354505
 		TimesRecovered = 0
 		Inventoried = False
 		stagingEnabled = True
@@ -13939,6 +15159,50 @@ PART
 	}
 	MODULE
 	{
+		name = PlannerController
+		isEnabled = True
+		considered = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = Reliability
+		isEnabled = True
+		type = ModuleDataTransmitter
+		broken = False
+		critical = False
+		quality = False
+		last = 0
+		next = 0
+		last_inspection = 0
+		needMaintenance = False
+		enforce_breakdown = False
+		running = False
+		operation_duration = 0
+		fail_duration = 0
+		ignitions = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleGeneratorAntenna
 		isEnabled = True
 		generatorIsActive = False
@@ -13967,6 +15231,37 @@ PART
 				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleUPFMEvents
+		isEnabled = True
+		highlight = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{

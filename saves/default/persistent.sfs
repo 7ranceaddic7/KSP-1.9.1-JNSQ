@@ -115,7 +115,6 @@ GAME
 		{
 			weldRequiresEVA = True
 			weldRequiresRepairSkill = True
-			keepDockingPorts = False
 		}
 		LNSettings
 		{
@@ -308,6 +307,7 @@ GAME
 			payToReconfigure = True
 			requiresSkillCheck = True
 			enableDebugLogging = False
+			emailConverterResults = True
 		}
 		RAParameters
 		{
@@ -327,6 +327,14 @@ GAME
 			CutoffVelocity = 10
 			HighCut = 12
 			LowCut = 6
+		}
+		PreferencesRadiation
+		{
+			lifetime = False
+			stormFrequency = 0.4
+			stormDurationHours = 2
+			stormRadiation = 5
+			shieldingEfficiency = 0.9
 		}
 		KerbalHealthRadiationSettings
 		{
@@ -350,14 +358,6 @@ GAME
 			DecontaminationAstronautComplexLevel = 3
 			DecontaminationRNDLevel = 3
 		}
-		PreferencesRadiation
-		{
-			lifetime = False
-			stormFrequency = 0.4
-			stormDurationHours = 2
-			stormRadiation = 5
-			shieldingEfficiency = 0.9
-		}
 		StatsGameSettings
 		{
 			AlwaysShow = True
@@ -366,6 +366,12 @@ GAME
 			HoverHighlight = True
 			TransferButton = True
 			ReloadDelay = 5
+		}
+		PartInfoSettings
+		{
+			WindowHeightPercent = 75
+			availableInFlight = True
+			useAltSkin = True
 		}
 		OD
 		{
@@ -465,6 +471,19 @@ GAME
 			prospectResetCost = 100
 			bonusPerSkillPoint = 1
 		}
+		JanitorsClosetSettings
+		{
+			toolbarEnabled = True
+			toolbarPopupsEnabled = True
+			editorMenuPopupEnabled = True
+			hoverTimeout = 0.5
+			enabeHoverOnToolbarIcons = True
+			useKerboKatzToolbar = True
+			buttonIdent = False
+			buttonTooltip = True
+			showMod = True
+			debug = False
+		}
 		KerbalHealthGeneralSettings
 		{
 			modEnabled = True
@@ -482,19 +501,6 @@ GAME
 			ExhaustionEndHealth = 0.25
 			DebugMode = False
 			ResetSettings = False
-		}
-		JanitorsClosetSettings
-		{
-			toolbarEnabled = True
-			toolbarPopupsEnabled = True
-			editorMenuPopupEnabled = True
-			hoverTimeout = 0.5
-			enabeHoverOnToolbarIcons = True
-			useKerboKatzToolbar = True
-			buttonIdent = False
-			buttonTooltip = True
-			showMod = True
-			debug = False
 		}
 		KURSSettings
 		{
@@ -536,6 +542,11 @@ GAME
 		{
 			ConsumeMachinery = True
 		}
+		AchOptions
+		{
+			useKSPskin = False
+			achievementDisplayTime = 10
+		}
 		BPB_Options
 		{
 			useKSPskin = True
@@ -543,11 +554,6 @@ GAME
 			activeInVAB = False
 			activeInSPH = False
 			allowChangeInFlight = False
-		}
-		AchOptions
-		{
-			useKSPskin = False
-			achievementDisplayTime = 10
 		}
 		BPB_Options2
 		{
@@ -875,16 +881,6 @@ GAME
 			facilityLevelTS = 3
 			facilityLevelVAB = 3
 		}
-		KRASH_Settings
-		{
-			CostAdj = 100
-			CostAdjustment = 1
-			wireframes = False
-			defaultAtmoStartingAltitude = 75000
-			defaultNoAtmoStartingAltitude = 10000
-			costAdjustment = 1
-			noChargeDuringTimewarp = True
-		}
 		EL
 		{
 			lightFadeCoefficient = 1
@@ -899,6 +895,16 @@ GAME
 		PM
 		{
 			EnabledForSave = True
+		}
+		KRASH_Settings
+		{
+			CostAdj = 100
+			CostAdjustment = 1
+			wireframes = False
+			defaultAtmoStartingAltitude = 75000
+			defaultNoAtmoStartingAltitude = 10000
+			costAdjustment = 1
+			noChargeDuringTimewarp = True
 		}
 		PAPI
 		{
@@ -918,12 +924,10 @@ GAME
 			UseUpgrades = True
 			hideSpaceCenterButton = False
 		}
-		TC
+		EEX
 		{
-			showStockTooltips = True
-			hoverTimeout = 0.5
-			debugMode = False
-			oldDebugMode = False
+			vabHeight = 5
+			sphHeight = 5
 		}
 		SR3
 		{
@@ -945,6 +949,13 @@ GAME
 			stopWarpAtBudgetPeriod = True
 			stopWarpOnNewYear = True
 			convergingRate = 0.5
+		}
+		TC
+		{
+			showStockTooltips = True
+			hoverTimeout = 0.5
+			debugMode = False
+			oldDebugMode = False
 		}
 		CrewRandRCustomParams
 		{
@@ -968,11 +979,6 @@ GAME
 			size8 = 5
 			size9 = 7.5
 			resetSizes = False
-		}
-		EEX
-		{
-			vabHeight = 5
-			sphHeight = 5
 		}
 		FMRS_Settings
 		{
@@ -1237,7 +1243,7 @@ GAME
 	SCENARIO
 	{
 		name = CommNetScenario
-		scene = 4
+		scene = 7, 8, 5, 6
 	}
 	SCENARIO
 	{
@@ -3659,15 +3665,15 @@ GAME
 	}
 	LoaderInfo
 	{
-		KSPe v2.2.1.0 = True
+		KSPe v2.2.1.0 = False
 		ModuleManagerWatchDog v0.0.1.0 = True
-		Scale_Redist v1.0.0.0 / v2.5.0.19 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.19 = False
 		Hyperspace v1.1.0.0 = True
 		ModuleManager v4.1.4.0 = True
 		ClickThroughBlocker v0.1.10.11 / v1.0.0.0 = True
 		FilterExtensions v3.2.5.0 / v1.0.0.0 = True
-		KSPAPIExtensions v2.2.1.0 = True
-		KSPe.UI v2.2.1.0 = True
+		KSPAPIExtensions v2.2.1.0 = False
+		KSPe.UI v2.2.1.0 = False
 		aaa_Toolbar v1.8.0.5 = True
 		USITools v1.0.0.0 = True
 		ToolbarControl v0.1.9.4 / v1.0.0.0 = True
@@ -3802,7 +3808,7 @@ GAME
 		ICSharpCode.SharpZipLib v0.86.0.518 / v0.86.0 = True
 		kOS v1.2.1.0 = True
 		kOS.Safe v1.2.1.0 = True
-		KRASH v0.5.33.1 / v1.0.0.0 = True
+		KRASH v0.5.33.1 / v1.0.0.0 = False
 		KSPDev_LogConsole v2.1.7422.1031 / v2.1 for KSP v1 = True
 		KSPDev_Utils.2.2 v2.2.7417.673 / v2.2 for KSP v1 = True
 		KSPLogger v0.6.0.3 / v1.0.0.0 = True
@@ -3843,7 +3849,7 @@ GAME
 		AmpYear v1.5.7.0 = True
 		ProgressiveCBMaps v0.1.29.0 = True
 		ResearchBodies v1.11.0.0 = True
-		ResonantOrbitCalculator v0.0.6.1 / v1.4.4.0 = True
+		ResonantOrbitCalculator v0.0.6.1 / v1.4.4.0 = False
 		FXModuleConstrainPositionEx v0.4.1.0 / v0.4.0.0 = True
 		ModuleScienceExeperimentCamera v0.4.1.0 / v0.4.0.0 = True
 		SCANsat v1.20.2.0 / vv20.2 = True
@@ -3883,7 +3889,7 @@ GAME
 		KSPAlternateResourcePanel v2.10.0.0 = True
 		TUFX v1.0.0.0 = True
 		KSPe.Light.TweakScale v2.2.1.2 = True
-		Scale v2.5.0.19 = True
+		Scale v2.5.0.19 = False
 		TweakScaleCompanion_FS v0.0.2.0 = True
 		TweakScalerFSBuoyancy v0.0.2.0 = True
 		TweakScaleCompanion_KIS v0.0.2.0 = True
@@ -4132,14 +4138,23 @@ GAME
 		FinalFrontier.dat = True
 		Hyperspace.dll = True
 		ModuleManager.4.1.4.dll = True
-		ModuleManager.ConfigCache = True
-		ModuleManager.ConfigSHA = True
+		ModuleManager.ConfigCache = False
+		ModuleManager.ConfigSHA = False
 		ModuleManager.Physics = True
 		ModuleManager.TechTree = True
 		S.A.V.E.dat = True
 		toolbar-settings.dat = True
 		totaltime.dat = True
 		WBIPlayMode.cfg = True
+		KSPe v2.2.1.2 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.20 = True
+		KSPAPIExtensions v2.2.1.2 = True
+		KSPe.UI v2.2.1.2 = True
+		KRASH v0.5.33.2 / v1.0.0.0 = True
+		PartInfo v0.0.3.7 / v1.0.0.0 = True
+		ResonantOrbitCalculator v0.0.6.2 / v1.4.4.0 = True
+		Scale v2.5.0.20 = True
+		PartInfo = True
 	}
 	ROSTER
 	{
@@ -4316,25 +4331,7 @@ GAME
 			}
 		}
 	}
-	MESSAGESYSTEM
-	{
-		flash = False
-		MESSAGE
-		{
-			title = Screen Message
-			message = <b>KERBALISM WARNING</b>~n~n<color=#FF4500>Mods with limited compatibility found:</color>~n- CommNetAntennasInfo~n- ResearchBodies~nYou might have problems with these mods. Please consult the FAQ on on kerbalism.github.io~n~n
-			color = 2
-			icon = 5
-			read = False
-		}
-	}
 	VMSNode
 	{
-		VesselModuleSaveFrameworkVesselModuleSave
-		{
-			a6f53b31-d474-4ef0-8abb-6f52a85faa17
-			{
-			}
-		}
 	}
 }
