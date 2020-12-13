@@ -15,7 +15,7 @@
   <AutoSortByUpdate>true</AutoSortByUpdate>
   <ActiveFilter>1</ActiveFilter>
   <SortColumns>
-    <string>UpdateCol</string>
+    <string>Installed</string>
   </SortColumns>
   <MultiSortDescending>
     <boolean>false</boolean>
@@ -31,10 +31,10 @@
     <Width>1216</Width>
     <Height>833</Height>
   </WindowSize>
-  <PanelPosition>1069</PanelPosition>
-  <ModInfoPosition>611</ModInfoPosition>
+  <PanelPosition>854</PanelPosition>
+  <ModInfoPosition>595</ModInfoPosition>
   <WindowLoc>
-    <X>226</X>
-    <Y>114</Y>
+    <X>1483</X>
+    <Y>10</Y>
   </WindowLoc>
 </Configuration>

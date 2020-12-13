@@ -17,13 +17,18 @@ Screenshots/
 sounds/
 thumbs/
 UserLoadingScreens/
-*.log
-*.exe
+.DS_Store
+*.adoc
 *.bak
+*.exe
+*.log
+*.md
+*.version
 *.zip
 *.7z
+[Ll]egalNotice
 [Ll]egalNotice.*
-[Ll]icense.*
+[Ll][Ii][Cc][Ee][Nn}[Ss][Ee]*
 [Rr]ead[Mm]e.*
 buildID64.txt
 Player - Shortcut.lnk

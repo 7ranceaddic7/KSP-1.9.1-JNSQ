@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <bool name="vizualize">1</bool>
+    <bool name="stageParachutes">0</bool>
+    <bool name="stageLaunchClamps">0</bool>
+    <int name="launchClampsStage">0</int>
+    <bool name="stagesepratrons">1</bool>
+    <bool name="useSmartStage">0</bool>
+    <int name="windowRectX">477</int>
+    <int name="windowRectY">188</int>
+</config>

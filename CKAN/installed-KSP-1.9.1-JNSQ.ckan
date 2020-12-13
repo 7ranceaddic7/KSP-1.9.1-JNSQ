@@ -3,7 +3,7 @@
     "identifier": "installed-KSP-1-9-1-JNSQ",
     "name": "installed-KSP-1.9.1-JNSQ",
     "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ KSP instance",
-    "version": "2020.12.13.11.36.27",
+    "version": "2020.12.13.01.50.30",
     "license": [
         "unknown"
     ],
@@ -751,6 +751,158 @@
         {
             "name": "HullcamVDSContinued",
             "version": "0.2.0.1"
+        },
+        {
+            "name": "DockingCamKURS",
+            "version": "1.3.8"
+        },
+        {
+            "name": "DockingPortSoundFX",
+            "version": "v2.1.12"
+        },
+        {
+            "name": "NavballDockAlignIndCE",
+            "version": "1.1.1"
+        },
+        {
+            "name": "AdvancedJetEngine",
+            "version": "v2.15.0"
+        },
+        {
+            "name": "AJEExtendedConfigs",
+            "version": "2:v2.0.5"
+        },
+        {
+            "name": "AstronomersVisualPack",
+            "version": "2:v4.04"
+        },
+        {
+            "name": "AutoAsparagus",
+            "version": "1:v2.3.0"
+        },
+        {
+            "name": "ChattererExtended",
+            "version": "0.6.2"
+        },
+        {
+            "name": "CollisionFXReUpdated",
+            "version": "1.1.0"
+        },
+        {
+            "name": "CommNetManager",
+            "version": "1.0.6"
+        },
+        {
+            "name": "CommunityDeltaVMaps",
+            "version": "1:2.7"
+        },
+        {
+            "name": "ContractConfigurator-CommNetRelays",
+            "version": "v2.1.0"
+        },
+        {
+            "name": "CustomAsteroids",
+            "version": "v1.8.0"
+        },
+        {
+            "name": "CustomAsteroids-Pops-Stock-Inner",
+            "version": "v1.8.0"
+        },
+        {
+            "name": "CustomAsteroids-Pops-Stock-Outer",
+            "version": "v1.8.0"
+        },
+        {
+            "name": "CustomBarnKit",
+            "version": "1.1.21.0"
+        },
+        {
+            "name": "ExtendedAntennaProgression",
+            "version": "v0.1.2"
+        },
+        {
+            "name": "FuseBoxContinued",
+            "version": "0.1.17.1"
+        },
+        {
+            "name": "KerbalEngineerRedux",
+            "version": "1.1.7.2"
+        },
+        {
+            "name": "KerbalHacksDroptankWrapper",
+            "version": "1.0"
+        },
+        {
+            "name": "KerbalismCompanionCalculator",
+            "version": "v1.3.0"
+        },
+        {
+            "name": "KSPRC-CityLights",
+            "version": "0.7_PreRelease_3"
+        },
+        {
+            "name": "MemorialWall",
+            "version": "2.0.0.2"
+        },
+        {
+            "name": "Milkyway-Skybox-SpaceEngine",
+            "version": "1.0"
+        },
+        {
+            "name": "MinAmbLightUpd",
+            "version": "1.2.6"
+        },
+        {
+            "name": "PAPILights",
+            "version": "0.5.0.5"
+        },
+        {
+            "name": "PAWS",
+            "version": "2.0.0.2"
+        },
+        {
+            "name": "RCSBuildAid",
+            "version": "v1.0.3"
+        },
+        {
+            "name": "StarTrekRebootUniformPack",
+            "version": "1.00"
+        },
+        {
+            "name": "surfacelights",
+            "version": "1.16"
+        },
+        {
+            "name": "TALSphericalToroidalPack",
+            "version": "3.12"
+        },
+        {
+            "name": "TooManyOrbits",
+            "version": "1.1.6.3"
+        },
+        {
+            "name": "TrackingStationEvolved",
+            "version": "6.0"
+        },
+        {
+            "name": "ZZZRadioTelescope",
+            "version": "1.0.5"
+        },
+        {
+            "name": "SmartStage",
+            "version": "1:2.9.14"
+        },
+        {
+            "name": "CustomAsteroids-Pops-Stock-Stockalike",
+            "version": "v1.8.0"
+        },
+        {
+            "name": "AVP-2kTextures",
+            "version": "v1.11"
+        },
+        {
+            "name": "EnvironmentalVisualEnhancements",
+            "version": "3:1.10.1-3"
         }
     ],
     "kind": "metapackage"

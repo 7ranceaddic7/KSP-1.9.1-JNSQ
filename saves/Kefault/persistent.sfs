@@ -16,7 +16,7 @@ GAME
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -single-instance -mm-dump - 
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -popupwindow - 
 	versionFull = 1.9.1.2788 (WindowsPlayer x64)
 	versionCreated = 1.9.1.2788 (WindowsPlayer x64)
 	RemovedROCs
@@ -168,9 +168,9 @@ GAME
 			AsteroidSpectrumContract = True
 			BaseContract = False
 			CollectScience = False
-			DeployedScienceContract = True
 			CrossBelt = True
 			CrossHeliopause = True
+			DeployedScienceContract = True
 			ExplorationContract = False
 			PlantFlag = True
 			GrandTour = True
@@ -354,18 +354,12 @@ GAME
 			HighCut = 12
 			LowCut = 6
 		}
-		PreferencesRadiation
-		{
-			lifetime = True
-			stormFrequency = 0.4
-			stormDurationHours = 2
-			stormRadiation = 5
-			shieldingEfficiency = 0.9
-		}
 		KerbalHealthRadiationSettings
 		{
 			RadiationEnabled = True
 			RadiationEffect = 0.1
+			UseKerbalismRadiation = False
+			KerbalismRadiationRatio = 0.25
 			ShieldingEffect = 1
 			InSpaceHighCoefficient = 0.4
 			InSpaceLowCoefficient = 0.2
@@ -383,6 +377,19 @@ GAME
 			DecontaminationScienceCost = 1000
 			DecontaminationAstronautComplexLevel = 3
 			DecontaminationRNDLevel = 3
+		}
+		PreferencesRadiation
+		{
+			lifetime = True
+			stormFrequency = 0.4
+			stormDurationHours = 2
+			stormRadiation = 5
+			shieldingEfficiency = 0.9
+		}
+		PayToPlaySettingProcSRBs
+		{
+			procSRBDiameterModelMarginPercent = 4
+			procSRBThrustModelMarginPercent = 10
 		}
 		StatsGameSettings
 		{
@@ -406,6 +413,17 @@ GAME
 			DecayDifficulty = 1
 			PlanetariumTracking = True
 			PlanetariumDebrisTracking = True
+		}
+		PayToPlaySettingsDifficultyNumbers
+		{
+			startingReliability = 2
+			randomStartingReliabilityBonusLimit = 2
+			failureOnIgnitionPercent = 0.05
+			ignitionFailurePercent = 0.05
+			destructionOnFailurePercent = 5
+			usageExperienceToDegradationMul = 1
+			topFailureWarningChancePercent = 90
+			topFailureWarningDeviationRatioPercent = 5
 		}
 		PreferencesMessages
 		{
@@ -470,7 +488,7 @@ GAME
 		{
 			StressFactor = -2
 			ConfinementBaseFactor = -3
-			LonelinessFactor = -1
+			LonelinessFactor = -2
 			MicrogravityFactor = -1
 			EVAFactor = -10
 			ConnectedFactor = 0.5
@@ -497,6 +515,17 @@ GAME
 			prospectResetCost = 100
 			bonusPerSkillPoint = 1
 		}
+		PayToPlaySettingsFeatures
+		{
+			enable = True
+			reliabilityProgress = True
+			randomStartingReliability = True
+			hideStartingReliability = True
+			useNonstandardLongTimeFormat = False
+			randomFailureWarningEnable = False
+			jokesInsteadOfFailedStatus = False
+			extraDebugLogging = False
+		}
 		JanitorsClosetSettings
 		{
 			toolbarEnabled = True
@@ -517,7 +546,7 @@ GAME
 			SortByLocation = True
 			LinesPerPage = 10
 			ShowTraitLevel = True
-			UpdateInterval = 30
+			UpdateInterval = 10
 			MinUpdateInterval = 1
 			BaseMaxHP = 100
 			HPPerLevel = 10
@@ -525,6 +554,7 @@ GAME
 			DeathEnabled = True
 			ExhaustionStartHealth = 0.2
 			ExhaustionEndHealth = 0.25
+			KerbalismIntegration = True
 			DebugMode = False
 			ResetSettings = False
 		}
@@ -568,11 +598,6 @@ GAME
 		{
 			ConsumeMachinery = True
 		}
-		AchOptions
-		{
-			useKSPskin = True
-			achievementDisplayTime = 8
-		}
 		BPB_Options
 		{
 			useKSPskin = True
@@ -580,6 +605,11 @@ GAME
 			activeInVAB = False
 			activeInSPH = False
 			allowChangeInFlight = False
+		}
+		AchOptions
+		{
+			useKSPskin = True
+			achievementDisplayTime = 8
 		}
 		BPB_Options2
 		{
@@ -717,9 +747,9 @@ GAME
 		}
 		CTB
 		{
+			showPopup = False
 			focusFollowsclick = True
 			global = True
-			showPopup = False
 			cleanupDelay = 0.5
 		}
 		StripeSettingsClassRestrictions
@@ -796,6 +826,15 @@ GAME
 			PartUpgradesInMission = False
 			EnableFullSASInSandbox = False
 		}
+		SpeedUnitAnnexSettings
+		{
+			UIstring1 = 
+			rover = km/h
+			aircraft = Mach number
+			radar = True
+			ias = True
+			overrideFAR = True
+		}
 		SpeedUnitAnnexSettings2
 		{
 			UIstring2 = 
@@ -808,15 +847,6 @@ GAME
 			targetAngle = True
 			targetAngles = True
 			targetInteger = True
-		}
-		SpeedUnitAnnexSettings
-		{
-			UIstring1 = 
-			rover = km/h
-			aircraft = Mach number
-			radar = True
-			ias = True
-			overrideFAR = True
 		}
 		MissionParamsGeneral
 		{
@@ -862,58 +892,9 @@ GAME
 			lastMCButton = All
 			lastMCButton = All
 		}
-		PM
+		BM
 		{
-			EnabledForSave = True
-		}
-		PAPI
-		{
-			debug = False
-		}
-		FMRS_Settings
-		{
-			enabled = True
-			autoactiveAtLaunch = True
-			_SETTING_Include_Undock = False
-			Timer_Stage_Delay = 0.2
-			_SETTING_Messages = True
-			_SETTING_Auto_Cut_Off = True
-			_SETTING_Auto_Recover = True
-			_SETTING_Throttle_Log = True
-			_SETTING_Parachutes = True
-			_SETTING_Defer_Parachutes_to_StageRecovery = True
-			_SETTING_Control_Uncontrollable = False
-		}
-		KRASH_Settings
-		{
-			CostAdj = 100
-			CostAdjustment = 1
-			wireframes = False
-			defaultAtmoStartingAltitude = 75000
-			defaultNoAtmoStartingAltitude = 10000
-			costAdjustment = 1
-			noChargeDuringTimewarp = True
-		}
-		SR1
-		{
-			SREnabled = True
-			UseDistanceOverride = False
-			FlatRateModel = False
-			UseDREVelocity = True
-			PreRecover = True
-			ShowFailureMessages = True
-			ShowSuccessMessages = True
-			PoweredRecovery = True
-			RecoverClamps = True
-			UseUpgrades = True
-			hideSpaceCenterButton = False
-		}
-		TC
-		{
-			showStockTooltips = True
-			hoverTimeout = 0.5
 			debugMode = False
-			oldDebugMode = False
 		}
 		StateFundingSettings
 		{
@@ -924,30 +905,10 @@ GAME
 			stopWarpOnNewYear = True
 			convergingRate = 0.5
 		}
-		SR3
+		EEX
 		{
-			GlobalMod = 100
-			GlobalModifier = 1
-			DistanceOver = 1
-			DistanceOverride = 0.01
-			DreVelocity = 2000
-			globalModifier = 1
-			distanceOverride = 0.01
-			DeadlyReentryMaxVelocity = 2000
-			MinTWR = 1
-		}
-		CrewRandRCustomParams
-		{
-			VacationScalar = 10
-			enabled = True
-			AssignCrews = True
-			vacationScalar = 0.1
-			MinimumVacationDays = 7
-			MaximumVacationDays = 28
-		}
-		BM
-		{
-			debugMode = False
+			vabHeight = 5
+			sphHeight = 5
 		}
 		NRAPCustomParams
 		{
@@ -963,10 +924,79 @@ GAME
 			size9 = 7.5
 			resetSizes = False
 		}
-		EEX
+		CrewRandRCustomParams
 		{
-			vabHeight = 5
-			sphHeight = 5
+			VacationScalar = 10
+			enabled = True
+			AssignCrews = True
+			vacationScalar = 0.1
+			MinimumVacationDays = 7
+			MaximumVacationDays = 28
+		}
+		SR3
+		{
+			GlobalMod = 100
+			GlobalModifier = 1
+			DistanceOver = 1
+			DistanceOverride = 0.01
+			DreVelocity = 2000
+			globalModifier = 1
+			distanceOverride = 0.01
+			DeadlyReentryMaxVelocity = 2000
+			MinTWR = 1
+		}
+		FMRS_Settings
+		{
+			enabled = True
+			autoactiveAtLaunch = True
+			_SETTING_Include_Undock = False
+			Timer_Stage_Delay = 0.2
+			_SETTING_Messages = True
+			_SETTING_Auto_Cut_Off = True
+			_SETTING_Auto_Recover = True
+			_SETTING_Throttle_Log = True
+			_SETTING_Parachutes = True
+			_SETTING_Defer_Parachutes_to_StageRecovery = True
+			_SETTING_Control_Uncontrollable = False
+		}
+		TC
+		{
+			showStockTooltips = True
+			hoverTimeout = 0.5
+			debugMode = False
+			oldDebugMode = False
+		}
+		SR1
+		{
+			SREnabled = True
+			UseDistanceOverride = False
+			FlatRateModel = False
+			UseDREVelocity = True
+			PreRecover = True
+			ShowFailureMessages = True
+			ShowSuccessMessages = True
+			PoweredRecovery = True
+			RecoverClamps = True
+			UseUpgrades = True
+			hideSpaceCenterButton = False
+		}
+		PAPI
+		{
+			debug = False
+		}
+		PM
+		{
+			EnabledForSave = True
+		}
+		KRASH_Settings
+		{
+			CostAdj = 100
+			CostAdjustment = 1
+			wireframes = False
+			defaultAtmoStartingAltitude = 75000
+			defaultNoAtmoStartingAltitude = 10000
+			costAdjustment = 1
+			noChargeDuringTimewarp = True
 		}
 		EL
 		{
@@ -1152,8 +1182,6 @@ GAME
 			part = conformaldecals-flag
 			part = conformaldecals-generic
 			part = conformaldecals-semiotic
-			part = 0625.Heatshield
-			part = 1.25.Heatshield
 			part = FASAlaunchClamp125
 			part = FASALaunchClamp1875
 			part = FASALaunchClamp9375
@@ -1278,6 +1306,27 @@ GAME
 			part = SR.Wing.02
 			part = SR.Wing.03
 			part = WBI.kPad
+			part = bluedog.625mDecoupler
+			part = bluedog.625mFairing
+			part = bluedog.9375mDecoupler
+			part = bluedog.ableEngine
+			part = bluedog.ableFairing
+			part = bluedog.ableTank
+			part = bluedog.navahoEngine
+			part = bluedog.redstone
+			part = bluedog.redstoneCS
+			part = bluedog.RedstoneLongTank
+			part = bluedog.RedstoneShortTank
+			part = bluedog.shortableTank
+			part = bluedog.thor625mAdapter
+			part = bluedog.thor9375mAdapter
+			part = bluedog.thorFin
+			part = bluedog.trapezoidFin
+			part = bluedog.vanguardEngine
+			part = bluedog.vanguardTank
+			part = AM.MLP.LaunchPlateRnd1
+			part = AM.MLP.LaunchPlateSqr1
+			part = AM.MLP.Pole12m
 		}
 		Science
 		{
@@ -1556,19 +1605,6 @@ GAME
 	}
 	SCENARIO
 	{
-		name = ScenarioDiscoverableObjects
-		scene = 7, 8, 5
-		lastSeed = 0
-		sizeCurve
-		{
-			key = 0 0 1.5 1.5
-			key = 0.3 0.45 0.875 0.875
-			key = 0.7 0.55 0.875 0.875
-			key = 1 1 1.5 1.5
-		}
-	}
-	SCENARIO
-	{
 		name = ScenarioUpgradeableFacilities
 		scene = 5, 6, 7, 8
 		SpaceCenter/LaunchPad
@@ -1638,6 +1674,7 @@ GAME
 		version = 1.9.1
 		WEIGHTS
 		{
+			SentinelContract = 30
 			SpaceHarvest = 30
 			SpaceAnalysis = 30
 			MannedOrbit = 30
@@ -1658,7 +1695,6 @@ GAME
 			ROCScienceRetrievalContract = 30
 			ROCScienceArmContract = 30
 			DeployedScienceContract = 30
-			SentinelContract = 30
 			PlantFlag = 30
 			PartTest = 30
 			GrandTour = 30
@@ -2037,6 +2073,56 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						sit = SPLASHED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 1d089ecc-cc48-4dc3-8f6f-f09d7dcc98b9
+				type = PartTest
+				prestige = 0
+				seed = 367908566
+				state = Offered
+				viewed = Unseen
+				agent = O.M.B. Demolition Enterprises
+				agentName = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,0,0,0,1,1.604881,-1.369,284413.39128035,0,0,0
+				part = Decoupler.1
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = Decoupler.1
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.5667880045095407
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
 						title = 
 					}
 				}
@@ -4405,6 +4491,11 @@ GAME
 			}
 			Contract_Type
 			{
+				TypeName = BDB_Corona_KH1
+				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
+			}
+			Contract_Type
+			{
 				TypeName = BDB_Corona_KH4
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
@@ -4425,17 +4516,12 @@ GAME
 			}
 			Contract_Type
 			{
-				TypeName = BDB_Lunar_Orbiter
-				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
-			}
-			Contract_Type
-			{
-				TypeName = BDB_Mariner
-				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
-			}
-			Contract_Type
-			{
 				TypeName = BDB_Nimbus
+				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
+			}
+			Contract_Type
+			{
+				TypeName = BDB_GeoStudy
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
 			Contract_Type
@@ -7006,8 +7092,8 @@ GAME
 		name = DeadlyReentryScenario
 		scene = 7, 5
 		difficultySetting = 1
-		displayCrewGForceWarning = True //  Should we display warning about unsafe crew G-Forces.
-		DREReentryHeatScale = 1 //  Overrides stock ReentryHeatScale.
+		displayCrewGForceWarning = True
+		DREReentryHeatScale = 1
 	}
 	SCENARIO
 	{
@@ -7243,7 +7329,7 @@ GAME
 				{
 					shipName = KOMET-1s
 					shipID = 2ee1db92-246d-4f3e-98d5-30f6e05f74e7
-					progress = 52469.854290015493
+					progress = 52493.406289998871
 					effectiveCost = 1841.4013500000001
 					buildTime = 85823.105280571195
 					integrationTime = 0
@@ -23326,7 +23412,7 @@ GAME
 				{
 					name = LaunchPad Reconditioning
 					BP = 518.02071418762284
-					progress = 412.93356134342321
+					progress = 448.26156132484903
 					cost = 0
 					associatedID = 3c46becf-7181-496f-8d0a-579ecd64b868
 					launchPadID = LaunchPad
@@ -23366,31 +23452,51 @@ GAME
 	{
 		name = KerbalHealthScenario
 		scene = 5, 8, 7, 6
-		version = 1.4.6.0
-		nextEventTime = 267931.669121671
+		version = 1.5.1.0
+		nextEventTime = 325163.05879623687
 		KerbalHealthStatus
 		{
 			name = Jebediah Kerman
 			health = 100
 			dose = 0
+			FACTOR
+			{
+				name = KSC
+				change = 4
+			}
 		}
 		KerbalHealthStatus
 		{
 			name = Bill Kerman
 			health = 100
 			dose = 0
+			FACTOR
+			{
+				name = KSC
+				change = 4
+			}
 		}
 		KerbalHealthStatus
 		{
 			name = Bob Kerman
 			health = 100
 			dose = 0
+			FACTOR
+			{
+				name = KSC
+				change = 4
+			}
 		}
 		KerbalHealthStatus
 		{
 			name = Valentina Kerman
 			health = 100
 			dose = 0
+			FACTOR
+			{
+				name = KSC
+				change = 4
+			}
 		}
 	}
 	SCENARIO
@@ -27755,76 +27861,6 @@ GAME
 		}
 		TLUpgrade
 		{
-			name = bluedog-Pioneer6-Boom-RCSUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSNitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSNitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Pioneer6-Boom-RCSHydrazine
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineNitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineNitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-loEngineHydrazine
-			currentTL = 1
-		}
-		TLUpgrade
-		{
 			name = bluedog-Gemini-Service-BUDMH+NTO
 			currentTL = 1
 		}
@@ -28605,41 +28641,6 @@ GAME
 		}
 		TLUpgrade
 		{
-			name = bluedog-Juno-StageRCSUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSNitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSNitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-Juno-StageRCSHydrazine
-			currentTL = 1
-		}
-		TLUpgrade
-		{
 			name = bluedog-Gemini-Lander-SaddleTankUDMH+NTO
 			currentTL = 1
 		}
@@ -29325,6 +29326,41 @@ GAME
 		}
 		TLUpgrade
 		{
+			name = bluedog-DeltaIV-DCSS-5mUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaIV-DCSS-5mHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
 			name = bluedog-DCSS-TankAerozine50+NTO
 			currentTL = 0
 		}
@@ -29392,41 +29428,6 @@ GAME
 		{
 			name = bluedog-Delta-GEM40Daleth-CGR-40 "Ruby"
 			currentTL = 0
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankNitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankNitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-DeltaK-LowerTankHydrazine
-			currentTL = 1
 		}
 		TLUpgrade
 		{
@@ -30460,6 +30461,41 @@ GAME
 		}
 		TLUpgrade
 		{
+			name = bluedog-Agena-Subsat-HitchhikerUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Agena-Subsat-HitchhikerHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
 			name = bluedog-Agena-EquipmentRackAerozine50+NTO
 			currentTL = 0
 		}
@@ -30602,76 +30638,6 @@ GAME
 		{
 			name = bluedog-Agena-EngineShroudNitrogen
 			currentTL = 0
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDNitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDNitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaDHydrazine
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaAUDMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaAAerozine50+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaAMMH+NTO
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaANitrousOxide
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaANitrogen
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaAHTP
-			currentTL = 1
-		}
-		TLUpgrade
-		{
-			name = bluedog-AgenaAHydrazine
-			currentTL = 1
 		}
 		TLUpgrade
 		{
@@ -30893,6 +30859,216 @@ GAME
 			name = bluedog-Ablestar-EngineFenris-18-104 "Alphastar"
 			currentTL = 1
 		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Pioneer6-Boom-RCSHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-Juno-StageRCSHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-DeltaK-LowerTankHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaDHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaAUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaAAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaAMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaANitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaANitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaAHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-AgenaAHydrazine
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineUDMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineAerozine50+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineMMH+NTO
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineNitrousOxide
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineNitrogen
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineHTP
+			currentTL = 1
+		}
+		TLUpgrade
+		{
+			name = bluedog-loEngineHydrazine
+			currentTL = 1
+		}
 		Unlocks
 		{
 		}
@@ -30957,7 +31133,7 @@ GAME
 	{
 		name = ResearchBodies
 		scene = 5, 6, 7, 8
-		lastTimeCheckedSOIs = 240955.63128048505
+		lastTimeCheckedSOIs = 241213.35128035003
 		RBGameSettings
 		{
 			BODY
@@ -30974,7 +31150,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 54
+				ContractsWeight = 30
 			}
 			BODY
 			{
@@ -32851,10 +33027,23 @@ GAME
 			}
 		}
 	}
+	SCENARIO
+	{
+		name = ScienceReporter
+		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = ReliabilityProgress
+		scene = 7, 6, 8, 5, 0, 1
+		Engines
+		{
+		}
+	}
 	FLIGHTSTATE
 	{
 		version = 1.9.1
-		UT = 241213.33128035004
+		UT = 241272.23128031919
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -32864,11 +33053,11 @@ GAME
 	{
 		KSPe v2.2.1.2 = True
 		ModuleManagerWatchDog v0.0.1.0 = True
-		Scale_Redist v1.0.0.0 / v2.5.0.20 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.20 = False
 		Hyperspace v1.1.0.0 = True
 		ModuleManager v4.1.4.0 = True
-		ClickThroughBlocker v0.1.10.11 / v1.0.0.0 = True
-		FilterExtensions v3.2.5.0 / v1.0.0.0 = True
+		ClickThroughBlocker v0.1.10.11 / v1.0.0.0 = False
+		FilterExtensions v3.2.5.0 / v1.0.0.0 = False
 		KSPAPIExtensions v2.2.1.2 = True
 		KSPe.Light.TweakScale v2.2.1.2 = True
 		KSPe.UI v2.2.1.2 = True
@@ -32880,7 +33069,7 @@ GAME
 		KSP-Recall v0.0.4.4 = True
 		KSPe.Light.Recall v2.2.0.3 = True
 		Resourceful v0.0.4.4 = True
-		Achievements v1.10.1.2 / v1.10.1.0 = True
+		Achievements v1.10.1.2 / v1.10.1.0 = False
 		SolverEngines v3.3.0.0 / v3.7.5.0 = True
 		AJE v2.15.0.0 = True
 		AllYAll v0.11.19.0 / v1.0.0.0 = True
@@ -32888,8 +33077,8 @@ GAME
 		AnimatedAttachment v2.1.3.0 / v0.4.0.0 = True
 		AnimatedDecouplers v1.4.2.19194 = True
 		AntennaHelper v1.0.7.3 = True
-		Astrogator v0.10.1.0 = True
-		KSP_Log v0.1.0.5 / v1.0.0.0 = True
+		Astrogator v0.10.1.0 = False
+		KSP_Log v0.1.0.5 / v1.0.0.0 = False
 		AutoQuickSaveSystem v0.1.0.0 / v1.0.0.0 = True
 		AviationLights v4.1.1.0 = True
 		B9PartSwitch v2.17.0.0 / vv2.17.0 = True
@@ -32904,14 +33093,14 @@ GAME
 		CCTV v1.1.6.5 / v1.0.0.0 = True
 		ChampagneBottle v0.3.10.3 / v1.0.0.0 = True
 		Chatterer v0.9.99.2788 = True
-		CollisionFXReUpdated v1.1.0.0 = True
+		CollisionFXReUpdated v1.1.0.0 = False
 		ComfortableLanding v1.5.0.0 = True
 		CommNetAntennasConsumptor v3.0.2.0 = True
 		CommNetAntennasInfo v3.0.2.0 = True
 		CCK v5.1.0.0 / v5.1.0.0 for KSP v1 = True
 		CommunityTraitIcons v1.1.1.0 = True
 		ConformalDecals v1.0.0.0 = True
-		ContractConfigurator v1.0.0.0 / v1.30.2 = True
+		ContractConfigurator v1.0.0.0 / v1.30.2 = False
 		ContractModifier v1.0.2.7 / vv2.7 = True
 		KXAPI v1.0.0.0 = True
 		CraftManager v1.0.7240.23210 = True
@@ -32919,7 +33108,7 @@ GAME
 		CrewLight v1.20.0.0 = True
 		CrewRandR v1.1.10.4 / v1.0.0.0 = True
 		CriticalTemperatureGauge v1.10.0.0 = True
-		DeadlyReentry v7.8.0.0 = True
+		DeadlyReentry v7.8.0.0 = False
 		DefaultActionGroups v1.0.0.0 = True
 		DestructionEffects v1.11.0.0 = True
 		DistantObject v2.0.0.2 = True
@@ -32953,20 +33142,20 @@ GAME
 		TextureConfig v1.10.1.1 = True
 		Utils v1.10.1.1 = True
 		_BuildManager v1.10.1.1 = True
-		FerramAerospaceResearch.Base v0.16.0.0 = True
+		FerramAerospaceResearch.Base v0.16.0.0 = False
 		ModularFlightIntegrator v1.0.0.0 / v1.2.7.0 = True
-		FerramAerospaceResearch v0.16.0.0 = True
+		FerramAerospaceResearch v0.16.0.0 = False
 		ferramGraph v1.3.0.0 = True
 		Firespitter v7.3.7287.12431 = True
 		FMRS v1.2.9.1 / v1.0.2.0 = True
 		FP_DockingSndFX v2.1.12.27690 = True
-		GravityTurn v1.8.1.0 = True
+		GravityTurn v1.8.1.0 = False
 		HaystackContinued v0.5.7.0 / v0.5.2.1 = True
 		HeapPadder v0.0.2.0 = True
 		HideEmptyTechTreeNodes v1.0.0.0 = True
 		HLAirships v5.3.0.0 = True
 		HotSpot v0.8.0.0 / v0.8.0 = True
-		HullCamera v0.2.0.0 = True
+		HullCamera v0.2.0.0 = False
 		kerbal-impact v0.0.0.0 = True
 		IndicatorLights v1.0.0.0 = True
 		InnerLock v1.0.7239.27476 = True
@@ -32988,7 +33177,7 @@ GAME
 		KerbalConstructionTime v1.4.8.0 = True
 		KerbalEngineer v1.1.7.2 = True
 		KerbalEngineer.Unity v1.0.0.0 = True
-		KerbalHealth v1.4.6.0 / v1.4.6 = True
+		KerbalHealth v1.4.6.0 / v1.4.6 = False
 		0Harmony v1.2.0.1 = True
 		KerbalismBootstrap v3.11.7536.20007 / v3.11 = True
 		KerbalJointReinforcementNext v4.1.15.0 = True
@@ -33032,16 +33221,16 @@ GAME
 		OneWindow v1.0.4.0 / vv4.0 = True
 		OneWindow_Unity v1.0.4.0 = True
 		PAPIPlugin v0.5.0.5 / v0.5.0.0 = True
-		PartInfo v0.0.3.7 / v1.0.0.0 = True
+		PartInfo v0.0.3.7 / v1.0.0.0 = False
 		PatchManager v0.0.17.2 / v1.0.0.0 = True
 		PebkacLaunchEscape2 v1.4.2.0 / v1.2.2.2 = True
 		PlanetShine v0.2.6.1 = True
 		PortraitStats v1.0.18.0 = True
 		PreciseEditor v1.0.0.0 = True
 		PreciseNode v1.2.11.1 / v1.2.4.0 = True
-		RealAntennas v1.1.0.0 / v1.2.1.0 = True
+		RealAntennas v1.1.0.0 / v1.2.1.0 = False
 		RealChute v1.4.7518.5195 / v1.4.8.0 = True
-		RealFuels v12.8.4.11 / v12.8.4.11-c9fa = True
+		RealFuels v12.8.4.11 / v12.8.4.11-c9fa = False
 		TestFlightAPI v1.0.7347.3151 = True
 		TestFlight v0.4.0.0 = True
 		TestFlightRF v1.0.7338.19661 = True
@@ -33069,10 +33258,10 @@ GAME
 		SpaceAge v1.3.0.0 / v1.3.0 = True
 		ButtonManager v0.0.1.0 / v1.0.0.0 = True
 		KSP_ColorPicker v0.1.0.3 / v1.0.0.0 = True
-		KSP_PartHighlighter v0.1.0.6 / v1.0.0.0 = True
+		KSP_PartHighlighter v0.1.0.6 / v1.0.0.0 = False
 		SpaceTuxUtility v0.0.1.0 / v1.0.0.0 = True
-		VesselModuleSave v0.0.1.0 / v1.0.0.0 = True
-		SpeedUnitAnnex v1.3.6.0 = True
+		VesselModuleSave v0.0.1.0 / v1.0.0.0 = False
+		SpeedUnitAnnex v1.3.6.0 = False
 		StageRecovery v1.9.2.2 / v1.8.0.0 = True
 		StateFunding v0.6.18.0 / v0.5.0.0 = True
 		StationKeeping v0.2.2.1 = True
@@ -33088,7 +33277,7 @@ GAME
 		KerbalAlarmClock v3.13.0.0 = True
 		KSPAlternateResourcePanel v2.10.0.0 = True
 		TUFX v1.0.0.0 = True
-		Scale v2.5.0.20 = True
+		Scale v2.5.0.20 = False
 		TweakScaleCompanion_FS v0.0.2.0 = True
 		TweakScalerFSBuoyancy v0.0.2.0 = True
 		TweakScaleCompanion_KIS v0.0.2.0 = True
@@ -33110,7 +33299,7 @@ GAME
 		000_USITools = True
 		001_ToolbarControl = True
 		002_CommunityPartsTitles = True
-		003_CommunityResourcePack = True
+		003_CommunityResourcePack = False
 		999_KSP-Recall = True
 		Achievements = True
 		AirplanePlus = True
@@ -33136,7 +33325,7 @@ GAME
 		CCTV = True
 		Champagne = True
 		Chatterer = True
-		CollisionFXReUpdated = True
+		CollisionFXReUpdated = False
 		ComfortableLanding = True
 		CommNetAntennasConsumptor = True
 		CommNetAntennasExtension = True
@@ -33157,7 +33346,7 @@ GAME
 		CrowdSourcedScience = True
 		CTTP = True
 		DaMichel = True
-		DeadlyReentry = True
+		DeadlyReentry = False
 		DecayingRTGs = True
 		DefaultActionGroups = True
 		DestructionEffects = True
@@ -33345,6 +33534,31 @@ GAME
 		totaltime.dat = True
 		WBIPlayMode.cfg = True
 		Custom_FARAeroData.cfg = True
+		Scale_Redist v1.0.0.0 / v2.5.0.24 = True
+		ClickThroughBlocker v0.1.10.14 / v1.0.0.0 = True
+		FilterExtensions v3.2.6.0 / v1.0.0.0 = True
+		Achievements v1.10.1.4 / v1.10.1.0 = True
+		Astrogator v0.10.2.0 = True
+		KSP_Log v0.1.1.2 / v1.0.0.0 = True
+		ContractConfigurator v1.0.0.0 / v1.30.5 = True
+		EVARefueling v1.0.0.0 = True
+		FerramAerospaceResearch.Base v0.16.0.1 = True
+		FerramAerospaceResearch v0.16.0.1 = True
+		GravityTurn v1.8.1.4 = True
+		HullCamera v0.2.0.1 = True
+		KerbalHealth v1.5.1.0 / v1.5.1 = True
+		LadderSeat v1.0.0.0 = True
+		PartInfo v0.0.4.1 / v1.0.0.0 = True
+		EngineDecay v1.0.0.0 = True
+		RealAntennas v1.1.0.0 / v1.3.0.0 = True
+		RealFuels v12.8.5.0 / v12.8.5-dirty / v12.8.5 = True
+		KSP_PartHighlighter v0.1.0.8 / v1.0.0.0 = True
+		VesselModuleSave v0.0.1.1 / v1.0.0.0 = True
+		SpeedUnitAnnex v1.3.7.0 = True
+		Scale v2.5.0.24 = True
+		EVARefueling = True
+		LadderWarp = True
+		PayToPlay = True
 	}
 	ROSTER
 	{
@@ -33520,14 +33734,24 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = Screen Message
+			message = <b>KERBALISM WARNING</b>~n~n<color=#FF4500>Mods with limited compatibility found:</color>~n- CommNetAntennasInfo~n- ResearchBodies~nYou might have problems with these mods. Please consult the FAQ on on kerbalism.github.io~n~n
+			color = 2
+			icon = 5
+			read = False
+		}
+		MESSAGE
+		{
+			title = Kerbal Health
+			message = y1, d06, 7:00: Kerbal Health has been updated to v1.5.1. Default Loneliness factor has been changed to -2. All parts have been rebalanced. Please check every crewed vessel to update Kerbal Health cache.
+			color = 1
+			icon = 4
+			read = False
+		}
 	}
 	VMSNode
 	{
-		VesselModuleSaveFrameworkVesselModuleSave
-		{
-			3c46becf-7181-496f-8d0a-579ecd64b868
-			{
-			}
-		}
 	}
 }

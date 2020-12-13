@@ -1,0 +1,21 @@
+{
+  "NAME": "ZZZRadioTelescope",
+  "URL": "http://ksp.spacetux.net/avc/ZZZRadioTelescope",
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 0,
+    "PATCH": 5,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  },
+  "INSTALL_LOC_1": {
+    "NAME": "ZZZRadioTelescope",
+    "PATH": "",
+    "DIRECTORY": "MunSeeker",
+    "FILE": "ZZZRadioTelescope.version"
+  }
+}
