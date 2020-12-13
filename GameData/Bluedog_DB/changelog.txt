@@ -1,5 +1,100 @@
 BLUEDOG DESIGN BUREAU CHANGELOG
 
+v 1.7.1 "огромный"
+
+Fixes
+- Fix some soft deprecated part models not loading (due to KSP excluding models from folders named zDeprecated)
+- Move most soft deprecated parts to new directory Bluedog_DB/OldParts for easier deletion. Users who have purged their craft of old parts can safely delete this folder.
+- Fix AJ10-118x name
+- Update craft files with SAF fairings
+
+- v1.7.0 "огромный"
+
+New Features
+
+- Revamped Agena parts including historical Agena A,B,D, ATDA & GATV. Strapon tank Agena and proposed engine upgrades too. P11 Agena subsatellite.
+- Agena Adapters for Titan III, Atlas SLV3B and ETS Carrack.
+- Keyhole satellites including KH1, KH4, KH4B, KH7 and KH8. Coronoa recovery pod.
+- New Centaur D with jettisonable insulation panels and new RL10 engines.
+- New Centaur T.
+- New Able upper stage and AJ10 engines.
+- Completely revamped Thor Delta family. Nearly all variants possible from the earliest Thor through to Delta II and III. Combined LR79 engine with variants for LR79, S3D and RS27. New Castor solid motors.
+- New Ablestar, Delta K and Delta P upper stages along with AJ10 and TR201 engines.
+- Delta HOSS (Hydrogen Oxygen Second Stage).
+- Delta IV including RS68 engine, 5m (3.125m) DCSS and various parts necessary for all variants including Small, Medium, M+ and Heavy.
+- New Gemini capsule and modular equipment section. Various service module variants including Lunar Recon and Long Ferry.
+- Updated Gemini Ferry and Big Gemini capsule parts.
+- New Juno II and IV parts.
+- New Mercury capsule.
+- New Redstone rocket. Juno I spin table functionality available with Dock Rotate mod.
+- New F1B variant for the F1 engine.
+- New Vanguard rocket with GE405 engine and Vanguard Able upper stage.
+- New Vega upper stage and GE405H engine.
+- New spin decouplers in 3.125m, 0.625m, 0.9375m and 1.25m sizes to spin up solid kick motors. (Recommend for use with Persistent Rotation mod).
+- Yo-yo despin device which uses KSP physics to slow down spin stabilised stages after kick solid motor burn out.
+- Simple Adjustable Fairings (SAF) as a new dependency, allows adjustable and realistic looking fairings.
+- Over 30 mostly historically accurate SAF fairings for Thor, Delta, Titan, Atlas, Centaur and many more.
+- Many more texture variants including several by InvaderChaos
+- Custom BDB contract pack (requires contract configurator) by Morphisor
+- Custom Kerbal suits for BDB (Apollo/Skylab era A7L, A7LB and A7LB commander suits) by Benjee10. Works via stock suit switcher in KSP 1.10+ only. Optional Texture Replacer compatible files in BDB Extras for older KSP versions.
+- New Flags by CineboxAndrew
+- New craft files by Friznit for all the new spacecraft and most rocket variants.
+- Lots of new science experiment definitions
+- New sequential fire feature available with some solid rocket motors (intended for Gemini and Mercury solids). Allows for staggered firing of motors (with optional overlap) within the same staging action. Needs to be enabled and setup in VAB.
+- Methalox B9 tank type (same ratio as Hephaistos, Provenance Aerospace and CryoTanks)
+
+All the probes
+- AIMP/IMP
+- Alouette
+- Biosat
+- Courier, Relay & Telstar
+- Explorer 1, 7, 8, 11, S45, S46
+- Pioneer 1, 4
+- Pioneer P3
+- Pioneer 5 (by InvaderChaos)
+- Pioneer 6
+- Lunar orbiter
+- Nimbus (parts for most variants)
+- Orbiting Astronomical Observatory (OAO 1,2 & 3)
+- Orbiting Frog Otolith
+- Orbiting Geophysical Observatory
+- Orbiting Solar Observatory
+- Ranger block I, II, III, Ranger B, Mariner 2 and Ranger Lander.
+- TIROS-1
+
+Misc
+- Updated B9PartSwitch
+- Updated Module Manager
+- Updated Community Resource Pack
+- Updated Dmagic Science Animate
+- Remove MiniAVC
+
+Fixes
+- replace legacy shaders on some plume particles
+
+Deprecated
+these parts are soft deprecated (hidden in the VAB) in this release and will be permanently removed in the near future
+- Old Agena parts
+- Old Juno II Parts
+- Old 'Early Rockets' parts including Thor, Redstone and Juno I
+- Old mercury parts
+- old Gemini capsule parts
+- Old versions of OGO, Explorer 7, Ion engine, pioneer 6, Pioneer P3, Ranger, Sputnik 3 and Venera 1
+- Old Vega
+
+- v1.6.3 "титан"
+
+Fixes
+- Fixed drag cubes so BDB loads in KSP 1.10.1
+- Remove miniavc.dll since its been broken and discontinued
+
+Misc
+- Update bundled B9PartSwitch, Community Resource Pack, Dmagic Science Animate and Module Manager.
+- Update .version file
+- OLD TITAN FOLDER IS NOW HARD DEPRECATED and removed entirely
+- Removed variants from stock type fairings.
+
+
 - v1.6.2 "титан"
 
 New

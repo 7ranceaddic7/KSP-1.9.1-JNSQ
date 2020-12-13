@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <CommandLineArguments>KSP_x64.exe -single-instance -mm-dump</CommandLineArguments>
   <AutoCloseWaitDialog>false</AutoCloseWaitDialog>
   <URLHandlerNoNag>false</URLHandlerNoNag>
@@ -13,24 +13,28 @@
   <RefreshOnStartupNoNag>true</RefreshOnStartupNoNag>
   <RefreshPaused>false</RefreshPaused>
   <AutoSortByUpdate>true</AutoSortByUpdate>
-  <ActiveFilter>6</ActiveFilter>
-  <SortByColumnIndex>2</SortByColumnIndex>
-  <SortDescending>false</SortDescending>
+  <ActiveFilter>1</ActiveFilter>
+  <SortColumns>
+    <string>UpdateCol</string>
+  </SortColumns>
+  <MultiSortDescending>
+    <boolean>false</boolean>
+  </MultiSortDescending>
   <HiddenColumnNames>
     <ColumnName>ReleaseDate</ColumnName>
     <ColumnName>Description</ColumnName>
     <ColumnName>DownloadCount</ColumnName>
     <ColumnName>SizeCol</ColumnName>
   </HiddenColumnNames>
-  <IsWindowMaximised>false</IsWindowMaximised>
+  <IsWindowMaximised>true</IsWindowMaximised>
   <WindowSize>
-    <Width>1617</Width>
-    <Height>940</Height>
+    <Width>1216</Width>
+    <Height>833</Height>
   </WindowSize>
-  <PanelPosition>853</PanelPosition>
-  <ModInfoPosition>344</ModInfoPosition>
+  <PanelPosition>1069</PanelPosition>
+  <ModInfoPosition>611</ModInfoPosition>
   <WindowLoc>
-    <X>0</X>
-    <Y>71</Y>
+    <X>226</X>
+    <Y>114</Y>
   </WindowLoc>
 </Configuration>

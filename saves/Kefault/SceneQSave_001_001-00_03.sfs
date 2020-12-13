@@ -7,8 +7,8 @@ GAME
 	linkCaption = 
 	Mode = CAREER
 	Status = 1
-	Seed = 1282546771
-	ROCSeed = 660293904
+	Seed = 845922930
+	ROCSeed = 810980377
 	scene = 5
 	editor = None
 	flag = __myLOCAL/Flags/my_flag_kerbin_green
@@ -27,8 +27,8 @@ GAME
 		preset = Custom
 		FLIGHT
 		{
-			CanQuickSave = False
-			CanQuickLoad = False
+			CanQuickSave = True
+			CanQuickLoad = True
 			CanAutoSave = True
 			CanUseMap = True
 			CanSwitchVesselsNear = True
@@ -83,7 +83,7 @@ GAME
 			RespawnTimer = 7200
 			BypassEntryPurchaseAfterResearch = True
 			AllowStockVessels = True
-			IndestructibleFacilities = True
+			IndestructibleFacilities = False
 			ResourceAbundance = 1
 			ReentryHeatScale = 1
 			EnableCommNet = True
@@ -115,7 +115,6 @@ GAME
 		{
 			weldRequiresEVA = True
 			weldRequiresRepairSkill = True
-			keepDockingPorts = False
 		}
 		LNSettings
 		{
@@ -158,30 +157,30 @@ GAME
 		USI_ConverterOptions
 		{
 			ConverterSwapRequiresEVA = True
-			ConverterSwapRequiresRepairSkill = False
+			ConverterSwapRequiresRepairSkill = True
 			ConverterSwapCostMultiplier = 1
 		}
 		StockContractParametersTemplate
 		{
+			DMAsteroidSurveyContract = True
+			DMAnomalyContract = True
 			ARMContract = True
 			AsteroidSpectrumContract = True
 			BaseContract = False
 			CollectScience = False
+			DeployedScienceContract = True
 			CrossBelt = True
 			CrossHeliopause = True
-			DeployedScienceContract = True
-			DMAnomalyContract = True
-			DMAsteroidSurveyContract = True
-			DMMagneticSurveyContract = True
-			DMReconContract = True
-			DMSurveyContract = True
 			ExplorationContract = False
+			PlantFlag = True
 			GrandTour = True
 			ImpactContract = True
 			ISRUContract = True
+			DMMagneticSurveyContract = True
 			MannedOrbit = True
+			DMSurveyContract = True
 			PartTest = True
-			PlantFlag = True
+			DMReconContract = True
 			RecoverAsset = False
 			ROCScienceArmContract = True
 			ROCScienceRetrievalContract = True
@@ -210,15 +209,41 @@ GAME
 			ECBonus = 0.5
 			DebugMode = False
 		}
-		ContractConfiguratorParameters
+		SpaceAgeChronicleSettings
 		{
-			DisplayOfferedOrbits = True
-			DisplayActiveOrbits = True
-			DisplayOfferedWaypoints = True
-			DisplayActiveWaypoints = True
-			ActiveContractMultiplier = 1
-			lastMCButton = All
-			lastMCButton = All
+			ShowAppLauncherButton = True
+			ShowNotifications = True
+			ChronicleLinesPerPage = 10
+			NewestFirst = True
+			AchievementsPerPage = 10
+			ImportStockAchievements = False
+			UnwarpOnEvents = True
+			TrackAchievements = True
+			TrackLaunch = True
+			TrackReachSpace = True
+			TrackBurns = True
+			MinBurnDuration = 5
+			TrackOrbit = True
+			TrackReentry = True
+			TrackDocking = True
+			TrackSOIChange = True
+			TrackLanding = True
+			TrackTakeoffs = True
+			MinJumpDuration = 30
+			TrackRecovery = True
+			TrackReturnFrom = True
+			TrackDestroy = True
+			TrackDeath = True
+			TrackFlagPlant = True
+			TrackAnomalyDiscovery = True
+			TrackFacilityUpgraded = True
+			TrackStructureCollapsed = True
+			TrackTechnologyResearched = True
+			FundsPerScore = 0
+			SciencePerScore = 0
+			RepPerScore = 0
+			DebugMode = False
+			ResetSettings = False
 		}
 		SaveSpecificSettings
 		{
@@ -236,7 +261,7 @@ GAME
 			requireRelay = True
 			transmissionBoost = True
 			requireMPLForBoost = True
-			transmissionPenalty = 0.25
+			transmissionPenalty = 0.18
 			showTransmitWarning = True
 		}
 		smGameParameters
@@ -308,6 +333,7 @@ GAME
 			payToReconfigure = True
 			requiresSkillCheck = True
 			enableDebugLogging = False
+			emailConverterResults = True
 		}
 		RAParameters
 		{
@@ -327,6 +353,14 @@ GAME
 			CutoffVelocity = 10
 			HighCut = 12
 			LowCut = 6
+		}
+		PreferencesRadiation
+		{
+			lifetime = True
+			stormFrequency = 0.4
+			stormDurationHours = 2
+			stormRadiation = 5
+			shieldingEfficiency = 0.9
 		}
 		KerbalHealthRadiationSettings
 		{
@@ -350,14 +384,6 @@ GAME
 			DecontaminationAstronautComplexLevel = 3
 			DecontaminationRNDLevel = 3
 		}
-		PreferencesRadiation
-		{
-			lifetime = True
-			stormFrequency = 0.4
-			stormDurationHours = 2
-			stormRadiation = 5
-			shieldingEfficiency = 0.9
-		}
 		StatsGameSettings
 		{
 			AlwaysShow = True
@@ -365,7 +391,13 @@ GAME
 			ExtendedTooltips = True
 			HoverHighlight = True
 			TransferButton = True
-			ReloadDelay = 8
+			ReloadDelay = 5
+		}
+		PartInfoSettings
+		{
+			WindowHeightPercent = 75
+			availableInFlight = True
+			useAltSkin = True
 		}
 		OD
 		{
@@ -383,8 +415,8 @@ GAME
 			malfunction = True
 			storm = True
 			script = True
-			stockMessages = True
-			messageLength = 4
+			stockMessages = False
+			messageLength = 8
 		}
 		HETTNCustomParams_Nodes
 		{
@@ -421,7 +453,7 @@ GAME
 		}
 		KesslerSettings
 		{
-			CloudChance = 100
+			CloudChance = 128
 		}
 		KerbNetDevourerSettings
 		{
@@ -456,14 +488,27 @@ GAME
 		}
 		GT
 		{
-			useCompact = True
+			useCompact = False
 			useNormal = False
-			useStock = False
+			useStock = True
 		}
 		GoldStrikeSettings
 		{
 			prospectResetCost = 100
 			bonusPerSkillPoint = 1
+		}
+		JanitorsClosetSettings
+		{
+			toolbarEnabled = True
+			toolbarPopupsEnabled = True
+			editorMenuPopupEnabled = True
+			hoverTimeout = 0.5
+			enabeHoverOnToolbarIcons = True
+			useKerboKatzToolbar = True
+			buttonIdent = True
+			buttonTooltip = True
+			showMod = True
+			debug = False
 		}
 		KerbalHealthGeneralSettings
 		{
@@ -482,19 +527,6 @@ GAME
 			ExhaustionEndHealth = 0.25
 			DebugMode = False
 			ResetSettings = False
-		}
-		JanitorsClosetSettings
-		{
-			toolbarEnabled = True
-			toolbarPopupsEnabled = True
-			editorMenuPopupEnabled = True
-			hoverTimeout = 0.5
-			enabeHoverOnToolbarIcons = True
-			useKerboKatzToolbar = True
-			buttonIdent = True
-			buttonTooltip = True
-			showMod = True
-			debug = False
 		}
 		KURSSettings
 		{
@@ -528,13 +560,18 @@ GAME
 			NumberOfFlightsRequired = 5
 			FlightHoursRequired = 12
 			WorldFirsts = 1
-			GenerateCrew = False
+			GenerateCrew = True
 			DefaultSuit = 0
 			VeteranSuit = 2
 		}
 		USI_DifficultyOptions
 		{
 			ConsumeMachinery = True
+		}
+		AchOptions
+		{
+			useKSPskin = True
+			achievementDisplayTime = 8
 		}
 		BPB_Options
 		{
@@ -544,18 +581,13 @@ GAME
 			activeInSPH = False
 			allowChangeInFlight = False
 		}
-		AchOptions
-		{
-			useKSPskin = True
-			achievementDisplayTime = 10
-		}
 		BPB_Options2
 		{
 			useAtmoPercentage = True
 			explosionDetection = True
-			negativeVelDetection = True
+			negativeVelDetection = False
 			defaultNegVel = -40
-			highGDetection = True
+			highGDetection = False
 			defaultG = 6
 			exceedingAoA = True
 			ignoreAoAAboveAltitudeKm = 50
@@ -639,7 +671,7 @@ GAME
 			migrated = True
 			version = 0
 			useCompressedPersistence = True
-			showStatistics = True
+			showStatistics = False
 			startOnArchive = True
 			obeyHideUi = True
 			enableSafeMode = True
@@ -692,43 +724,10 @@ GAME
 		}
 		StripeSettingsClassRestrictions
 		{
-			RemoveExistingHonours = False
+			RemoveExistingHonours = True
 			PilotsAllowed = True
 			ScientistsAllowed = True
 			EngineersAllowed = True
-		}
-		SpaceAgeChronicleSettings
-		{
-			ShowAppLauncherButton = True
-			ShowNotifications = True
-			ChronicleLinesPerPage = 10
-			NewestFirst = True
-			AchievementsPerPage = 10
-			ImportStockAchievements = False
-			UnwarpOnEvents = True
-			TrackAchievements = True
-			TrackLaunch = True
-			TrackReachSpace = True
-			TrackOrbit = True
-			TrackReentry = True
-			TrackDocking = True
-			TrackSOIChange = True
-			TrackLanding = True
-			MinJumpDuration = 30
-			TrackRecovery = True
-			TrackReturnFrom = True
-			TrackDestroy = True
-			TrackDeath = True
-			TrackFlagPlant = True
-			TrackAnomalyDiscovery = True
-			TrackFacilityUpgraded = True
-			TrackStructureCollapsed = True
-			TrackTechnologyResearched = True
-			FundsPerScore = 0
-			SciencePerScore = 0
-			RepPerScore = 0
-			DebugMode = False
-			ResetSettings = False
 		}
 		CB
 		{
@@ -744,10 +743,10 @@ GAME
 		{
 			enabled = True
 			hideButton = False
-			hideButtonInFlight = True
+			hideButtonInFlight = False
 			hideDropdownButtonInFlight = False
-			lockWindowPosInFlight = True
-			lockWindowPos = True
+			lockWindowPosInFlight = False
+			lockWindowPos = False
 		}
 		KSPWheelSettings
 		{
@@ -776,31 +775,9 @@ GAME
 			enableInTrackingStation = True
 			enableInFlight = True
 			enableInMapView = True
-			delayFlightUI = 0.5
-			startDelay = 1
+			delayFlightUI = 0.800000011920929
+			startDelay = 0.8
 			altSkin = True
-		}
-		UPFMSettings
-		{
-			autoPersistance = True
-			newGameOnly = False
-			safetyWarning = True
-			highlightFailures = True
-			stopOnFailure = True
-			overrideStageRecovery = False
-			logging = False
-			AlternatorFailureModuleAllowed = True
-			AntennaFailureModuleAllowed = True
-			BatteryFailureModuleAllowed = True
-			ControlSurfaceFailureModuleAllowed = True
-			EngineFailureModuleAllowed = True
-			LandingGearFailureModuleAllowed = True
-			ParachuteFailureModuleAllowed = True
-			RCSFailureModuleAllowed = True
-			ReactionWheelFailureModuleAllowed = True
-			TankFailureModuleAllowed = True
-			SolarPanelFailureModuleAllowed = True
-			SRBFailureModuleAllowed = True
 		}
 		AdvancedParams
 		{
@@ -875,85 +852,15 @@ GAME
 			facilityLevelTS = 3
 			facilityLevelVAB = 3
 		}
-		KRASH_Settings
+		ContractConfiguratorParameters
 		{
-			CostAdj = 100
-			CostAdjustment = 1
-			wireframes = False
-			defaultAtmoStartingAltitude = 75000
-			defaultNoAtmoStartingAltitude = 10000
-			costAdjustment = 1
-			noChargeDuringTimewarp = True
-		}
-		EL
-		{
-			lightFadeCoefficient = 1
-			lightPower = 1
-			lightRange = 1
-			useKSPskin = True
-		}
-		BM
-		{
-			debugMode = False
-		}
-		PM
-		{
-			EnabledForSave = True
-		}
-		PAPI
-		{
-			debug = False
-		}
-		SR1
-		{
-			SREnabled = True
-			UseDistanceOverride = False
-			FlatRateModel = False
-			UseDREVelocity = True
-			PreRecover = True
-			ShowFailureMessages = True
-			ShowSuccessMessages = True
-			PoweredRecovery = True
-			RecoverClamps = True
-			UseUpgrades = True
-			hideSpaceCenterButton = False
-		}
-		TC
-		{
-			showStockTooltips = True
-			hoverTimeout = 0.5
-			debugMode = False
-			oldDebugMode = False
-		}
-		SR3
-		{
-			GlobalMod = 100
-			GlobalModifier = 1
-			DistanceOver = 1
-			DistanceOverride = 0.01
-			DreVelocity = 2000
-			globalModifier = 1
-			distanceOverride = 0.01
-			DeadlyReentryMaxVelocity = 2000
-			MinTWR = 1
-		}
-		StateFundingSettings
-		{
-			ConvergingRate = 50
-			enabled = True
-			budgetPeriodsPerYear = 12
-			stopWarpAtBudgetPeriod = True
-			stopWarpOnNewYear = True
-			convergingRate = 0.5
-		}
-		CrewRandRCustomParams
-		{
-			VacationScalar = 10
-			enabled = True
-			AssignCrews = True
-			vacationScalar = 0.1
-			MinimumVacationDays = 7
-			MaximumVacationDays = 28
+			DisplayOfferedOrbits = True
+			DisplayActiveOrbits = True
+			DisplayOfferedWaypoints = True
+			DisplayActiveWaypoints = True
+			ActiveContractMultiplier = 1
+			lastMCButton = All
+			lastMCButton = All
 		}
 		NRAPCustomParams
 		{
@@ -969,10 +876,83 @@ GAME
 			size9 = 7.5
 			resetSizes = False
 		}
+		BM
+		{
+			debugMode = False
+		}
+		StateFundingSettings
+		{
+			ConvergingRate = 50
+			enabled = True
+			budgetPeriodsPerYear = 12
+			stopWarpAtBudgetPeriod = True
+			stopWarpOnNewYear = True
+			convergingRate = 0.5
+		}
 		EEX
 		{
 			vabHeight = 5
 			sphHeight = 5
+		}
+		CrewRandRCustomParams
+		{
+			VacationScalar = 10
+			enabled = True
+			AssignCrews = True
+			vacationScalar = 0.1
+			MinimumVacationDays = 7
+			MaximumVacationDays = 28
+		}
+		SR3
+		{
+			GlobalMod = 100
+			GlobalModifier = 1
+			DistanceOver = 1
+			DistanceOverride = 0.01
+			DreVelocity = 2000
+			globalModifier = 1
+			distanceOverride = 0.01
+			DeadlyReentryMaxVelocity = 2000
+			MinTWR = 1
+		}
+		PAPI
+		{
+			debug = False
+		}
+		TC
+		{
+			showStockTooltips = True
+			hoverTimeout = 0.5
+			debugMode = False
+			oldDebugMode = False
+		}
+		SR1
+		{
+			SREnabled = True
+			UseDistanceOverride = False
+			FlatRateModel = False
+			UseDREVelocity = True
+			PreRecover = True
+			ShowFailureMessages = True
+			ShowSuccessMessages = True
+			PoweredRecovery = True
+			RecoverClamps = True
+			UseUpgrades = True
+			hideSpaceCenterButton = False
+		}
+		PM
+		{
+			EnabledForSave = True
+		}
+		KRASH_Settings
+		{
+			CostAdj = 100
+			CostAdjustment = 1
+			wireframes = False
+			defaultAtmoStartingAltitude = 75000
+			defaultNoAtmoStartingAltitude = 10000
+			costAdjustment = 1
+			noChargeDuringTimewarp = True
 		}
 		FMRS_Settings
 		{
@@ -987,6 +967,13 @@ GAME
 			_SETTING_Parachutes = True
 			_SETTING_Defer_Parachutes_to_StageRecovery = True
 			_SETTING_Control_Uncontrollable = False
+		}
+		EL
+		{
+			lightFadeCoefficient = 1
+			lightPower = 1
+			lightRange = 1
+			useKSPskin = True
 		}
 	}
 	SCENARIO
@@ -1014,8 +1001,8 @@ GAME
 		scene = 7, 8, 5, 6, 21
 		RESOURCE_SETTINGS
 		{
-			GameSeed = 206367709
-			ROCMissionSeed = 206367709
+			GameSeed = 2119590338
+			ROCMissionSeed = 2119590338
 			MaxDeltaTime = 21600
 		}
 	}
@@ -1023,7 +1010,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 57993.732421875
+		funds = 35080
 	}
 	SCENARIO
 	{
@@ -1058,24 +1045,6 @@ GAME
 			part = bluedog.ThorDelta.Interstage
 			part = bluedog.YoyoDespinTest2
 			part = bluedog.simpleAntenna
-			part = bluedog.625mDecoupler
-			part = bluedog.625mFairing
-			part = bluedog.9375mDecoupler
-			part = bluedog.ableEngine
-			part = bluedog.ableFairing
-			part = bluedog.ableTank
-			part = bluedog.navahoEngine
-			part = bluedog.redstone
-			part = bluedog.redstoneCS
-			part = bluedog.RedstoneLongTank
-			part = bluedog.RedstoneShortTank
-			part = bluedog.shortableTank
-			part = bluedog.thor625mAdapter
-			part = bluedog.thor9375mAdapter
-			part = bluedog.thorFin
-			part = bluedog.trapezoidFin
-			part = bluedog.vanguardEngine
-			part = bluedog.vanguardTank
 			part = bluedog.Diamant.Asterix
 			part = bluedog.Explorer1
 			part = bluedog.Sargent.11x
@@ -1139,24 +1108,11 @@ GAME
 			part = bluedog.Vanguard.Satellite1
 			part = bluedog.Vanguard.Satellite2
 			part = bluedog.Vanguard.Satellite3
-			part = CapellaAdaptor
-			part = CapellaEngine1
-			part = CapellaExperiment1
-			part = CapellaExperiment2
-			part = CapellaExperiment3
-			part = CapellaFin1
-			part = TitovEngine1
-			part = TitovFin1
-			part = TitovNoseCone
-			part = TitovProbeCore
-			part = TitovTank1
-			part = TitovTank2
 			part = conformaldecals-flag
 			part = conformaldecals-generic
 			part = conformaldecals-semiotic
 			part = 0625.Heatshield
 			part = 1.25.Heatshield
-			part = DockingCamPointerCam
 			part = FASAlaunchClamp125
 			part = FASALaunchClamp1875
 			part = FASALaunchClamp9375
@@ -1289,10 +1245,6 @@ GAME
 			part = AM.MLP.LaunchPlateSqr1
 			part = AM.MLP.LaunchStandSmallPole
 			part = AM.MLP.SmallLaunchStand
-		}
-		ExpParts
-		{
-			adapterSmallMiniTall = 1
 		}
 	}
 	SCENARIO
@@ -1595,7 +1547,7 @@ GAME
 	{
 		name = ScenarioContractEvents
 		scene = 7, 8, 5
-		id = 1315710454
+		id = 1752505100
 	}
 	SCENARIO
 	{
@@ -1663,688 +1615,18 @@ GAME
 			Moho = 30
 			Minmus = 30
 			Mun = 30
-			Kerbin = 54
+			Kerbin = 30
 			Sun = 30
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = 080e97a5-3a58-485b-a304-c9b582071e34
-				type = ConfiguredContract
-				prestige = 0
-				seed = 1190718015
-				state = Active
-				viewed = Read
-				agent = Research & Development Department
-				agentName = Research & Development Department
-				deadlineType = None
-				expiryType = None
-				ignoresWeight = True
-				values = 172800,0,0,0,0,2,11.4,-6.4,108213.98,213.980000000036,0,0
-				subtype = Ground Test
-				title = Ground Test
-				description = Our first mission is a simple one. We need to build a simple scientific rocket and test its equipment before we can receive permission for its first flight. Since safety is a major priority, this mission is not authorized to use kerbonauts. Since the technology you need is still be in the prototype stage the Probodobodyne Stayputnik , the FL-A10 Adapter and Z-100 Rechargeable Battery Pack are available upon accepting the contract.
-				synopsis = Collect science data at KSP.
-				completedMessage = Congratulations ! You have completed the mission !
-				notes = Collect science data at KSP.
-				hash = 870469689
-				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.ExperimentalPart
-					part = probeCoreSphere.v2
-					part = adapterSmallMiniTall
-					part = batteryPack
-					unlockCriteria = CONTRACT_ACCEPTANCE
-					lockCriteria = CONTRACT_COMPLETION
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = SensorCalibration
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = EpicSpaceProgram.Ground Test
-					title = Sensor Calibration
-					notes = 
-					completedMessage = 
-					define = SensorCalibration
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = NewVessel
-						id = NewVessel
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = EpicSpaceProgram.Ground Test
-						title = Launch a New Vessel
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						launchID = 1
-					}
-					PARAM
-					{
-						name = HasCrew
-						id = Crewmembers
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = EpicSpaceProgram.Ground Test
-						title = Unmanned
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = True
-						minCrew = 0
-						maxCrew = 0
-						minExperience = 0
-						maxExperience = 5
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Unmanned
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = EpicSpaceProgram.Ground Test
-							title = Unmanned
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = CollectScienceCustom
-						id = CollectScience
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = EpicSpaceProgram.Ground Test
-						title = Collect science from KSP
-						notes = 
-						completedMessage = 
-						allowStateReset = False
-						targetBody = Kerbin
-						situation = SrfLanded
-						recoveryMethod = Recover
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = EpicSpaceProgram.Ground Test
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = EpicSpaceProgram.Ground Test
-							title = Situation: Landed
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Experiment: Any
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = EpicSpaceProgram.Ground Test
-							title = Experiment: Any
-							notes = 
-							completedMessage = 
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Subject
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = EpicSpaceProgram.Ground Test
-								title = 
-								notes = 
-								completedMessage = 
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Recovery: Recover
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = EpicSpaceProgram.Ground Test
-								title = Recovery: Recover
-								notes = 
-								completedMessage = 
-							}
-						}
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = b5635784-6c53-4a9d-a97f-ed10ecf38991
-				type = ConfiguredContract
-				prestige = 0
-				seed = 379725404
-				state = Active
-				viewed = Read
-				agent = Wright Aeronautical
-				agentName = Wright Aeronautical
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 302400,0,0,0,0,10,51.2,-5.8,302613.98,213.980000000036,0,0
-				subtype = Wright-FirstFlight
-				title = Build and fly your first airplane!
-				description = Thanks to your organization's research efforts, we have finally developed an air-breathing engine that should be light enough to mount to a glider, making controlled powered air flight possible!&br;&br;Previous attempts to use solid rockets for gliders often ended in disaster and a scarcity of willing volunteers.  Wright Aeronautical is asking you to partner with them to build and test a flying machine using an air breathing engine. Your flying machine must have wings so it can control its flight, and must be able to land safely.&br;&br;This is a whole new frontier where many have failed before, so there isn't any investment money available to offer you at the moment. Wright Aeronautical is willing to cover labor costs, snacks, and notify the press, however, you will need to put forth your own funds to acquire the parts necessary for this project. If you succeed, your pilot will acquire both valuable flying skills and your organization will become known worldwide.
-				synopsis = It's time to construct a flying machine - one that will prove to the world that controlled powered air flight is indeed possible!
-				completedMessage = Congratulations! The flight was a success!&br;&br;The historic flight was thankfully caught on camera by the lone press agent who responded to the press invitation. His article about your flight has been read by millions, and you have now spurred the imaginations of Kerbals everywhere.
-				notes = Wilbur and Orville both wanted to go, but the coin they flipped landed on its side - hence the reason why they're also asking you to put up a volunteer to pilot the contraption.
-				hash = -1252266316
-				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.AwardExperience
-					parameter = WrightLand
-					experience = 1
-					awardImmediately = False
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = VesselParameterGroup
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-FirstFlight
-					title = Your flying machine must
-					notes = 
-					completedMessage = 
-					define = GAPcraftWrightFirstFlight
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = True
-					PARAM
-					{
-						name = HasCrew
-						id = HasCrew
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = have a volunteer
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = True
-						minCrew = 1
-						maxCrew = 2147483647
-						minExperience = 0
-						maxExperience = 5
-						PARAM
-						{
-							name = CountParameterDelegate`1
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Count: At least 1 
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = PartValidation
-						id = PartValidation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = have wings
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = True
-						minCount = 1
-						maxCount = 2147483647
-						FILTER
-						{
-							type = FILTER
-							category = Aero
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = With category: Aero
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = With category: Aero
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = CountParameterDelegate`1
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Count: At least 1 
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = All
-						id = All
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = have an air breathing engine only
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = PartValidation
-							id = PartValidation
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = not have any solid rocket engines
-							notes = 
-							completedMessage = 
-							hideChildren = True
-							allowStateReset = True
-							minCount = 0
-							maxCount = 2147483647
-							FILTER
-							{
-								type = NONE
-								MODULE
-								{
-									EngineType = SolidBooster
-								}
-							}
-							PARAM
-							{
-								name = AllParameterDelegate`1
-								id = None have module
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = GAP.Wright-FirstFlight
-								title = None have module
-								notes = 
-								completedMessage = 
-								PARAM
-								{
-									name = ParameterDelegate`1
-									id = With Engine Type: SolidBooster
-									state = Incomplete
-									disableOnStateChange = False
-									values = 0,0,0,0,0
-									ContractIdentifier = GAP.Wright-FirstFlight
-									title = With Engine Type: SolidBooster
-									notes = 
-									completedMessage = 
-								}
-							}
-						}
-						PARAM
-						{
-							name = PartValidation
-							id = PartValidation
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = not have any liquid rocket engines
-							notes = 
-							completedMessage = 
-							hideChildren = True
-							allowStateReset = True
-							minCount = 0
-							maxCount = 2147483647
-							FILTER
-							{
-								type = NONE
-								MODULE
-								{
-									EngineType = LiquidFuel
-								}
-							}
-							PARAM
-							{
-								name = AllParameterDelegate`1
-								id = None have module
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = GAP.Wright-FirstFlight
-								title = None have module
-								notes = 
-								completedMessage = 
-								PARAM
-								{
-									name = ParameterDelegate`1
-									id = With Engine Type: LiquidFuel
-									state = Incomplete
-									disableOnStateChange = False
-									values = 0,0,0,0,0
-									ContractIdentifier = GAP.Wright-FirstFlight
-									title = With Engine Type: LiquidFuel
-									notes = 
-									completedMessage = 
-								}
-							}
-						}
-						PARAM
-						{
-							name = HasResource
-							id = HasResource
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = not have any solid rocket fuel
-							notes = 
-							completedMessage = 
-							hideChildren = True
-							allowStateReset = True
-							capacity = False
-							RESOURCE
-							{
-								resource = SolidFuel
-								minQuantity = 0
-								maxQuantity = 0
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Resource: SolidFuel: None
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = GAP.Wright-FirstFlight
-								title = Resource: SolidFuel: None
-								notes = 
-								completedMessage = 
-							}
-						}
-						PARAM
-						{
-							name = HasResource
-							id = HasResource
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = not have any oxidizer
-							notes = 
-							completedMessage = 
-							hideChildren = True
-							allowStateReset = True
-							capacity = False
-							RESOURCE
-							{
-								resource = Oxidizer
-								minQuantity = 0
-								maxQuantity = 0
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Resource: Oxidizer: None
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								ContractIdentifier = GAP.Wright-FirstFlight
-								title = Resource: Oxidizer: None
-								notes = 
-								completedMessage = 
-							}
-						}
-					}
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = VesselParameterGroup
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-FirstFlight
-					title = get airborne
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					hideChildren = True
-					vessel = GAPcraftWrightFirstFlight
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Vessel: GAPcraftWrightFirstFlight
-						optional = True
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = Vessel: GAPcraftWrightFirstFlight
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						hidden = True
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Kerbin
-						situation = FLYING
-						minSpeed = 15
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Flying
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Situation: Flying
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Greater than 15 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Speed: Greater than 15 m/s
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = WrightLand
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-FirstFlight
-					title = and then land and stop anywhere
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					hideChildren = True
-					vessel = GAPcraftWrightFirstFlight
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Vessel: GAPcraftWrightFirstFlight
-						optional = True
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = Vessel: GAPcraftWrightFirstFlight
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = 
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						situation = LANDED
-						maxSpeed = 0
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Situation: Landed
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Less than 0 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-FirstFlight
-							title = Speed: Less than 0 m/s
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-				PARAM
-				{
-					name = All
-					id = All
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-FirstFlight
-					title = safely
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					PARAM
-					{
-						name = VesselNotDestroyed
-						id = VesselNotDestroyed
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = without destroying your flying machine
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						vessel = GAPcraftWrightFirstFlight
-					}
-					PARAM
-					{
-						name = KerbalDeathsCustom
-						id = KerbalDeaths
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-FirstFlight
-						title = or killing anyone
-						notes = 
-						completedMessage = 
-						countMax = 1
-						count = 0
-						vesselIdentifier = GAPcraftWrightFirstFlight
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 44547.077339058756
+		NextSpawnTime = 29195.626320163057
 	}
 	SCENARIO
 	{
@@ -3169,938 +2451,6 @@ GAME
 	{
 		name = ContractPreLoader
 		scene = 7, 8, 5
-		CONTRACT
-		{
-			guid = 0b79f9de-c744-4e64-a160-ba597ac2d38a
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1192825425
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-750,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Ford-Ladder
-			title = Purchase ladder tech.
-			description = Hello, my name is Henry Kerman with the Ford Carriage Company. My company has developed structural and mobility parts useful for making small but reliable vehicles.&br;&br;You may purchase the following production-ready prototype that will allow you to start making smaller vehicles:&br;&br;- Pegasus I Mobility Enhancer
-			synopsis = Structural and mobility technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Pegasus I Mobility Enhancer&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = -518906736
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = ladder1
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Ford-Ladder
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 32121f5d-aca8-454f-93c0-86465cd40e4b
-			type = ConfiguredContract
-			prestige = 1
-			seed = 262294315
-			state = Offered
-			viewed = Seen
-			agent = K.A.R.A
-			agentName = KARA
-			deadlineType = None
-			expiryType = None
-			ignoresWeight = True
-			values = 129600,0,0,0,0,2,9.125,0,108213.98,0,0,0
-			subtype = LeaveLaunchPad
-			title = Leave the Launchpad!
-			description = We think we've finally done it. A rocket design that won't immediately explode on the launchpad, one that should actually fly for at least a few seconds. Go test this theory, and take this barrier made of twigs with you. We don't want another repeat of what happened to our last agency administrator...
-			synopsis = Leave the surface of Kerbin.
-			completedMessage = Rocket successfully launched! Now to figure out how to get it back in one piece...
-			hash = -224479274
-			targetBody = Kerbin
-			PARAM
-			{
-				name = VesselIsType
-				id = p1
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = PBCgroup.LeaveLaunchPad
-				title = 
-				notes = Ensure that your vessel's name is tagged as a PROBE, and not RELAY, ROVER, DEBRIS, etc.
-				completedMessage = 
-				allowStateReset = True
-				vesselType = Probe
-			}
-			PARAM
-			{
-				name = HasCrewCapacity
-				id = p2
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = PBCgroup.LeaveLaunchPad
-				title = Crew Capacity: None
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				allowStateReset = True
-				failWhenUnmet = True
-				minCapacity = 0
-				maxCapacity = 0
-			}
-			PARAM
-			{
-				name = ReachState
-				id = p3
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = PBCgroup.LeaveLaunchPad
-				title = 
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				allowStateReset = True
-				targetBody = Kerbin
-				situation = FLYING
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Flying
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Flying
-					notes = 
-					completedMessage = 
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = d97b534b-5a07-41ba-99fc-4330b70ef897
-			type = ConfiguredContract
-			prestige = 2
-			seed = 879049546
-			state = Offered
-			viewed = Seen
-			agent = Exploration
-			agentName = Exploration
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 186960,0,0,0,0,4,15.6,0,187173.98,0,0,0
-			subtype = ExplorationPlus-ReachSpace
-			title = Reach for the Stars
-			description = It's time to slip the surly bonds of gravity, and touch the stars. What? Oh, I mean - let's go to space.
-			synopsis = Start a space program
-			completedMessage = Huzzah! There is no such thing as the final frontier.
-			hash = 1712163008
-			targetBody = Kerbin
-			PARAM
-			{
-				name = ReachState
-				id = ReachSpace
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = ExplorationPlus.ExplorationPlus-ReachSpace
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				situation = SUB_ORBITAL
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Sub-orbital trajectory
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Sub-orbital trajectory
-					notes = 
-					completedMessage = 
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = af5e6c03-1fb0-40f1-a359-7cd54301bd64
-			type = ConfiguredContract
-			prestige = 0
-			seed = 289269712
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-750,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Ford-CubicStrut
-			title = Purchase cubic strut tech.
-			description = Hello, my name is Henry Kerman with the Ford Carriage Company. My company has developed structural and mobility parts useful for making small but reliable vehicles.&br;&br;You may purchase the following production-ready prototype that will allow you to start making smaller vehicles:&br;&br;- Cubic Octagonal Strut
-			synopsis = Structural and mobility technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Cubic Octagonal Strut&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 844254250
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = strutCube
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Ford-CubicStrut
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = f1ad461f-69e9-45a5-9415-7bdc3b230d39
-			type = ConfiguredContract
-			prestige = 2
-			seed = 208146325
-			state = Offered
-			viewed = Seen
-			agent = Exploration
-			agentName = Exploration
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 167760,0,0,0,0,4,9.5999,0,167973.98,0,0,0
-			subtype = ExplorationPlus-FirstSteps
-			title = Do Some Science!
-			description = First things first, we need to test our equipment - be a good Kerbal and collect some science. Preferably while moving very fast.
-			synopsis = Start a space program
-			completedMessage = Huzzah! There is no such thing as the final frontier.
-			hash = -197427298
-			targetBody = Kerbin
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = ExplorationPlus.ExplorationPlus-FirstSteps
-				title = Return our first piece of scientific data.
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				recoveryMethod = RecoverOrTransmit
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Any
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Any
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Subject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = ReachState
-				id = FirstLaunch
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = ExplorationPlus.ExplorationPlus-FirstSteps
-				title = Launch a vessel into the air
-				notes = 
-				completedMessage = 
-				hideChildren = True
-				allowStateReset = True
-				targetBody = Kerbin
-				situation = FLYING
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-					hidden = True
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Flying
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Flying
-					notes = 
-					completedMessage = 
-					hidden = True
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 52422449-4c25-482d-8f4f-b91a2f5c3772
-			type = ConfiguredContract
-			prestige = 0
-			seed = 2040105135
-			state = Offered
-			viewed = Read
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-2000,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-Intake
-			title = Purchase air intake tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed an engine that is light enough to mount onto a flying machine!&br;&br;You may purchase the following production-ready prototype part that will allow you to start making flying machines:&br;&br;- Small Circular Intake
-			synopsis = Flight engine technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype part will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Small Circular Intake&br;&br;Enjoy the new parts!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 1357429391
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = miniIntake
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-Intake
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 555f7f60-d4b3-445d-baca-13ad52063032
-			type = ConfiguredContract
-			prestige = 2
-			seed = 1098905546
-			state = Offered
-			viewed = Seen
-			agent = Exploration
-			agentName = Exploration
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 297600,0,0,0,0,4,15.6,0,297813.98,0,0,0
-			subtype = ExplorationPlus-Orbit
-			title = Orbit Kerbin
-			description = Here at KSC we like to think we are always open to exploring new frontiers. With this in mind, we want you to head out to Kerbin and see what we can see.
-			synopsis = Reach orbit of Kerbin
-			completedMessage = Huzzah! There is no such thing as the final frontier.
-			hash = 2045345754
-			targetBody = Kerbin
-			UNIQUE_DATA
-			{
-				targetBody1 = CelestialBody:Kerbin
-			}
-			PARAM
-			{
-				name = ReachState
-				id = ReachState
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = ExplorationPlus.ExplorationPlus-Orbit
-				title = Orbit Kerbin
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				situation = ORBITING
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Orbit
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Orbit
-					notes = 
-					completedMessage = 
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = e201d3ff-e111-4fd4-b882-2dc95d137a29
-			type = ConfiguredContract
-			prestige = 0
-			seed = 890301328
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-1250,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-Sepratron
-			title = Purchase sepratron tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed flight control technology that we know will eventually lead to controllable flying machines!&br;&br;You may purchase the following production-ready prototype that will allow you to start making flying machines:&br;&br;- Sepratron I
-			synopsis = Flight control technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Sepratron I&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 143048266
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = sepMotor1
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-Sepratron
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 40d9ed17-f639-4dea-91d3-a11b676f8fc0
-			type = ConfiguredContract
-			prestige = 0
-			seed = 572141147
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-2500,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-Elevon
-			title = Purchase flight control tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed flight control technology that we know will eventually lead to controllable flying machines!&br;&br;You may purchase the following production-ready prototype that will allow you to start making flying machines:&br;&br;- Elevon 4
-			synopsis = Flight control technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Elevon 4&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = -2099823536
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = smallCtrlSrf
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-Elevon
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 6a43de94-46f0-4f6c-a2ee-66a9584c779a
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1000698966
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-2500,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Inigma-CommandSeat
-			title = Purchase command seat tech.
-			description = Hello again! Inigma Kerman here. Welcome to the Prototype Marketplace for my own company, Inigma Industries! I am proud to share that my company has discovered command seat technology!&br;&br;You may purchase the following production-ready prototype that will allow you to start making command seat vehicles:&br;&br;- EAS-1 External Command Seat
-			synopsis = Command seat technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- EAS-1 External Command Seat&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 2116764639
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = seatExternalCmd
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Inigma-CommandSeat
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 7b510637-5f68-46fe-a682-cfde1e7e676d
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1029946131
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-1250,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-FuelLine
-			title = Purchase fuel line tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed an engine that is light enough to mount onto a flying machine!&br;&br;You may purchase the following production-ready prototype part that will allow you to start making flying machines:&br;&br;- FTX-2 External Fuel Duct
-			synopsis = Flight engine technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype part will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- FTX-2 External Fuel Duct&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = -1042246785
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = fuelLine
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-FuelLine
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 21058607-b777-4f08-be43-02e8238e3fb5
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1824725322
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-3000,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Tesla-Wheel
-			title = Purchase electric wheel tech.
-			description = Hello, my name is Nikola Kerman, and I am the owner of Tesla Electrics. We have invented technology that can be applied toward the development of simple electic vehicles!&br;&br;You may purchase this production-ready prototype that will allow you to start making electric-powered vehicles:&br;&br;- RoveMax Model S2 wheels
-			synopsis = Electric vehicle technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- RoveMax Model S2&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = -139142824
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = roverWheel2
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Tesla-Wheel
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 1c310f3d-4b04-4a6b-b97d-8051277eff2e
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1265845193
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-750,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Ford-iBeam
-			title = Purchase mini I beam tech.
-			description = Hello, my name is Henry Kerman with the Ford Carriage Company. My company has developed structural and mobility parts useful for making small but reliable vehicles.&br;&br;You may purchase the following production-ready prototype that will allow you to start making smaller vehicles:&br;&br;- M-Beam 200 I-Beam Pocket Edition
-			synopsis = Structural and mobility technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- M-Beam 200 I-Beam Pocket Edition&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = -1137529279
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = structuralIBeam3
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Ford-iBeam
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 789825fa-2524-4963-bf87-31c7c5e8bf07
-			type = ConfiguredContract
-			prestige = 0
-			seed = 198320617
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-3000,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-APKitty
-			title = Purchase AirplanePlus propeller tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed an engine that is light enough to mount onto a flying machine!&br;&br;You may purchase the following production-ready prototype that will allow you to start making flying machines:&br;&br;- KT6A "Kitty" Turboprop Engine
-			synopsis = Propeller engine technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- KT6A "Kitty" Turboprop Engine&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 500326037
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = tbmProp
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-APKitty
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = 3f20b96f-d00a-40dc-b766-d9af6522ce5c
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1097324737
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-2500,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-Wing
-			title = Purchase wing tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed flight control technology that we know will eventually lead to controllable flying machines!&br;&br;You may purchase the following production-ready prototype that will allow you to start making flying machines:&br;&br;- Wing Connector Type E
-			synopsis = Flight control technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Wing Connector Type E&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 679514106
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = wingConnector5
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-Wing
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = c12ad9d6-e013-42b4-bf0e-db4becb6ca35
-			type = ConfiguredContract
-			prestige = 0
-			seed = 269692460
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-2500,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Inigma-Decoupler
-			title = Purchase decoupler tech.
-			description = Hello again! Inigma Kerman here. Welcome to the Prototype Marketplace for my own company, Inigma Industries! I am proud to share that my company has discovered decoupler technology!&br;&br;You may purchase the following production-ready prototype that will allow you to start separating parts of a craft:&br;&br;- TD-06 Decoupler
-			synopsis = Decoupler technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- TD-06 Decoupler&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 862106249
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = Decoupler.0
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Inigma-Decoupler
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
-		CONTRACT
-		{
-			guid = e4a16aea-6b8e-4ee2-b7cf-874330b42efa
-			type = ConfiguredContract
-			prestige = 0
-			seed = 474715864
-			state = Offered
-			viewed = Seen
-			agent = Giving Aircraft a Purpose
-			agentName = Giving Aircraft a Purpose
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 302400,0,0,-1250,0,0,0,0,302613.98,0,0,0
-			subtype = GAP-Wright-FuelTank
-			title = Purchase fuel tank tech.
-			description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed an engine that is light enough to mount onto a flying machine!&br;&br;You may purchase the following production-ready prototype part that will allow you to start making flying machines:&br;&br;- Oscar-B Fuel Tank
-			synopsis = Flight engine technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype part will be yours!
-			completedMessage = Part transfer complete.&br;&br;Your organization now has access to the following:&br;&br;- Oscar-B Fuel Tank&br;&br;Enjoy the new part!
-			notes = The part will be available immediately to your organization upon contract acceptance.
-			hash = 800662079
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.ExperimentalPart
-				part = miniFuelTank
-				unlockCriteria = CONTRACT_ACCEPTANCE
-				lockCriteria = DO_NOT_LOCK
-			}
-			PARAM
-			{
-				name = Timer
-				id = Timer
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = Prototype Marketplace.GAP-Wright-FuelTank
-				title = 
-				notes = 
-				completedMessage = 
-				fakeFailures = True
-				duration = 1
-				endTime = 0
-				timerType = CONTRACT_ACCEPTANCE
-			}
-		}
 	}
 	SCENARIO
 	{
@@ -4209,11 +2559,6 @@ GAME
 			}
 			Contract_Type
 			{
-				TypeName = BDB_Corona_KH1
-				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
-			}
-			Contract_Type
-			{
 				TypeName = BDB_Corona_KH4
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
@@ -4255,6 +2600,11 @@ GAME
 			Contract_Type
 			{
 				TypeName = BDB_Ranger_Block2
+				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
+			}
+			Contract_Type
+			{
+				TypeName = BDB_Ranger
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
 			Contract_Type
@@ -4305,6 +2655,11 @@ GAME
 			Contract_Type
 			{
 				TypeName = CleverSatConstellationShift
+				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
+			}
+			Contract_Type
+			{
+				TypeName = CleverSatCore
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
 			Contract_Type
@@ -4629,11 +2984,6 @@ GAME
 			}
 			Contract_Type
 			{
-				TypeName = KerbalAcademyFieldScience
-				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
-			}
-			Contract_Type
-			{
 				TypeName = KerbalAcademyFlightSchool
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
@@ -4745,6 +3095,11 @@ GAME
 			Contract_Type
 			{
 				TypeName = SurfaceSample
+				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
+			}
+			Contract_Type
+			{
+				TypeName = StationCore
 				ContractValues = 1.000,1.000,1.000,1.000,1.000,1.000,1.000,10.0,10.0
 			}
 			Contract_Type
@@ -6803,38 +5158,6 @@ GAME
 		scene = 6, 7, 5, 8
 		CrewList
 		{
-			KERBAL
-			{
-				Name = Jebediah Kerman
-				CurrentMissionStartTime = -1
-				GetLastMissionDuration = -1
-				LastMissionEndTime = -1
-				ExtremelyFatigued = False
-			}
-			KERBAL
-			{
-				Name = Bill Kerman
-				CurrentMissionStartTime = -1
-				GetLastMissionDuration = -1
-				LastMissionEndTime = -1
-				ExtremelyFatigued = False
-			}
-			KERBAL
-			{
-				Name = Bob Kerman
-				CurrentMissionStartTime = -1
-				GetLastMissionDuration = -1
-				LastMissionEndTime = -1
-				ExtremelyFatigued = False
-			}
-			KERBAL
-			{
-				Name = Valentina Kerman
-				CurrentMissionStartTime = -1
-				GetLastMissionDuration = -1
-				LastMissionEndTime = -1
-				ExtremelyFatigued = False
-			}
 		}
 	}
 	SCENARIO
@@ -6867,7 +5190,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = b5635784-6c53-4a9d-a97f-ed10ecf38991|N|True,080e97a5-3a58-485b-a304-c9b582071e34|N|True
+				ActiveListID = 
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -6898,7 +5221,7 @@ GAME
 	{
 		name = StripesData
 		scene = 5, 7, 8, 6
-		firstRun = True
+		firstRun = False
 		STRIPYKERBAL
 		{
 			Name = Jebediah Kerman
@@ -6963,7 +5286,7 @@ GAME
 			SalesFigures = 0
 			SciPoints = -1
 			UpgradesResetCounter = 0
-			TechUpgrades = 2
+			TechUpgrades = 3
 			SavedUpgradePointsPreAPI = 0
 			VABUpgrades
 			{
@@ -6995,12 +5318,12 @@ GAME
 			}
 			SPHUpgrades
 			{
-				Upgrade = 3
+				Upgrade = 2
 			}
 			RDUpgrades
 			{
 				Upgrade = 4
-				Upgrade = 2
+				Upgrade = 3
 			}
 			VABList
 			{
@@ -7048,7 +5371,7 @@ GAME
 			}
 			SPHRateCache
 			{
-				rate = 0.25
+				rate = 0.20000000000000001
 				rate = 0
 			}
 		}
@@ -7060,8 +5383,8 @@ GAME
 	{
 		name = KerbalHealthScenario
 		scene = 5, 8, 7, 6
-		version = 1.4.4.0
-		nextEventTime = 76489.019840472363
+		version = 1.4.6.0
+		nextEventTime = 64329.9043742953
 		KerbalHealthStatus
 		{
 			name = Jebediah Kerman
@@ -7096,7 +5419,7 @@ GAME
 	{
 		name = KRASHPersistent
 		scene = 5, 6, 7, 8, 5
-		shelterSimulationActive = True
+		shelterSimulationActive = False
 		selectedCostsCfg = * Custom
 	}
 	SCENARIO
@@ -7117,12 +5440,12 @@ GAME
 		EmergencyFundPercent = 10
 		EmergencyFundingEnabled = False
 		MasterSwitch = True
-		HardMode = True
+		HardMode = False
 		ContractInterceptor = True
 		CoverCosts = False
 		StopTimeWarp = True
-		DecayEnabled = True
-		RepDecay = 5
+		DecayEnabled = False
+		RepDecay = 10
 		Multiplier = 2227
 		FriendlyInterval = 30
 		AvailableWages = 1000
@@ -7135,10 +5458,10 @@ GAME
 		sphCost = 6000
 		missionControlCost = 4000
 		astronautComplexCost = 2000
-		administrationCost = 1991
+		administrationCost = 4000
 		vabCost = 6000
 		trackingStationCost = 3000
-		rndCost = 10000
+		rndCost = 7000
 		otherFacilityCost = 3000
 		LaunchCostsEnabled = True
 		LaunchCostsVAB = 1000
@@ -7147,41 +5470,13 @@ GAME
 		kerbalDeathPenalty = 15
 		vesselDeathPenalty = 10
 		upgraded = True
-		useItOrLoseIt = False
+		useItOrLoseIt = True
 		researchWarning = False
 	}
 	SCENARIO
 	{
 		name = HallOfFameScenarioModule
 		scene = 7, 8, 5
-	}
-	SCENARIO
-	{
-		name = UPFMData
-		scene = 7, 6
-		UPFMTracker
-		{
-			FlightWindow = True
-			EditorWindow = False
-			PART
-			{
-				ID = 547606261
-				Generation = 1
-				Tested = False
-			}
-			PART
-			{
-				ID = 3648284008
-				Generation = 1
-				Tested = False
-			}
-			PART
-			{
-				ID = 3749686248
-				Generation = 1
-				Tested = False
-			}
-		}
 	}
 	SCENARIO
 	{
@@ -14619,7 +12914,7 @@ GAME
 	{
 		name = ResearchBodies
 		scene = 5, 6, 7, 8
-		lastTimeCheckedSOIs = 215.76000000003657
+		lastTimeCheckedSOIs = 227.40000000004252
 		RBGameSettings
 		{
 			BODY
@@ -14956,7 +13251,7 @@ GAME
 			}
 			ResourceType
 			{
-				Resource = Blutonium
+				Resource = Karbonite
 				MinColor = 0,0.319215685,0.74000001,1
 				MaxColor = 0.75,0.382352889,0,1
 				Transparency = 20
@@ -14964,27 +13259,27 @@ GAME
 			}
 			ResourceType
 			{
-				Resource = Gemstones
+				Resource = Minerals
 				MinColor = 0.4762353,0.0432941206,0.920000017,1
 				MaxColor = 0,0.576470971,0.0745100006,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
-				Resource = Zeonium
+				Resource = Substrate
 				MinColor = 0.64188242,0.0138039198,0.879999995,1
 				MaxColor = 0.742823482,0.819999993,0,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
-				Resource = Propellium
+				Resource = Uraninite
 				MinColor = 0,0.839215994,0.76078397,1
 				MaxColor = 1,0.235294104,0.0313725509,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
@@ -14992,23 +13287,23 @@ GAME
 				MinColor = 0.75999999,0,0.572235286,1
 				MaxColor = 0,0.568784416,0.980000019,1
 				Transparency = 20
-				MinMaxValues = 0|0.500|6.500,1|5.000|45.000,2|0.500|6.500,3|0.500|6.500,4|0.500|6.500,5|0.500|6.500,6|0.500|6.500,7|0.500|6.500,8|0.500|6.500,9|5.000|40.000,10|0.500|6.500,11|0.500|6.500,12|0.500|6.500,13|0.500|6.500,14|0.500|6.500,15|0.500|6.500,16|0.500|6.500,17|0.500|6.500,18|0.500|6.500,19|0.500|6.500,20|0.500|6.500,21|0.500|6.500,22|0.500|6.500,23|0.500|6.500,24|0.500|6.500,25|0.500|6.500,26|0.500|6.500,27|0.500|6.500,28|0.500|6.500,29|0.500|6.500,30|0.500|6.500,31|0.500|6.500
+				MinMaxValues = 0|0.500|6.500,1|5.000|45.000,2|0.500|6.500,3|0.500|6.500,4|0.500|6.500,5|0.500|6.500,6|0.500|6.500,7|0.500|6.500,8|0.500|6.500,9|5.000|40.000,10|0.500|6.500,11|0.500|6.500,12|0.500|6.500,13|0.500|6.500,14|0.500|6.500,15|0.500|6.500,16|0.500|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
-				Resource = Minerite
+				Resource = MetallicOre
 				MinColor = 0.720000029,0.505411804,0,1
 				MaxColor = 0,0.630274475,0.980000019,1
 				Transparency = 20
-				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
-				Resource = Nitronite
+				Resource = MetalOre
 				MinColor = 0.182784304,0.589999974,0,1
 				MaxColor = 0.0865882412,0.894745111,0.920000017,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|0.000|7.500,18|0.000|7.500,19|0.000|7.500,20|0.000|7.500,21|0.000|7.500,22|0.000|7.500,23|0.000|7.500,24|0.000|7.500,25|0.000|7.500,26|0.000|7.500,27|0.000|7.500,28|0.000|7.500,29|0.000|7.500,30|0.000|7.500,31|0.000|7.500
 			}
 			ResourceType
 			{
@@ -15016,23 +13311,39 @@ GAME
 				MinColor = 1,0.2196078,0.772548974,1
 				MaxColor = 0.322196096,0.790000021,0,1
 				Transparency = 20
-				MinMaxValues = 0|15.000|35.000,1|15.000|35.000,2|15.000|35.000,3|15.000|35.000,4|15.000|35.000,5|15.000|35.000,6|15.000|35.000,7|15.000|35.000,8|15.000|35.000,9|15.000|35.000,10|15.000|35.000,11|15.000|35.000,12|15.000|35.000,13|15.000|35.000,14|15.000|35.000,15|15.000|35.000,16|15.000|35.000,17|15.000|35.000,18|15.000|35.000,19|15.000|35.000,20|15.000|35.000,21|15.000|35.000,22|15.000|35.000,23|15.000|35.000,24|15.000|35.000,25|15.000|35.000,26|15.000|35.000,27|15.000|35.000,28|15.000|35.000,29|15.000|35.000,30|15.000|35.000,31|15.000|35.000
+				MinMaxValues = 0|15.000|35.000,1|15.000|35.000,2|15.000|35.000,3|15.000|35.000,4|15.000|35.000,5|15.000|35.000,6|15.000|35.000,7|15.000|35.000,8|15.000|35.000,9|15.000|35.000,10|15.000|35.000,11|15.000|35.000,12|15.000|35.000,13|15.000|35.000,14|15.000|35.000,15|15.000|35.000,16|15.000|35.000,17|0.000|35.000,18|0.000|35.000,19|0.000|35.000,20|0.000|35.000,21|0.000|35.000,22|0.000|35.000,23|0.000|35.000,24|0.000|35.000,25|0.000|35.000,26|0.000|35.000,27|0.000|35.000,28|0.000|35.000,29|0.000|35.000,30|0.000|35.000,31|0.000|35.000
 			}
 			ResourceType
 			{
-				Resource = Hexagen
+				Resource = ExoticMinerals
 				MinColor = 0.939568579,0.970000029,0,1
 				MaxColor = 0.467882395,0,0.970000029,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
-				Resource = GrayWater
+				Resource = Gypsum
+				MinColor = 0.779999971,0.2905882,0,1
+				MaxColor = 0,1,0.807843089,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Hydrates
 				MinColor = 0.172117695,0.769999981,0.39858821,1
 				MaxColor = 0.930000007,0.452235311,0,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
+			}
+			ResourceType
+			{
+				Resource = RareMetals
+				MinColor = 0,0.49000001,0.351647109,1
+				MaxColor = 1,0,0.223529398,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|6.500,1|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,8|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
 			}
 			ResourceType
 			{
@@ -15044,23 +13355,7 @@ GAME
 			}
 			ResourceType
 			{
-				Resource = Methane
-				MinColor = 0.146117598,0.0432941206,0.689999998,1
-				MaxColor = 0,1,0.678431392,1
-				Transparency = 20
-				MinMaxValues = 0|1.000|7.500,1|1.000|15.000,2|1.000|20.000,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|1.000|7.500,18|1.000|7.500,19|1.000|7.500,20|1.000|7.500,21|1.000|7.500,22|1.000|7.500,23|1.000|7.500,24|1.000|7.500,25|1.000|7.500,26|1.000|7.500,27|1.000|7.500,28|1.000|7.500,29|1.000|7.500,30|1.000|7.500,31|1.000|7.500
-			}
-			ResourceType
-			{
-				Resource = CarbonDioxide
-				MinColor = 0.720000029,0.505411804,0,1
-				MaxColor = 0,0.630274475,0.980000019,1
-				Transparency = 20
-				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|1.000|6.500,18|1.000|6.500,19|1.000|6.500,20|1.000|6.500,21|1.000|6.500,22|1.000|6.500,23|1.000|6.500,24|1.000|6.500,25|1.000|6.500,26|1.000|6.500,27|1.000|6.500,28|1.000|6.500,29|1.000|6.500,30|1.000|6.500,31|1.000|6.500
-			}
-			ResourceType
-			{
-				Resource = Ammonia
+				Resource = Alumina
 				MinColor = 0.446470588,0,0.689999998,1
 				MaxColor = 0.0705882385,1,0,1
 				Transparency = 20
@@ -15068,43 +13363,75 @@ GAME
 			}
 			ResourceType
 			{
+				Resource = Borate
+				MinColor = 0.0170588307,0.863176525,0.870000005,1
+				MaxColor = 1,0,0,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500
+			}
+			ResourceType
+			{
+				Resource = Monazite
+				MinColor = 0.146117598,0.0432941206,0.689999998,1
+				MaxColor = 0,1,0.678431392,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|15.000,2|1.000|20.000,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|1.000|7.500,18|1.000|7.500,19|1.000|7.500,20|1.000|7.500,21|1.000|7.500,22|1.000|7.500,23|1.000|7.500,24|1.000|7.500,25|1.000|7.500,26|1.000|7.500,27|1.000|7.500,28|1.000|7.500,29|1.000|7.500,30|1.000|7.500,31|1.000|7.500
+			}
+			ResourceType
+			{
+				Resource = SaltWater
+				MinColor = 0,0.779999971,0.333411813,1
+				MaxColor = 0.388235301,0.921568573,1,1
+				Transparency = 20
+				MinMaxValues = 0|0.100|1.000,1|0.100|40.000,2|0.100|1.000,3|0.100|1.000,4|0.100|1.000,5|0.100|1.000,6|0.100|1.000,7|0.100|1.000,8|0.100|1.000,9|0.100|1.000,10|0.100|1.000,11|0.100|1.000,12|0.100|1.000,13|0.100|1.000,14|0.100|1.000,15|0.100|1.000,16|0.100|1.000
+			}
+			ResourceType
+			{
+				Resource = Silicates
+				MinColor = 0.769999981,0.721686184,0.262705892,1
+				MaxColor = 0.882352889,0.458823502,1,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|0.000|7.500,18|0.000|7.500,19|0.000|7.500,20|0.000|7.500,21|0.000|7.500,22|0.000|7.500,23|0.000|7.500,24|0.000|7.500,25|0.000|7.500,26|0.000|7.500,27|0.000|7.500,28|0.000|7.500,29|0.000|7.500,30|0.000|7.500,31|0.000|7.500
+			}
+			ResourceType
+			{
+				Resource = SolarWind
+				MinColor = 0.129882395,0.350117713,0.720000029,1
+				MaxColor = 1,1,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.100|1.000,1|0.100|1.000,2|0.100|1.000,3|0.100|1.000,4|0.500|10.000,5|0.100|1.000,6|0.100|1.000,7|0.100|1.000,8|0.100|1.000,9|0.100|1.000,10|0.100|1.000,11|0.100|1.000,12|0.100|1.000,13|0.100|1.000,14|0.100|1.000,15|0.100|1.000,16|0.100|1.000
+			}
+			ResourceType
+			{
+				Resource = Methane
+				MinColor = 0.146117598,0.0432941206,0.689999998,1
+				MaxColor = 0,1,0.678431392,1
+				Transparency = 20
+				MinMaxValues = 0|1.000|7.500,1|1.000|15.000,2|1.000|20.000,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|0.000|7.500,18|0.000|7.500,19|0.000|7.500,20|0.000|7.500,21|0.000|7.500,22|0.000|7.500,23|0.000|7.500,24|0.000|7.500,25|0.000|7.500,26|0.000|7.500,27|0.000|7.500,28|0.000|7.500,29|0.000|7.500,30|0.000|7.500,31|0.000|7.500
+			}
+			ResourceType
+			{
+				Resource = CarbonDioxide
+				MinColor = 0.720000029,0.505411804,0,1
+				MaxColor = 0,0.630274475,0.980000019,1
+				Transparency = 20
+				MinMaxValues = 8|1.000|6.500,1|1.000|6.500,0|1.000|6.500,2|1.000|6.500,3|1.000|6.500,4|1.000|6.500,5|1.000|6.500,6|1.000|6.500,7|1.000|6.500,9|1.000|6.500,10|1.000|6.500,11|1.000|6.500,12|1.000|6.500,13|1.000|6.500,14|1.000|6.500,15|1.000|6.500,16|1.000|6.500,17|0.000|6.500,18|0.000|6.500,19|0.000|6.500,20|0.000|6.500,21|0.000|6.500,22|0.000|6.500,23|0.000|6.500,24|0.000|6.500,25|0.000|6.500,26|0.000|6.500,27|0.000|6.500,28|0.000|6.500,29|0.000|6.500,30|0.000|6.500,31|0.000|6.500
+			}
+			ResourceType
+			{
+				Resource = Ammonia
+				MinColor = 0.446470588,0,0.689999998,1
+				MaxColor = 0.0705882385,1,0,1
+				Transparency = 20
+				MinMaxValues = 0|0.700|10.000,1|0.700|14.000,2|2.500|35.000,3|0.700|10.000,4|2.500|35.000,5|0.700|10.000,6|5.000|55.000,7|0.700|10.000,8|0.700|10.000,9|0.700|10.000,10|0.700|10.000,11|0.700|10.000,12|0.700|10.000,13|0.700|10.000,14|0.700|10.000,15|0.700|90.000,16|0.700|10.000,17|0.000|10.000,18|0.000|10.000,19|0.000|10.000,20|0.000|10.000,21|0.000|10.000,22|0.000|10.000,23|0.000|10.000,24|0.000|10.000,25|0.000|10.000,26|0.000|10.000,27|0.000|10.000,28|0.000|10.000,29|0.000|10.000,30|0.000|10.000,31|0.000|10.000
+			}
+			ResourceType
+			{
 				Resource = Oxygen
 				MinColor = 0.0170588307,0.863176525,0.870000005,1
 				MaxColor = 1,0,0,1
 				Transparency = 20
-				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|1.000|7.500,18|1.000|7.500,19|1.000|7.500,20|1.000|7.500,21|1.000|7.500,22|1.000|7.500,23|1.000|7.500,24|1.000|7.500,25|1.000|7.500,26|1.000|7.500,27|1.000|7.500,28|1.000|7.500,29|1.000|7.500,30|1.000|7.500,31|1.000|7.500
-			}
-			ResourceType
-			{
-				Resource = Alumina
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|2.000|3.000,1|2.000|3.000,2|2.000|3.000,3|2.000|3.000,4|2.000|3.000,5|2.000|3.000,6|2.000|3.000,7|2.000|3.000,8|2.000|3.000,9|2.000|3.000,10|2.000|3.000,11|2.000|3.000,12|2.000|3.000,13|2.000|3.000,14|2.000|3.000,15|2.000|3.000,16|2.000|3.000,17|2.000|3.000,18|2.000|3.000,19|2.000|3.000,20|2.000|3.000,21|2.000|3.000,22|2.000|3.000,23|2.000|3.000,24|2.000|3.000,25|2.000|3.000,26|2.000|3.000,27|2.000|3.000,28|2.000|3.000,29|2.000|3.000,30|2.000|3.000,31|2.000|3.000
-			}
-			ResourceType
-			{
-				Resource = ExoticMinerals
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Gypsum
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Hydrates
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
+				MinMaxValues = 0|1.000|7.500,1|1.000|7.500,2|1.000|7.500,3|1.000|7.500,4|1.000|7.500,5|1.000|7.500,6|1.000|7.500,7|1.000|7.500,8|1.000|7.500,9|1.000|7.500,10|1.000|7.500,11|1.000|7.500,12|1.000|7.500,13|1.000|7.500,14|1.000|7.500,15|1.000|7.500,16|1.000|7.500,17|0.000|7.500,18|0.000|7.500,19|0.000|7.500,20|0.000|7.500,21|0.000|7.500,22|0.000|7.500,23|0.000|7.500,24|0.000|7.500,25|0.000|7.500,26|0.000|7.500,27|0.000|7.500,28|0.000|7.500,29|0.000|7.500,30|0.000|7.500,31|0.000|7.500
 			}
 			ResourceType
 			{
@@ -15116,75 +13443,11 @@ GAME
 			}
 			ResourceType
 			{
-				Resource = MetallicOre
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Minerals
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Monazite
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|3.000|4.000,1|3.000|4.000,2|3.000|4.000,3|3.000|4.000,4|3.000|4.000,5|3.000|4.000,6|3.000|4.000,7|3.000|4.000,8|3.000|4.000,9|3.000|4.000,10|3.000|4.000,11|3.000|4.000,12|3.000|4.000,13|3.000|4.000,14|3.000|4.000,15|3.000|4.000,16|3.000|4.000,17|3.000|4.000,18|3.000|4.000,19|3.000|4.000,20|3.000|4.000,21|3.000|4.000,22|3.000|4.000,23|3.000|4.000,24|3.000|4.000,25|3.000|4.000,26|3.000|4.000,27|3.000|4.000,28|3.000|4.000,29|3.000|4.000,30|3.000|4.000,31|3.000|4.000
-			}
-			ResourceType
-			{
-				Resource = RareMetals
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Silicates
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Uraninite
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = Substrate
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
-				Resource = MetalOre
-				MinColor = 1,0,1,1
-				MaxColor = 0.899999976,0.600000024,0,1
-				Transparency = 20
-				MinMaxValues = 0|0.000|0.000,1|0.000|0.000,2|0.000|0.000,3|0.000|0.000,4|0.000|0.000,5|0.000|0.000,6|0.000|0.000,7|0.000|0.000,8|0.000|0.000,9|0.000|0.000,10|0.000|0.000,11|0.000|0.000,12|0.000|0.000,13|0.000|0.000,14|0.000|0.000,15|0.000|0.000,16|0.000|0.000,17|0.000|0.000,18|0.000|0.000,19|0.000|0.000,20|0.000|0.000,21|0.000|0.000,22|0.000|0.000,23|0.000|0.000,24|0.000|0.000,25|0.000|0.000,26|0.000|0.000,27|0.000|0.000,28|0.000|0.000,29|0.000|0.000,30|0.000|0.000,31|0.000|0.000
-			}
-			ResourceType
-			{
 				Resource = Nitrogen
 				MinColor = 1,0,1,1
 				MaxColor = 0.899999976,0.600000024,0,1
 				Transparency = 20
-				MinMaxValues = 0|0.000|0.001,1|0.000|0.001,2|0.000|0.001,3|0.000|0.001,4|0.000|0.001,5|0.000|0.001,6|0.000|0.001,7|0.000|0.001,8|0.000|0.001,9|0.000|0.001,10|0.000|0.001,11|0.000|0.001,12|0.000|0.001,13|0.000|0.001,14|0.000|0.001,15|0.000|0.001,16|0.000|0.001,17|0.000|0.001,18|0.000|0.001,19|0.000|0.001,20|0.000|0.001,21|0.000|0.001,22|0.000|0.001,23|0.000|0.001,24|0.000|0.001,25|0.000|0.001,26|0.000|0.001,27|0.000|0.001,28|0.000|0.001,29|0.000|0.001,30|0.000|0.001,31|0.000|0.001
+				MinMaxValues = 0|1.000|10.000,1|1.000|10.000,2|1.000|10.000,3|1.000|10.000,4|1.000|10.000,5|1.000|10.000,6|1.000|10.000,7|1.000|10.000,8|1.000|10.000,9|1.000|10.000,10|1.000|10.000,11|1.000|10.000,12|1.000|10.000,13|1.000|10.000,14|1.000|10.000,15|1.000|10.000,16|1.000|10.000,17|1.000|10.000,18|1.000|10.000,19|1.000|10.000,20|1.000|10.000,21|1.000|10.000,22|1.000|10.000,23|1.000|10.000,24|1.000|10.000,25|1.000|10.000,26|1.000|10.000,27|1.000|10.000,28|1.000|10.000,29|1.000|10.000,30|1.000|10.000,31|1.000|10.000
 			}
 		}
 	}
@@ -15380,6 +13643,10 @@ GAME
 		name = SpaceAgeScenario
 		scene = 7, 5, 8
 		CHRONICLE
+		{
+			logTimeFormat = UT
+		}
+		VESSELS
 		{
 		}
 		ACHIEVEMENTS
@@ -15911,7 +14178,7 @@ GAME
 	{
 		name = TestFlightManagerScenario
 		scene = 7, 6, 5, 8
-		saveData = settingsenabled:False,
+		saveData = 
 	}
 	SCENARIO
 	{
@@ -15948,7 +14215,7 @@ GAME
 				Item
 				{
 					VesselID = 
-					ID = b473ae8408e14f139da38ec766185bad
+					ID = 9c81e7940b6641379659f4d23fafd358
 					Name = Next Budget
 					NotesStorage = 
 					TypeOfAlarm = Raw
@@ -16033,46 +14300,10 @@ GAME
 		name = Kerbalism
 		scene = 5, 8, 7, 6
 		version = 3.11
-		uid = 983788717
+		uid = 202259912
 		uncreditedScience = 0
 		kerbals
 		{
-			Jebediah___Kerman
-			{
-				rescue = True
-				disabled = False
-				eva_dead = False
-				rules
-				{
-				}
-			}
-			Bill___Kerman
-			{
-				rescue = True
-				disabled = False
-				eva_dead = False
-				rules
-				{
-				}
-			}
-			Bob___Kerman
-			{
-				rescue = True
-				disabled = False
-				eva_dead = False
-				rules
-				{
-				}
-			}
-			Valentina___Kerman
-			{
-				rescue = True
-				disabled = False
-				eva_dead = False
-				rules
-				{
-				}
-			}
 		}
 		vessels2
 		{
@@ -16086,7 +14317,7 @@ GAME
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 37945.705648706593
+				storm_generation = 43088.297461700269
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16094,29 +14325,29 @@ GAME
 			}
 			Moho
 			{
-				storm_time = 0
-				storm_duration = 0
-				storm_generation = 40248.644161780612
-				storm_state = 0
-				msg_storm = 0
-				displayed_duration = 0
+				storm_time = 146.8324552611023
+				storm_duration = 7108.1506681944893
+				storm_generation = 49583.239295933818
+				storm_state = 2
+				msg_storm = 2
+				displayed_duration = 7108.1506681944893
 				display_warning = True
 			}
 			Eve
 			{
-				storm_time = 0
-				storm_duration = 0
-				storm_generation = 38605.269165534562
-				storm_state = 0
-				msg_storm = 0
-				displayed_duration = 0
+				storm_time = 274.30021536997788
+				storm_duration = 13279.570579159416
+				storm_generation = 55198.240066945655
+				storm_state = 1
+				msg_storm = 1
+				displayed_duration = 13279.570579159416
 				display_warning = True
 			}
 			Duna
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 37674.822663686515
+				storm_generation = 38996.880671423227
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16126,7 +14357,7 @@ GAME
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 36903.216536188454
+				storm_generation = 37999.36308225806
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16134,29 +14365,29 @@ GAME
 			}
 			Dres
 			{
-				storm_time = 0
-				storm_duration = 0
-				storm_generation = 39114.371593460448
-				storm_state = 0
-				msg_storm = 0
-				displayed_duration = 0
+				storm_time = 1139.1604758172089
+				storm_duration = 55155.909102271828
+				storm_generation = 91305.224216119415
+				storm_state = 1
+				msg_storm = 1
+				displayed_duration = 55155.909102271828
 				display_warning = True
 			}
 			Eeloo
 			{
-				storm_time = 0
-				storm_duration = 0
-				storm_generation = 42318.498784875999
-				storm_state = 0
-				msg_storm = 0
-				displayed_duration = 0
+				storm_time = 4762.7406703826791
+				storm_duration = 230620.04840309222
+				storm_generation = 268229.01067059889
+				storm_state = 1
+				msg_storm = 1
+				displayed_duration = 230620.04840309222
 				display_warning = True
 			}
 			Edna
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 38483.891634208812
+				storm_generation = 43073.736039389514
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16164,19 +14395,19 @@ GAME
 			}
 			Lindor
 			{
-				storm_time = 0
-				storm_duration = 0
-				storm_generation = 36204.568222938586
-				storm_state = 0
-				msg_storm = 0
-				displayed_duration = 0
+				storm_time = 3634.7245608638941
+				storm_duration = 175996.03673727214
+				storm_generation = 215576.3904299289
+				storm_state = 1
+				msg_storm = 1
+				displayed_duration = 175996.03673727214
 				display_warning = True
 			}
 			Hamek
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 38482.606099924073
+				storm_generation = 36784.270531271432
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16186,7 +14417,7 @@ GAME
 			{
 				storm_time = 0
 				storm_duration = 0
-				storm_generation = 39190.434817221379
+				storm_generation = 37996.602963096906
 				storm_state = 0
 				msg_storm = 0
 				displayed_duration = 0
@@ -16221,7 +14452,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.9.1
-		UT = 892.56621650004035
+		UT = 577.85709540003927
 		activeVessel = 0
 		mapViewFiltering = 0
 		commNetUIModeTracking = Network
@@ -16229,22 +14460,24 @@ GAME
 	}
 	LoaderInfo
 	{
-		KSPe v2.2.1.0 = True
+		KSPe v2.2.1.2 = True
 		ModuleManagerWatchDog v0.0.1.0 = True
-		Scale_Redist v1.0.0.0 / v2.5.0.18 = True
+		Scale_Redist v1.0.0.0 / v2.5.0.20 = True
 		Hyperspace v1.1.0.0 = True
 		ModuleManager v4.1.4.0 = True
 		ClickThroughBlocker v0.1.10.11 / v1.0.0.0 = True
 		FilterExtensions v3.2.5.0 / v1.0.0.0 = True
-		KSPAPIExtensions v2.2.1.0 = True
-		KSPe.UI v2.2.1.0 = True
+		KSPAPIExtensions v2.2.1.2 = True
+		KSPe.Light.TweakScale v2.2.1.2 = True
+		KSPe.UI v2.2.1.2 = True
+		MiniAVC v1.4.0.2 = True
 		aaa_Toolbar v1.8.0.5 = True
 		USITools v1.0.0.0 = True
 		ToolbarControl v0.1.9.4 / v1.0.0.0 = True
-		Driftless v0.0.4.1 = True
-		KSP-Recall v0.0.4.1 = True
+		Driftless v0.0.4.4 = True
+		KSP-Recall v0.0.4.4 = True
 		KSPe.Light.Recall v2.2.0.3 = True
-		Resourceful v0.0.4.1 = True
+		Resourceful v0.0.4.4 = True
 		Achievements v1.10.1.2 / v1.10.1.0 = True
 		SolverEngines v3.3.0.0 / v3.7.5.0 = True
 		AJE v2.15.0.0 = True
@@ -16276,7 +14509,7 @@ GAME
 		CCK v5.1.0.0 / v5.1.0.0 for KSP v1 = True
 		CommunityTraitIcons v1.1.1.0 = True
 		ConformalDecals v1.0.0.0 = True
-		ContractConfigurator v1.0.0.0 / v1.29.0 = True
+		ContractConfigurator v1.0.0.0 / v1.30.2 = True
 		ContractModifier v1.0.2.7 / vv2.7 = True
 		KXAPI v1.0.0.0 = True
 		CraftManager v1.0.7240.23210 = True
@@ -16294,7 +14527,7 @@ GAME
 		ProgressParser v1.0.11.0 / vv11.0 = True
 		ContractsWindow v1.0.9.4 / vv9.4 = True
 		ContractsWindow.Unity v1.0.9.4 = True
-		DockingCamera v1.3.7.3 / v1.0.0.0 = True
+		DockingCamera v1.3.7.4 / v1.0.0.0 = True
 		DockRotate v1.10.0.49 = True
 		DockSafe v1.0.4.0 = True
 		DynamicBatteryStorage v1.0.0.0 = True
@@ -16323,7 +14556,6 @@ GAME
 		FerramAerospaceResearch v0.16.0.0 = True
 		ferramGraph v1.3.0.0 = True
 		Firespitter v7.3.7287.12431 = True
-		FlagRotate v1.1.1.0 = True
 		FMRS v1.2.9.1 / v1.0.2.0 = True
 		FP_DockingSndFX v2.1.12.27690 = True
 		GravityTurn v1.8.1.0 = True
@@ -16354,7 +14586,7 @@ GAME
 		KerbalConstructionTime v1.4.8.0 = True
 		KerbalEngineer v1.1.7.2 = True
 		KerbalEngineer.Unity v1.0.0.0 = True
-		KerbalHealth v1.4.4.0 / v1.4.4 = True
+		KerbalHealth v1.4.6.0 / v1.4.6 = True
 		0Harmony v1.2.0.1 = True
 		KerbalismBootstrap v3.11.7536.20007 / v3.11 = True
 		KerbalJointReinforcementNext v4.1.15.0 = True
@@ -16372,10 +14604,12 @@ GAME
 		ICSharpCode.SharpZipLib v0.86.0.518 / v0.86.0 = True
 		kOS v1.2.1.0 = True
 		kOS.Safe v1.2.1.0 = True
-		KRASH v0.5.33.1 / v1.0.0.0 = True
+		KRASH v0.5.33.2 / v1.0.0.0 = True
+		KSP-AVC v1.4.1.5 = True
 		KSPDev_LogConsole v2.1.7422.1031 / v2.1 for KSP v1 = True
 		KSPDev_Utils.2.2 v2.2.7417.673 / v2.2 for KSP v1 = True
 		KSPLogger v0.6.0.3 / v1.0.0.0 = True
+		KSPRescuePodFix v1.0.0.0 = True
 		KSPTOTConnect v1.0.0.0 = True
 		KSPWheel v0.0.0.0 = True
 		Landertron v1.1.1.0 / v1.1.1 = True
@@ -16393,10 +14627,10 @@ GAME
 		NearFutureSolar v0.4.0.0 = True
 		FinalFrontier v1.0.0.0 = True
 		NRAP v1.6.0.0 / v1.5.1.1 = True
-		OhScrap v2.1.0.0 = True
 		OneWindow v1.0.4.0 / vv4.0 = True
 		OneWindow_Unity v1.0.4.0 = True
 		PAPIPlugin v0.5.0.5 / v0.5.0.0 = True
+		PartInfo v0.0.3.7 / v1.0.0.0 = True
 		PatchManager v0.0.17.2 / v1.0.0.0 = True
 		PebkacLaunchEscape2 v1.4.2.0 / v1.2.2.2 = True
 		PlanetShine v0.2.6.1 = True
@@ -16406,23 +14640,23 @@ GAME
 		RealAntennas v1.1.0.0 / v1.2.1.0 = True
 		RealChute v1.4.7518.5195 / v1.4.8.0 = True
 		RealFuels v12.8.4.11 / v12.8.4.11-c9fa = True
-		TestFlightAPI v1.0.7453.25209 = True
+		TestFlightAPI v1.0.7347.3151 = True
 		TestFlight v0.4.0.0 = True
 		TestFlightRF v1.0.7338.19661 = True
 		RecoveryController v0.0.4.0 / v1.0.0.0 = True
 		AmpYear v1.5.7.0 = True
 		ProgressiveCBMaps v0.1.29.0 = True
 		ResearchBodies v1.11.0.0 = True
-		ResonantOrbitCalculator v0.0.6.1 / v1.4.4.0 = True
+		ResonantOrbitCalculator v0.0.6.2 / v1.4.4.0 = True
 		FXModuleConstrainPositionEx v0.4.1.0 / v0.4.0.0 = True
 		ModuleScienceExeperimentCamera v0.4.1.0 / v0.4.0.0 = True
-		SCANsat v1.20.2.0 / vv20.2 = True
-		SCANmechjeb v1.20.2.0 / vv20.2 = True
-		SCANsat.Unity v1.20.2.0 = True
-		scatterer v0.632.0.0 = True
+		SCANsat v1.20.4.0 / vv20.4 = True
+		SCANmechjeb v1.20.4.0 / vv20.4 = True
+		SCANsat.Unity v1.20.4.0 = True
+		scatterer v0.0.0.0 = True
 		ScienceParamModifier v1.0.12.0 / vv12 = True
 		ScienceRelay v1.0.6.0 / vv6.0 = True
-		ScrapYard v2.1.0.0 = True
+		ScrapYard v2.1.1.0 = True
 		ScrapYard_ContractConfigurator v2.1.0.0 = True
 		Shabby v0.1.2.0 / v0.1.2 = True
 		SignalDelay v0.2.13.0 / v0.2.13 = True
@@ -16430,7 +14664,7 @@ GAME
 		SmartParts v1.9.16.0 = True
 		SmokeScreen v2.8.14.0 = True
 		SoundtrackEditorForked v4.7.1.3 / v4.6.0.0 = True
-		SpaceAge v1.2.0.3 = True
+		SpaceAge v1.3.0.0 / v1.3.0 = True
 		ButtonManager v0.0.1.0 / v1.0.0.0 = True
 		KSP_ColorPicker v0.1.0.3 / v1.0.0.0 = True
 		KSP_PartHighlighter v0.1.0.6 / v1.0.0.0 = True
@@ -16442,8 +14676,8 @@ GAME
 		StationKeeping v0.2.2.1 = True
 		KSPDev_Utils.2.3 v2.3.7435.219 / v2.3 for KSP v1 = True
 		SurfaceLights v1.16.7437.40107 / v1.16 for KSP v1 = True
-		TestFlightContracts v1.0.7453.25210 = True
-		TestFlightCore v1.0.7453.25210 = True
+		TestFlightContracts v1.0.7347.3149 = True
+		TestFlightCore v1.0.7347.3151 = True
 		TextureReplacer v4.2.1.21267 = True
 		Timekeeper v1.0.2.0 = True
 		TotalTime v0.6.9.0 = True
@@ -16452,8 +14686,7 @@ GAME
 		KerbalAlarmClock v3.13.0.0 = True
 		KSPAlternateResourcePanel v2.10.0.0 = True
 		TUFX v1.0.0.0 = True
-		KSPe.Light.TweakScale v2.2.1.2 = True
-		Scale v2.5.0.18 = True
+		Scale v2.5.0.20 = True
 		TweakScaleCompanion_FS v0.0.2.0 = True
 		TweakScalerFSBuoyancy v0.0.2.0 = True
 		TweakScaleCompanion_KIS v0.0.2.0 = True
@@ -16467,7 +14700,6 @@ GAME
 		WildBlueTools v1.0.0.0 = True
 		KerbalActuators v1.0.0.0 = True
 		AirshipUtils v1.0.0.0 = True
-		ZeroMiniAVC v1.1.0.1 = True
 		000_ClickThroughBlocker = True
 		000_FilterExtensions = True
 		000_FilterExtensions_Configs = True
@@ -16476,6 +14708,7 @@ GAME
 		000_USITools = True
 		001_ToolbarControl = True
 		002_CommunityPartsTitles = True
+		003_CommunityResourcePack = True
 		999_KSP-Recall = True
 		Achievements = True
 		AirplanePlus = True
@@ -16501,7 +14734,6 @@ GAME
 		CCTV = True
 		Champagne = True
 		Chatterer = True
-		CNAR = True
 		CollisionFXReUpdated = True
 		ComfortableLanding = True
 		CommNetAntennasConsumptor = True
@@ -16549,7 +14781,6 @@ GAME
 		FASA = True
 		FerramAerospaceResearch = True
 		Firespitter = True
-		FlagRotate = True
 		FlightTracker = True
 		FMRS = True
 		FP_DPSoundFX = True
@@ -16559,7 +14790,6 @@ GAME
 		HeapPadder = True
 		HideEmptyTechTreeNodes = True
 		HLAirships = True
-		hooks = True
 		HotSpot = True
 		HullCameraVDS = True
 		IDFlags = True
@@ -16598,9 +14828,11 @@ GAME
 		Kopernicus = True
 		kOS = True
 		KRASH = True
+		KSP-AVC = True
 		KSPDev = True
 		KSPLogger = True
 		KSPRC = True
+		KSPRescuePodFix = True
 		KSPTOTConnect = True
 		KSPWheel = True
 		KXAPI = True
@@ -16626,10 +14858,9 @@ GAME
 		NEBULA = True
 		Nereid = True
 		NRAP = True
-		objects = True
-		OhScrap = True
 		OneWindow = True
 		PAPIPlugin = True
+		PartInfo = True
 		PatchManager = True
 		Pebkac = True
 		PlanetShine = True
@@ -16646,7 +14877,6 @@ GAME
 		RealFuels-Stock = True
 		RealPlume = True
 		RecoveryController = True
-		refs = True
 		RemoteTechRedev = True
 		REPOSoftTech = True
 		ResonantOrbitCalculator = True
@@ -16666,7 +14896,9 @@ GAME
 		SoundtrackEditorForked = True
 		SpaceAge = True
 		SpaceTuxLibrary = True
+		SpaceTuxSA = True
 		SpeedUnitAnnex = True
+		SSCEP = True
 		StageRecovery = True
 		StateFunding = True
 		StationKeeping = True
@@ -16693,7 +14925,6 @@ GAME
 		WhitecatIndustries = True
 		WildBlueIndustries = True
 		XyphosAerospace = True
-		ZeroMiniAVC = True
 		zFinal_FilterExtensions = True
 		__LOCAL = True
 		__myLOCAL = True
@@ -16723,7 +14954,7 @@ GAME
 			brave = 0.5
 			dumb = 0.5
 			badS = True
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -16739,7 +14970,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
-			suit = Future
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -16765,7 +14996,7 @@ GAME
 			brave = 0.5
 			dumb = 0.800000012
 			badS = False
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -16781,7 +15012,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
-			suit = Future
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -16807,7 +15038,7 @@ GAME
 			brave = 0.300000012
 			dumb = 0.100000001
 			badS = False
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -16823,7 +15054,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
-			suit = Future
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -16849,7 +15080,7 @@ GAME
 			brave = 0.550000012
 			dumb = 0.400000006
 			badS = True
-			veteran = True
+			veteran = False
 			tour = False
 			state = Available
 			inactive = False
@@ -16865,7 +15096,7 @@ GAME
 			lightG = 0.5176
 			lightB = 0
 			completedFirstEVA = False
-			suit = Future
+			suit = Default
 			hero = True
 			CAREER_LOG
 			{
@@ -16886,14 +15117,6 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = False
-		MESSAGE
-		{
-			title = Screen Message
-			message = <b>KERBALISM WARNING</b>~n~n<color=#FF4500>Mods with limited compatibility found:</color>~n- CommNetAntennasInfo~n- ResearchBodies~nYou might have problems with these mods. Please consult the FAQ on on kerbalism.github.io~n~n
-			color = 2
-			icon = 5
-			read = False
-		}
 	}
 	VMSNode
 	{

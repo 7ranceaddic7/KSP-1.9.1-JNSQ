@@ -154,18 +154,18 @@ toolbars
 	{
 		toolbar_670108022
 		{
-			x = 1025
-			y = 974
+			x = 1167
+			y = 979
 			width = 348
-			height = 42
+			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = True
 			buttonOrder = 
 			visibleButtons = CapCom.CapComToolbarID,ContractRewardModifier.CMToolbarID,FerramAerospaceResearch.FAREditorButtonBlizzy,FinalFrontier.button,KCT_NS.MainButton,KerbalAlarmClock.btnToolbarIcon,KerbalHealth.HealthReport,kOS.kOSButton,WaypointManager.button,ConnectedLivingSpace.ConnectedLivingSpace,ReCoupler.ReCoupler,KRASH_NS.krashButton,Achievements_NS.achButton,STE_NS.MainButton
-			scale = 32
-			followKSPAppScale = True
-			followKSPUIScale = True
+			scale = 24
+			followKSPAppScale = False
+			followKSPUIScale = False
 		}
 	}
 	FLIGHTMAP

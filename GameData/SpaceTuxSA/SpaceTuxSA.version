@@ -1,0 +1,26 @@
+{
+  "NAME": "Spacetux",
+  "URL": "http://ksp.spacetux.net/avc/SpaceTuxSA",
+  "DOWNLOAD": "https://github.com/linuxgurugamer/SpaceTuxSA/releases",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "SpaceTuxSA"
+  },
+  "VERSION": {
+    "MAJOR": 0,
+    "MINOR": 3,
+    "PATCH": 13,
+    "BUILD": 1
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  },
+  "INSTALL_LOC_1": {
+    "NAME": "SpaceTuxSA",
+    "PATH": "",
+    "DIRECTORY": "SpaceTuxSA",
+    "FILE": "SpaceTuxSA.version"
+  }
+}
