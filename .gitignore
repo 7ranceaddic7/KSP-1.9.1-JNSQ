@@ -1,8 +1,7 @@
 ## Ignore files
 
-# KSP-specific files
+# KSP-specific FOLDERS
 _MMCfgOutput/
-CKAN/
 GameData/SquadExpansion/
 Internals/
 KSP_x64_Data/
@@ -17,50 +16,30 @@ Screenshots/
 sounds/
 thumbs/
 UserLoadingScreens/
+
+# KSP-specific FILES
 .DS_Store
 *.adoc
 *.bak
+*.dds
+*.dll
 *.exe
 *.log
 *.md
+*.png
 *.version
 *.zip
 *.7z
-[Ll]egalNotice
-[Ll]egalNotice.*
-[Ll][Ii][Cc][Ee][Nn}[Ss][Ee]*
-[Rr]ead[Mm]e.*
+[Cc][Hh][Aa][Nn][Gg][Ee]*
+[Ll][Ee][Gg][Aa][Ll]*
+[Ll][Ii][Cc][Ee][Nn][Ss][Ee]*
+[Rr][Ee][Aa][Dd][Mm][Ee]*
 buildID64.txt
 Player - Shortcut.lnk
 Unity*
 ModuleManager*
 
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln
-.docstates
-
-# User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
-
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-
-# Visual Studio directory
+# Visual Studio
 .vs/
 *.pdb
 .localhistory/

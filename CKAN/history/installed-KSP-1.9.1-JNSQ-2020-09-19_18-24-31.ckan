@@ -1,0 +1,757 @@
+{
+    "spec_version": "v1.18",
+    "identifier": "installed-KSP-1-9-1-JNSQ",
+    "name": "installed-KSP-1.9.1-JNSQ",
+    "abstract": "A list of modules installed on the KSP-1.9.1-JNSQ KSP instance",
+    "version": "2020.09.20.01.24.31",
+    "license": [
+        "unknown"
+    ],
+    "depends": [
+        {
+            "name": "Kopernicus",
+            "version": "2:release-1.9.1-1"
+        },
+        {
+            "name": "MakingHistory-DLC",
+            "version": "1.9.1"
+        },
+        {
+            "name": "BreakingGround-DLC",
+            "version": "1.4.1"
+        },
+        {
+            "name": "ContractConfigurator-CleverSats",
+            "version": "1.4"
+        },
+        {
+            "name": "ContractConfigurator-FieldResearch",
+            "version": "1.2.1"
+        },
+        {
+            "name": "ContractConfigurator-KerbalAcademy",
+            "version": "1.1.10"
+        },
+        {
+            "name": "ContractConfigurator-KerbinSpaceStation",
+            "version": "2:3.7.2.2"
+        },
+        {
+            "name": "GAP",
+            "version": "1.6.1"
+        },
+        {
+            "name": "CrowdSourcedScience",
+            "version": "v6.0"
+        },
+        {
+            "name": "AllYAll",
+            "version": "1:0.11.19"
+        },
+        {
+            "name": "Astrogator",
+            "version": "v0.10.1"
+        },
+        {
+            "name": "AviationLights",
+            "version": "1:v4.1.1"
+        },
+        {
+            "name": "AmazingCurveEditor",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "BluedogDB",
+            "version": "v1.6.3"
+        },
+        {
+            "name": "CommunityResourcePack",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "DMagicScienceAnimate",
+            "version": "v0.23"
+        },
+        {
+            "name": "AnimatedAttachment",
+            "version": "v2.1.5"
+        },
+        {
+            "name": "AnimatedDecouplers",
+            "version": "v1.4.2.2"
+        },
+        {
+            "name": "JanitorsCloset",
+            "version": "0.3.7"
+        },
+        {
+            "name": "LaunchNumbering",
+            "version": "0.5.4.1"
+        },
+        {
+            "name": "StageRecovery",
+            "version": "1.9.2.2"
+        },
+        {
+            "name": "FMRSContinued",
+            "version": "1.2.9.1"
+        },
+        {
+            "name": "BasicDeltaV",
+            "version": "6.0"
+        },
+        {
+            "name": "BasicOrbit",
+            "version": "9.0"
+        },
+        {
+            "name": "B9PartSwitch",
+            "version": "v2.17.0"
+        },
+        {
+            "name": "Chatterer",
+            "version": "0.9.99"
+        },
+        {
+            "name": "KSPRescuePodFix",
+            "version": "1.6.4.14"
+        },
+        {
+            "name": "CCTV",
+            "version": "1.1.6.5"
+        },
+        {
+            "name": "ComfortableLanding",
+            "version": "2:1.9.1"
+        },
+        {
+            "name": "CommNetAntennasConsumptor",
+            "version": "3.0.2"
+        },
+        {
+            "name": "RationalResourcesParts",
+            "version": "1.10"
+        },
+        {
+            "name": "CraftManager",
+            "version": "1.2.0"
+        },
+        {
+            "name": "CriticalTemperatureGauge",
+            "version": "1.10.0.0"
+        },
+        {
+            "name": "CommunityTraitIcons",
+            "version": "v1.1.1"
+        },
+        {
+            "name": "ContractParser",
+            "version": "9.0"
+        },
+        {
+            "name": "EngineIgnitorReignited",
+            "version": "1.3.6.2"
+        },
+        {
+            "name": "TweakScale",
+            "version": "v2.4.3.21"
+        },
+        {
+            "name": "CommNetAntennasExtension",
+            "version": "2.1.3"
+        },
+        {
+            "name": "CommNetAntennasInfo",
+            "version": "3.0.2"
+        },
+        {
+            "name": "RemoteTechRedevAntennas",
+            "version": "0.1.1"
+        },
+        {
+            "name": "DistantObject",
+            "version": "v2.0.0.2"
+        },
+        {
+            "name": "DockingPortAlignmentIndicator",
+            "version": "6.9.1"
+        },
+        {
+            "name": "TextureReplacer",
+            "version": "v4.2.3"
+        },
+        {
+            "name": "DockSafe",
+            "version": "1:1.1"
+        },
+        {
+            "name": "DynamicBatteryStorage",
+            "version": "2:2.1.9.0"
+        },
+        {
+            "name": "DefaultActionGroups",
+            "version": "1.3"
+        },
+        {
+            "name": "DestructionEffects",
+            "version": "2:v1.11.0"
+        },
+        {
+            "name": "DistantObject-default",
+            "version": "v2.0.0.2"
+        },
+        {
+            "name": "EarlyBird",
+            "version": "0.2.1.0"
+        },
+        {
+            "name": "EarnYourStripes",
+            "version": "4.0.2"
+        },
+        {
+            "name": "EasyVesselSwitch",
+            "version": "2.1"
+        },
+        {
+            "name": "CrewLight",
+            "version": "1:1.20.0"
+        },
+        {
+            "name": "EditorTime",
+            "version": "KSP1.4.1"
+        },
+        {
+            "name": "ZeroMiniAVC",
+            "version": "1:1.1.0.1"
+        },
+        {
+            "name": "FilterExtensions",
+            "version": "3.2.5"
+        },
+        {
+            "name": "FinalFrontier",
+            "version": "1.10.0-3485"
+        },
+        {
+            "name": "FilterExtensionsDefaultConfig",
+            "version": "3.2.5"
+        },
+        {
+            "name": "MoarFEConfigs",
+            "version": "1.0.5.2"
+        },
+        {
+            "name": "FlightTracker",
+            "version": "3.0.0.1"
+        },
+        {
+            "name": "Graphotron",
+            "version": "1.5.1.0"
+        },
+        {
+            "name": "HotSpot",
+            "version": "0.8.0"
+        },
+        {
+            "name": "HyperEdit",
+            "version": "1.5.8.0"
+        },
+        {
+            "name": "JSIPartUtilities",
+            "version": "0.5.0.4"
+        },
+        {
+            "name": "IndicatorLights",
+            "version": "1.7"
+        },
+        {
+            "name": "InnerLock",
+            "version": "0.1.2"
+        },
+        {
+            "name": "WaypointManager",
+            "version": "2.8.2.6"
+        },
+        {
+            "name": "KAS",
+            "version": "1.7"
+        },
+        {
+            "name": "KerbalActuators",
+            "version": "v1.8.3"
+        },
+        {
+            "name": "KerbalAlarmClock",
+            "version": "v3.13.0.0"
+        },
+        {
+            "name": "KerbalChangelog",
+            "version": "v1.3.0"
+        },
+        {
+            "name": "ToolbarController",
+            "version": "1:0.1.9.4"
+        },
+        {
+            "name": "ContractConfigurator",
+            "version": "1.30.2"
+        },
+        {
+            "name": "KerbalJointReinforcementNext",
+            "version": "v4.1.15"
+        },
+        {
+            "name": "KerbalKrashSystem",
+            "version": "2:0.5.1"
+        },
+        {
+            "name": "KesslerSyndrome",
+            "version": "1.4"
+        },
+        {
+            "name": "KIS",
+            "version": "1.26"
+        },
+        {
+            "name": "kOS",
+            "version": "1:1.2.1.0"
+        },
+        {
+            "name": "WildBlueTools",
+            "version": "v1.81.3"
+        },
+        {
+            "name": "KSPLogger",
+            "version": "0.6.0.3"
+        },
+        {
+            "name": "KSP-Recall",
+            "version": "v0.0.4.4"
+        },
+        {
+            "name": "KXAPI",
+            "version": "1.2.0"
+        },
+        {
+            "name": "ClassicStockResources",
+            "version": "v1.1.4"
+        },
+        {
+            "name": "DMTanks-AeroRTG",
+            "version": "1:1.1.0.1"
+        },
+        {
+            "name": "DMTanks-CargoBays",
+            "version": "1:1.1.0.1"
+        },
+        {
+            "name": "DMTanks-Fuselage",
+            "version": "1.1.0.2"
+        },
+        {
+            "name": "DMTanks-SphericalTanks",
+            "version": "1:1.1.0.0"
+        },
+        {
+            "name": "CommunityCategoryKit",
+            "version": "5.1.0.0"
+        },
+        {
+            "name": "Achievements",
+            "version": "1.10.1.2"
+        },
+        {
+            "name": "Landertron",
+            "version": "v1.2.0"
+        },
+        {
+            "name": "SimpleAdjustableFairings",
+            "version": "v1.11.0"
+        },
+        {
+            "name": "ModularFlightIntegrator",
+            "version": "1.2.7.0"
+        },
+        {
+            "name": "ModuleManager",
+            "version": "4.1.4"
+        },
+        {
+            "name": "ScrapYard",
+            "version": "2.1.0.0"
+        },
+        {
+            "name": "StationKeeping",
+            "version": "1:0.2.2.1"
+        },
+        {
+            "name": "PreciseEditor",
+            "version": "1.4.0"
+        },
+        {
+            "name": "SpacetuxSA",
+            "version": "0.3.13.1"
+        },
+        {
+            "name": "RealChute",
+            "version": "v1.4.8"
+        },
+        {
+            "name": "RationalResources",
+            "version": "1.10"
+        },
+        {
+            "name": "PayToPlay",
+            "version": "1.5.4.5"
+        },
+        {
+            "name": "SignalDelay",
+            "version": "v0.2.13"
+        },
+        {
+            "name": "MechJeb2",
+            "version": "2.11.0.0"
+        },
+        {
+            "name": "SmartParts",
+            "version": "1.9.16"
+        },
+        {
+            "name": "SmokeScreen",
+            "version": "2.8.14.0"
+        },
+        {
+            "name": "SolverEngines",
+            "version": "v3.7.5"
+        },
+        {
+            "name": "SpaceAge",
+            "version": "v1.3.0"
+        },
+        {
+            "name": "SpaceTuxLibrary",
+            "version": "0.0.3.9"
+        },
+        {
+            "name": "DockRotate",
+            "version": "v1.10.0.49"
+        },
+        {
+            "name": "Timekeeper",
+            "version": "v1.0.2"
+        },
+        {
+            "name": "UniversalStorage2",
+            "version": "1.9.1.2"
+        },
+        {
+            "name": "ResonantOrbitCalculator",
+            "version": "0.0.6.2"
+        },
+        {
+            "name": "PreciseNode",
+            "version": "1.2.11.1"
+        },
+        {
+            "name": "BarisBridge",
+            "version": "v1.10"
+        },
+        {
+            "name": "PatchManager",
+            "version": "0.0.17.2"
+        },
+        {
+            "name": "BAMCont",
+            "version": "1.3.3.3"
+        },
+        {
+            "name": "KRASH",
+            "version": "0.5.33.2"
+        },
+        {
+            "name": "FerramAerospaceResearchContinued",
+            "version": "3:0.16.0.0"
+        },
+        {
+            "name": "FuelTanksPlus",
+            "version": "2.0.2"
+        },
+        {
+            "name": "LithobrakeExplorationTechnologies",
+            "version": "0.4"
+        },
+        {
+            "name": "HeapPadder",
+            "version": "0.0.2"
+        },
+        {
+            "name": "KerbalStats",
+            "version": "3.1.0"
+        },
+        {
+            "name": "KerbalConstructionTime",
+            "version": "1:1.4.8"
+        },
+        {
+            "name": "LoadingTipsPlus",
+            "version": "V1.8"
+        },
+        {
+            "name": "MagiCore",
+            "version": "1.3.2.3"
+        },
+        {
+            "name": "MonthlyBudgets",
+            "version": "5.0.1"
+        },
+        {
+            "name": "NearFutureElectrical-Core",
+            "version": "1.1.3"
+        },
+        {
+            "name": "NearFutureElectrical",
+            "version": "1.1.3"
+        },
+        {
+            "name": "NearFutureElectrical-DecayingRTGs",
+            "version": "1.1.3"
+        },
+        {
+            "name": "CommunityTechTree",
+            "version": "1:3.4.2"
+        },
+        {
+            "name": "NearFutureSolar",
+            "version": "1.2.3"
+        },
+        {
+            "name": "NearFutureSolar-Core",
+            "version": "1.2.3"
+        },
+        {
+            "name": "Kerbalism",
+            "version": "3.11"
+        },
+        {
+            "name": "Kerbalism-Config-Default",
+            "version": "3.11"
+        },
+        {
+            "name": "Firespitter",
+            "version": "v7.15"
+        },
+        {
+            "name": "FirespitterCore",
+            "version": "v7.15"
+        },
+        {
+            "name": "FirespitterResourcesConfig",
+            "version": "v7.15"
+        },
+        {
+            "name": "HaystackReContinued",
+            "version": "0.5.7"
+        },
+        {
+            "name": "GravityTurnContinued",
+            "version": "3:1.8.1"
+        },
+        {
+            "name": "EngineLightRelit",
+            "version": "1.6.3"
+        },
+        {
+            "name": "KSPWheel",
+            "version": "1:0.16.14.33"
+        },
+        {
+            "name": "OneWindow",
+            "version": "4.0"
+        },
+        {
+            "name": "PlanetShine",
+            "version": "0.2.6.3"
+        },
+        {
+            "name": "PlanetShine-Config-Default",
+            "version": "0.2.6.3"
+        },
+        {
+            "name": "PortraitStats",
+            "version": "18.0"
+        },
+        {
+            "name": "ProgressParser",
+            "version": "11.0"
+        },
+        {
+            "name": "RasterPropMonitor",
+            "version": "1:v0.31.4"
+        },
+        {
+            "name": "RasterPropMonitor-Core",
+            "version": "1:v0.31.4"
+        },
+        {
+            "name": "SCANsat",
+            "version": "v20.4"
+        },
+        {
+            "name": "KerbalHealth",
+            "version": "v1.4.6"
+        },
+        {
+            "name": "RealFuels",
+            "version": "rf-v12.8.4.1"
+        },
+        {
+            "name": "RealFuels-Stock",
+            "version": "v5.1.0"
+        },
+        {
+            "name": "RealAntennas",
+            "version": "v1.2.1"
+        },
+        {
+            "name": "RecoveryController",
+            "version": "0.0.4"
+        },
+        {
+            "name": "ResearchBodies",
+            "version": "2:V1.11.0.0"
+        },
+        {
+            "name": "REPOSoftTech-Agencies",
+            "version": "V1.5.7.0"
+        },
+        {
+            "name": "ScienceRelay",
+            "version": "6.0"
+        },
+        {
+            "name": "SpeedUnitAnnex",
+            "version": "1.3.6"
+        },
+        {
+            "name": "EditorExtensionsRedux",
+            "version": "3.4.1.1"
+        },
+        {
+            "name": "ClickThroughBlocker",
+            "version": "1:0.1.10.11"
+        },
+        {
+            "name": "TestFlightConfigLibrary",
+            "version": "0.2.0"
+        },
+        {
+            "name": "TestFlight",
+            "version": "1.12.0.0"
+        },
+        {
+            "name": "TestFlightConfig-Stock-S42",
+            "version": "0.2.0"
+        },
+        {
+            "name": "BobsPanicBox",
+            "version": "1:0.0.2.3"
+        },
+        {
+            "name": "BetterTimeWarpCont",
+            "version": "2.3.12.6"
+        },
+        {
+            "name": "BetterSRBs",
+            "version": "1.2.3"
+        },
+        {
+            "name": "USITools",
+            "version": "1.3.0.0"
+        },
+        {
+            "name": "PartInfo",
+            "version": "0.0.3.7"
+        },
+        {
+            "name": "AirplanePlus",
+            "version": "26.5"
+        },
+        {
+            "name": "DMagicOrbitalScience",
+            "version": "1.4.3"
+        },
+        {
+            "name": "SpaceXLegs",
+            "version": "2.8.6"
+        },
+        {
+            "name": "Trajectories",
+            "version": "v2.3.4"
+        },
+        {
+            "name": "AntennaHelper",
+            "version": "2:1.0.7.2"
+        },
+        {
+            "name": "CommunityPartsTitlesExtrasCategory",
+            "version": "0.6.4"
+        },
+        {
+            "name": "Scatterer",
+            "version": "3:v0.0610"
+        },
+        {
+            "name": "Scatterer-config",
+            "version": "3:v0.0610"
+        },
+        {
+            "name": "Scatterer-sunflare",
+            "version": "3:v0.0610"
+        },
+        {
+            "name": "StockScatterColliderEnablerPatch",
+            "version": "v1.0.0"
+        },
+        {
+            "name": "CommunityPartsTitles",
+            "version": "0.6.4"
+        },
+        {
+            "name": "CommunityPartsTitlesExtrasNoCCKDup",
+            "version": "0.6.4"
+        },
+        {
+            "name": "KSP-AVC",
+            "version": "1.4.1.5"
+        },
+        {
+            "name": "StateFundingContinued",
+            "version": "0.6.18"
+        },
+        {
+            "name": "Toolbar",
+            "version": "1:1.8.0.5"
+        },
+        {
+            "name": "TotalTime",
+            "version": "0.6.9"
+        },
+        {
+            "name": "ModularLaunchPads",
+            "version": "2.0.8"
+        },
+        {
+            "name": "EVARefueling",
+            "version": "0.0"
+        },
+        {
+            "name": "LadderWarp",
+            "version": "0.0"
+        },
+        {
+            "name": "HullcamVDSContinued",
+            "version": "0.2.0.1"
+        }
+    ],
+    "kind": "metapackage"
+}
