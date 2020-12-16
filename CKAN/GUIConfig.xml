@@ -13,7 +13,7 @@
   <RefreshOnStartupNoNag>true</RefreshOnStartupNoNag>
   <RefreshPaused>false</RefreshPaused>
   <AutoSortByUpdate>true</AutoSortByUpdate>
-  <ActiveFilter>1</ActiveFilter>
+  <ActiveFilter>6</ActiveFilter>
   <SortColumns>
     <string>Installed</string>
   </SortColumns>
